@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+
+/*@font-face {*/
+/*  font-family : Geologica;*/
+/*  src         : url('/fonts/Geologica-VariableFont_CRSV,SHRP,slnt,wght.ttf') format('truetype');*/
+/*  font-weight : 100 900;*/
+/*  font-style  : normal;*/
+/*}*/
+
+@theme {
+  --breakpoint-xs         : 25rem;
+
+  --font-sans             : 'Geologica', sans-serif;
+
+  --color-emirocks-milk   : hsl(40, 33%, 93%);
+  --color-emirocks-gray   : hsl(244, 28%, 11%);
+  --color-emirocks-green  : hsl(69, 99%, 49%);
+  --color-emirocks-violet : hsl(247, 99%, 63%);
+
+  --color-telegram        : #2AABEE;
+  --color-whatsapp        : #25D366;
+
+  --radius-emirocks       : 20px;
+
+  --spacing-emirocks-md   : var(--THEME-space-md);
+  --spacing-emirocks-sm   : var(--THEME-space-sm);
+
+  --animate-running-line  : running-line 60s linear infinite;
+  @keyframes running-line {
+    0% {
+      transform : translateX(0%);
+    }
+    100% {
+      transform : translateX(-50%);
+    }
+  }
+}
+
+:root {
+  @apply text-emirocks-gray;
+  /*--THEME-space-md : 3rem;*/
+  @apply [--THEME-space-md:2rem] lg:[--THEME-space-md:3rem];
+  @apply [--THEME-space-sm:1rem] lg:[--THEME-space-sm:1.5rem];
+}
+
+input[type=number],
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  margin             : 0;
+  -webkit-appearance : none;
+  -moz-appearance    : textfield;
+}
