@@ -20,6 +20,8 @@ const useTabsContext = () => useContext(TabsContext);
 
 
 export function Tabs({
+  ref: propsRef,
+  onTabChange,
   scrollUpFn,
   scrollUpTarget,
   scrollUpTargetSelector,
@@ -27,6 +29,7 @@ export function Tabs({
   ...props
 }: ComponentProps<'div'> & {
   scrollUpFn?: (target: HTMLElement) => void,
+  onTabChange?: (index: number) => void,
 } & RequireOneOrNone<{
   scrollUpTarget: HTMLElement,
   scrollUpTargetSelector: string,
@@ -55,7 +58,8 @@ export function Tabs({
       await waitScrollEnd({ debounce: 100 });
     }
     _setCurrentTabIndex(next);
-  }, [tabsCount, scrollUpFn, scrollUpTarget, scrollUpTargetSelector, scrollUpTargetId]);
+    onTabChange?.(next);
+  }, [tabsCount, scrollUpTargetSelector, scrollUpTargetId, scrollUpTarget, onTabChange, scrollUpFn]);
 
   const tabsContext: TabsContext = {
     tabsCount,
@@ -68,7 +72,13 @@ export function Tabs({
 
   return (
     <TabsContext value={tabsContext}>
-      <div ref={ref} {...props} />
+      <div ref={instance => {
+        ref.current = instance;
+        if (propsRef) {
+          if (typeof propsRef === 'function') propsRef(instance);
+          else propsRef.current = instance;
+        }
+      }} {...props} />
     </TabsContext>
   );
 }

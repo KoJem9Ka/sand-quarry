@@ -1,4 +1,4 @@
 export const CONTACT_LINKS = {
-  telegram: 'https://t.me/emirocks',
-  whatsapp: 'https://wa.me/message/BMTSO66UFZUVO1',// https://whatsapp.com
+  telegram: 'https://t.me/telegram',
+  whatsapp: 'https://www.whatsapp.com',
 } as const;

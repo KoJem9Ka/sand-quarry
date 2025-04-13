@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@plugin "@tailwindcss/typography";
+
 
 /*@font-face {*/
 /*  font-family : Geologica;*/
@@ -8,23 +10,32 @@
 /*  font-style  : normal;*/
 /*}*/
 
+:root {
+  @apply text-quarry-dark;
+  /*--THEME-space-md : 3rem;*/
+  @apply [--THEME-space-md:2rem] lg:[--THEME-space-md:3rem];
+  @apply [--THEME-space-sm:1rem] lg:[--THEME-space-sm:1.5rem];
+}
+
+@theme inline {
+  --spacing-space-md : var(--THEME-space-md);
+  --spacing-space-sm : var(--THEME-space-sm);
+}
+
 @theme {
   --breakpoint-xs         : 25rem;
 
   --font-sans             : 'Geologica', sans-serif;
 
-  --color-emirocks-milk   : hsl(40, 33%, 93%);
-  --color-emirocks-gray   : hsl(244, 28%, 11%);
-  --color-emirocks-green  : hsl(69, 99%, 49%);
-  --color-emirocks-violet : hsl(247, 99%, 63%);
+  --color-quarry-dark     : hsl(244, 28%, 11%);
+  --color-quarry-brown    : #D7A36C;
+  --color-quarry-gray     : #303C45;
+  --color-quarry-mute     : #ABABAB;
 
   --color-telegram        : #2AABEE;
   --color-whatsapp        : #25D366;
 
-  --radius-emirocks       : 20px;
-
-  --spacing-emirocks-md   : var(--THEME-space-md);
-  --spacing-emirocks-sm   : var(--THEME-space-sm);
+  --radius-radius-md      : 20px;
 
   --animate-running-line  : running-line 60s linear infinite;
   @keyframes running-line {
@@ -37,13 +48,6 @@
   }
 }
 
-:root {
-  @apply text-emirocks-gray;
-  /*--THEME-space-md : 3rem;*/
-  @apply [--THEME-space-md:2rem] lg:[--THEME-space-md:3rem];
-  @apply [--THEME-space-sm:1rem] lg:[--THEME-space-sm:1.5rem];
-}
-
 input[type=number],
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -51,3 +55,7 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance : none;
   -moz-appearance    : textfield;
 }
+
+.prose {@apply max-w-none;}
+
+.prose-in {@apply [&_*:first-child]:mt-0 [&_*:last-child]:mb-0}

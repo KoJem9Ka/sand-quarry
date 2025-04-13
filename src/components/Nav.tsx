@@ -5,6 +5,7 @@ import { type ComponentProps, forwardRef, type ForwardedRef } from 'react';
 import { cn } from '@/utils/cn';
 
 import { navScroll } from '@/utils/nav-scroll';
+import { useTranslations } from 'next-intl';
 
 
 type NavProps = ComponentProps<'nav'> & {
@@ -12,15 +13,15 @@ type NavProps = ComponentProps<'nav'> & {
 };
 
 export const Nav = forwardRef(({ className, linkClassName, ...props }: NavProps, ref: ForwardedRef<HTMLElement>) => {
-  const _linkClassName = cn('cursor-pointer hover:text-emirocks-violet', linkClassName);
+  const t = useTranslations('navigation');
+  const _linkClassName = cn('cursor-pointer hover:text-quarry-brown', linkClassName);
 
   return (
     <nav ref={ref} className={cn('flex gap-8', className)} {...props}>
-      <a className={_linkClassName} href={`#${HeadingIdEnum.AboutProject}`} onClick={navScroll}>О проекте</a>
-      <a className={_linkClassName} href={`#${HeadingIdEnum.Mortgage}`} onClick={navScroll}>Ипотека</a>
-      <a className={_linkClassName} href={`#${HeadingIdEnum.GoldenVisa}`} onClick={navScroll}>Золотая виза</a>
-      <a className={_linkClassName} href={`#${HeadingIdEnum.Services}`} onClick={navScroll}>Услуги</a>
-      <a className={_linkClassName} href={`#${HeadingIdEnum.Cases}`} onClick={navScroll}>Кейсы</a>
+      <a className={_linkClassName} href={`#${HeadingIdEnum.LegalStatus}`} onClick={navScroll}>{t('legalStatus')}</a>
+      <a className={_linkClassName} href={`#${HeadingIdEnum.Characteristics}`} onClick={navScroll}>{t('characteristics')}</a>
+      <a className={_linkClassName} href={`#${HeadingIdEnum.BusinessModels}`} onClick={navScroll}>{t('businessModels')}</a>
+      <a className={_linkClassName} href={`#${HeadingIdEnum.SaleConditions}`} onClick={navScroll}>{t('saleConditions')}</a>
     </nav>
   );
 });

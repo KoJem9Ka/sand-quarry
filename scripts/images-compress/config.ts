@@ -1,4 +1,3 @@
-import { range } from 'lodash-es';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -15,8 +14,9 @@ export type Image = {
 }
 
 const IMAGES: Image[] = [{
-  src: 'bg-main.jpg',
+  src: 'images/bg-main.jpg'.replaceAll(/\//g, path.sep),
   sizes: [{ maxWidth: 2560 }, { maxWidth: 1920 }, { maxWidth: 1280 }, { maxWidth: 640 }],
+  quality: 70,
 }];
 
 const projectRoot = fileURLToPath(new URL(path.join('..', '..'), import.meta.url));

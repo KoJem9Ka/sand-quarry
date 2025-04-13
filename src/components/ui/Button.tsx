@@ -38,7 +38,7 @@ export function Button({ className, children, ...props }: ButtonProps) {
 }
 
 const colors = {
-  'green': 'bg-emirocks-green text-emirocks-gray',
-  'violet': 'bg-emirocks-violet text-white',
+  'brown': 'bg-quarry-brown text-white',
+  'violet': 'bg-quarry-gray text-white',
   'gray': 'bg-black/50 text-white',
 };

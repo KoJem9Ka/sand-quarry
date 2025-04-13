@@ -43,7 +43,7 @@ async function compress(args: Image): Promise<object> {
 
     await Promise.all([
       imageResized.jpeg({ quality, mozjpeg: true }).toFile(path.join(CONFIG.distDir, fileDirAndNameWithSizeJPG)),
-      imageResized.webp({ quality, effort: 6 }).toFile(path.join(CONFIG.distDir, fileDirAndNameWithSizeWEBP)),
+      imageResized.webp({ quality: quality - 30, effort: 6 }).toFile(path.join(CONFIG.distDir, fileDirAndNameWithSizeWEBP)),
     ]);
 
     [

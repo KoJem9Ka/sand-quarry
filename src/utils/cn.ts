@@ -5,10 +5,10 @@ import { extendTailwindMerge } from 'tailwind-merge';
 const twMerge = extendTailwindMerge({
   extend: {
     theme: {
-      spacing: ['emirocks-md', 'emirocks-sm'],
+      spacing: ['space-md', 'space-sm'],
       breakpoint: ['xs'],
-      color: ['emirocks-milk', 'emirocks-gray', 'emirocks-green', 'emirocks-violet'],
-      radius: ['emirocks'],
+      color: ['quarry-brown', 'quarry-gray', 'quarry-mute', 'telegram', 'whatsapp'],
+      radius: ['radius-md'],
     },
   },
 });

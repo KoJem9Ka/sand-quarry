@@ -10,13 +10,13 @@ export function Footer() {
   const year = Math.max(new Date().getFullYear(), 2025);
 
   return (
-    <footer className="bg-emirocks-gray text-white py-emirocks-md mt-emirocks-md">
+    <footer className="bg-quarry-gray text-white py-space-md mt-space-md">
       <Container className="flex flex-col items-center justify-center gap-7">
-        <Nav className="max-sm:flex-col items-center gap-3" linkClassName="hover:text-emirocks-green" />
+        <Nav className="max-sm:flex-col items-center gap-3" linkClassName="hover:text-quarry-brown" />
 
-        <Button onClick={modalConsultationOpen} color="violet" className="text-sm">КОНСУЛЬТАЦИЯ</Button>
+        <Button onClick={modalConsultationOpen} color='brown' className="text-sm">КОНСУЛЬТАЦИЯ</Button>
 
-        <p>© EMIROCKS {year}</p>
+        <p>© ??? {year}</p>
       </Container>
     </footer>
   );

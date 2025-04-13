@@ -4,9 +4,9 @@ import { cva } from 'class-variance-authority';
 
 
 export const iconArrowCva = cva([
-  'transition text-black/25 rounded-full',
-  'disabled:text-black/10',
-  'not-disabled:hover:text-black/50 not-disabled:active:scale-90 not-disabled:active:text-emirocks-violet not-disabled:cursor-pointer',
+  'transition text-current/25 rounded-full',
+  'disabled:text-current/10',
+  'not-disabled:hover:text-current/50 not-disabled:active:scale-90 not-disabled:active:text-quarry-brown not-disabled:cursor-pointer',
 ], {
   variants: {
     asButton: { true: '' },

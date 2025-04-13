@@ -4,19 +4,18 @@ export enum Selectors {
 }
 
 export enum HeadingIdEnum {
-  AboutProject = 'about-project',
-  Mortgage = 'mortgage',
-  GoldenVisa = 'golden-visa',
-  Services = 'services',
-  Cases = 'cases',
+  LegalStatus = 'legal-status',
+  Characteristics = 'characteristics',
+  BusinessModels = 'business-models',
+  SaleConditions = 'sale-conditions',
 }
 
 export enum ElementIdEnum {
-  OurAdvantages = 'our-advantages',
-  PrimaryOrSecondaryMarket = 'primary-or-secondary-market',
-  MortgageOrInstallmentPlan = 'mortgage-or-installment-plan',
-  MoscowOrDubai = 'moscow-or-dubai',
-  ApartmentsOnTheMarket = 'apartments-on-the-market',
+  // OurAdvantages = 'our-advantages',
+  // PrimaryOrSecondaryMarket = 'primary-or-secondary-market',
+  // MortgageOrInstallmentPlan = 'mortgage-or-installment-plan',
+  // MoscowOrDubai = 'moscow-or-dubai',
+  // ApartmentsOnTheMarket = 'apartments-on-the-market',
 }
 
-export type ElementId = HeadingIdEnum | ElementIdEnum;
+export type ElementId = HeadingIdEnum/* | ElementIdEnum*/;

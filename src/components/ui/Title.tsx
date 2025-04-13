@@ -7,7 +7,7 @@ type TitleProps = ComponentProps<'h2'>
 export function Title({ className, ...props }: TitleProps) {
   return (
     <h2
-      className={cn('mt-emirocks-md text-3xl lg:text-5xl font-bold text-center text-balance', className)}
+      className={cn('mt-space-md text-3xl lg:text-5xl font-bold text-center text-balance', className)}
       {...props}
     />
   );
@@ -25,7 +25,7 @@ export function Title2<Component extends ElementType = 'h3'>({ className, as, ..
 
   return (
     <Component
-      className={cn('mt-emirocks-md text-xl lg:text-3xl font-bold text-center text-balance', className)}
+      className={cn('mt-space-md text-xl lg:text-3xl font-bold text-center text-balance', className)}
       {...props}
     />
   );
@@ -43,7 +43,7 @@ export function Title3<Component extends ElementType = 'h4'>({ className, as, ..
 
   return (
     <Component
-      className={cn('mt-emirocks-md text-lg lg:text-2xl font-bold text-center text-balance', className)}
+      className={cn('mt-space-md text-lg lg:text-2xl font-bold text-center text-balance', className)}
       {...props}
     />
   );

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useRef, useCallback, useReducer } from 'react';
+import { useCallback, useEffect, useReducer, useRef, useState } from 'react';
 import { cn } from '@/utils/cn';
 import { Nav } from '@/components/Nav';
 import { Transition } from '@headlessui/react';
@@ -9,12 +9,14 @@ import { useUnfocus } from '@/hooks/useUnfocus';
 import { HamburgerButton } from '@/components/ui/HamburgerButton';
 import { Container } from '@/components/Container';
 import { throttle } from 'lodash-es';
-import { IconEmirocksLogo } from '@/components/icons/IconEmirocksLogo';
-import Link from 'next/link';
 import { MessengerButton } from '@/components/MessengerButton';
+import { Link } from '@/i18n/navigation';
+import { IconSandQuarryLogo } from '@/components/icons/IconSandQuarryLogo';
+import { useLocale } from 'use-intl';
 
 
 export function Header() {
+  const locale = useLocale();
   const hamburgerRef = useRef<HTMLButtonElement>(null);
   const mobileNavRef = useRef<HTMLElement>(null);
   const divInHeaderRef = useRef<HTMLDivElement>(null);
@@ -48,53 +50,50 @@ export function Header() {
   return (
     <>
       <header id="header" data-bg={isBackground || undefined} className={cn(
-        'fixed top-0 z-50 group',
+        'fixed top-0 z-50 group text-white',
         'flex flex-col w-full',
         'transition',
         isVisible ? 'translate-y-0' : '-translate-y-full',
         isBackground
-          ? 'bg-white/50 not-supports-[backdrop-filter:blur(1px)]:bg-white [backdrop-filter:blur(var(--blur-md))]'
-          : 'bg-transparent text-white',
-        isBackground && isSpreadOpen && 'bg-white/75',
+          ? 'bg-quarry-gray/70 not-supports-[backdrop-filter:blur(1px)]:bg-quarry-gray [backdrop-filter:blur(var(--blur-sm))]'
+          : 'bg-transparent',
+        isBackground && isSpreadOpen && 'bg-quarry-gray/75',
       )}>
         <Container>
           <div ref={divInHeaderRef} className="flex gap-3 py-4 justify-between items-center w-full">
-            <Link className="flex items-center text-lg font-bold space-x-1 [--accent:var(--color-emirocks-green)]" href="/">
-              <IconEmirocksLogo className="h-[36px] w-auto not-group-data-bg:[--icon-stroke:hsla(0,0%,100%,1)]" />
-              {/*<img src={imgEmirocksLogo} alt="emirocks logo" className="h-[32px] stroke-3 stroke-white" />*/}
+            <Link className="flex items-center text-lg font-bold space-x-1" href="/">
+              <IconSandQuarryLogo locale={locale} className="h-[36px] w-auto not-group-data-bg:[--icon-stroke:hsla(0,0%,100%,1)]"/>
             </Link>
 
-            <Nav className="max-lg:hidden text-lg" linkClassName={clsx(!isBackground && 'hover:text-emirocks-green')} />
+            <Nav className="max-lg:hidden text-md"/>
 
-            <div className="lg:hidden grow" />
+            <div className="lg:hidden grow"/>
 
             <div className="shrink-0 space-x-3 flex items-center max-lg:mr-3">
-              <MessengerButton service="telegram" />
-              <MessengerButton service="whatsapp" />
+              <MessengerButton service="telegram"/>
+              <MessengerButton service="whatsapp"/>
+              <Link href="/" locale={locale === 'en' ? 'ru' : 'en'}>
+                {locale === 'en' ? 'RU' : 'EN'}
+              </Link>
             </div>
 
-            <HamburgerButton isOpen={isSpreadOpen} ref={hamburgerRef} className="lg:hidden" onClick={onSpreadToggle} />
-
-            {/*<Button color="violet" className="max-lg:hidden text-sm">КОНСУЛЬТАЦИЯ</Button>*/}
+            <HamburgerButton isOpen={isSpreadOpen} ref={hamburgerRef} className="lg:hidden" onClick={onSpreadToggle}/>
           </div>
 
           <Transition show={isSpreadOpen}>
             <Nav
               ref={mobileNavRef}
               className={clsx(
-                'lg:hidden flex-col gap-5 items-center px-4 py-emirocks-md overflow-hidden text-2xl',
+                'lg:hidden flex-col gap-5 items-center px-4 py-space-md overflow-hidden text-2xl',
                 'transition-all data-[closed]:text-transparent data-[closed]:-translate-y-10 data-[closed]:gap-0 data-[closed]:p-0 data-[closed]:max-h-0 max-h-100',
               )}
-              linkClassName={clsx(!isBackground && 'hover:text-emirocks-green')}
             />
           </Transition>
         </Container>
       </header>
 
       <Transition show={isSpreadOpen}>
-        <div
-          className="fixed inset-0 bg-black/75 z-40 data-[closed]:backdrop-blur-none data-[closed]:bg-transparent transition ease-in-out backdrop-blur-sm"
-        />
+        <div className="fixed inset-0 bg-black/75 z-40 data-[closed]:backdrop-blur-none data-[closed]:bg-transparent transition ease-in-out backdrop-blur-sm"/>
       </Transition>
     </>
   );

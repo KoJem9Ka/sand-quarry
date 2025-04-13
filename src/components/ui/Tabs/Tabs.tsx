@@ -1,14 +1,33 @@
-import { Tabs as _Tabs, TabList as _TabList, Tab as _Tab, TabContent as _TabContent, TabContents as _TabContents, TabsArrow as _TabsArrow } from './TabsCore';
-import type { ComponentProps } from 'react';
+'use client';
+
+import { Tab as _Tab, TabContent as _TabContent, TabContents as _TabContents, TabList as _TabList, Tabs as _Tabs, TabsArrow as _TabsArrow } from './TabsCore';
+import { type ComponentProps, useCallback, useEffect, useReducer, useRef } from 'react';
 import { cn } from '@/utils/cn';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { IconArrow, iconArrowCva } from '@/components/icons/IconArrow';
+import { delay } from 'lodash-es';
 
 
 export function Tabs({ children, className, ...props }: ComponentProps<typeof _Tabs>) {
-  return <_Tabs className={cn('w-full flex flex-col self-start grow gap-[20px]', className)} {...props}>
+  const ref = useRef<HTMLDivElement>(null);
+  const [isBiggerThanScreen, setIsBiggerThanScreen] = useReducer(() => true, false);
+
+  const onTabChange = useCallback(() => void (delay(() => {
+    if (!ref.current) return;
+    console.log(ref.current.clientHeight, window.innerHeight * 0.75);
+    if (ref.current.clientHeight > window.innerHeight * 0.75) setIsBiggerThanScreen();
+  }, 300)), []);
+
+  useEffect(onTabChange, [onTabChange]);
+
+  return <_Tabs
+    ref={ref}
+    onTabChange={onTabChange}
+    className={cn('w-full flex flex-col self-start grow gap-[20px]', className)}
+    {...props}
+  >
     {children}
-    <TabsArrows className="md:hidden" />
+    <TabsArrows className={isBiggerThanScreen ? undefined : 'md:hidden'}/>
   </_Tabs>;
 }
 
@@ -19,8 +38,9 @@ const tabListCva = cva([
   variants: {
     variant: {
       line: [
-        'gap-3 relative after:absolute after:-z-1 after:bg-gray-300 after:h-[1px] after:left-0 after:right-0',
-        '*:relative *:after:absolute *:after:transition-all *:after:left-0 *:after:right-0 *:after:h-[0px] *:data-selected:after:h-[5px]',
+        'gap-3 relative',
+        'after:absolute after:bg-current/15 after:h-[1px] after:left-0 after:right-0',
+        '*:relative *:after:absolute *:after:z-1 *:after:transition-all *:after:left-0 *:after:right-0 *:after:h-[0px] *:data-selected:after:h-[5px]',
       ],
       boxes: [
         'gap-1',
@@ -33,7 +53,7 @@ const tabListCva = cva([
       disabled: null,
     },
     color: {
-      violet: '*:hover:text-emirocks-violet',
+      brown: '*:hover:text-quarry-brown',
     },
     size: {
       md: 'text-lg font-bold',
@@ -42,17 +62,17 @@ const tabListCva = cva([
     },
   },
   compoundVariants: [{
-    variant: 'line', color: 'violet',
-    className: '*:after:bg-emirocks-violet *:data-selected:text-emirocks-violet',
+    variant: 'line', color: 'brown',
+    className: '*:after:bg-quarry-brown *:data-selected:text-quarry-brown',
   }, {
-    variant: 'boxes', color: 'violet',
-    className: '*:hover:bg-emirocks-violet/20 *:data-selected:bg-emirocks-violet *:data-selected:text-white',
+    variant: 'boxes', color: 'brown',
+    className: '*:hover:bg-quarry-brown/20 *:data-selected:bg-quarry-brown *:data-selected:text-white',
   }],
   defaultVariants: {
     variant: 'line',
     line: 'atBottom',
     size: 'md',
-    color: 'violet',
+    color: 'brown',
   },
 });
 
@@ -91,10 +111,10 @@ export function TabsArrows({ isDisableOnEdge, className, ...props }: Omit<Compon
   return (
     <div className={cn('flex justify-center gap-3', className)} {...props}>
       <_TabsArrow className={iconArrowCva({ asButton: true })} direction="left" isDisableOnEdge={isDisableOnEdge}>
-        <IconArrow direction="left" />
+        <IconArrow direction="left"/>
       </_TabsArrow>
       <_TabsArrow className={iconArrowCva({ asButton: true })} direction="right" isDisableOnEdge={isDisableOnEdge}>
-        <IconArrow direction="right" />
+        <IconArrow direction="right"/>
       </_TabsArrow>
     </div>
   );

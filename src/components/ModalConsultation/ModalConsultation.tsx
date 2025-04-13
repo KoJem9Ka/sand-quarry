@@ -32,7 +32,7 @@ export function ModalConsultation() {
         <DialogPanel
           transition
           className={`
-            w-full max-w-xl rounded-emirocks overflow-hidden
+            w-full max-w-xl rounded-radius-md overflow-hidden
             backdrop-blur-3xl ease-in-out transition
             data-enter:data-closed:scale-115 data-closed:opacity-0
           `}

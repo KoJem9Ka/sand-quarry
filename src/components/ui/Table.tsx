@@ -4,13 +4,22 @@ import { cn } from '@/utils/cn';
 
 type TableProps = ComponentProps<'table'> & {
   wrapperClassName?: string;
+  isNoBroder?: boolean;
 }
 
-export const Table = forwardRef<HTMLTableElement, TableProps>(({ wrapperClassName, className, ...props }, ref) => (
-  <div className={cn('overflow-hidden rounded-emirocks border-2 border-emirocks-violet [&_tr,&_td]:border-gray-300', wrapperClassName)}>
+export const Table = forwardRef<HTMLTableElement, TableProps>(({
+  isNoBroder,
+  wrapperClassName,
+  className, ...props
+}, ref) => (
+  <div className={cn(
+    'overflow-hidden [&_td]:border-gray-300 [&_td]:not-last:border-r',
+    isNoBroder ? undefined : 'rounded-radius-md border-2 border-quarry-brown',
+    wrapperClassName,
+  )}>
     <table
       ref={ref}
-      className={cn('w-full bg-emirocks-violet', className)} {...props}
+      className={cn('w-full bg-quarry-brown', className)} {...props}
     />
   </div>
 ));
@@ -18,7 +27,7 @@ Table.displayName = 'Table';
 
 export function THead({ className, ...props }: ComponentProps<'thead'>) {
   return (
-    <thead className={cn('bg-emirocks-violet text-white', className)} {...props} />
+    <thead className={cn('bg-quarry-brown text-white', className)} {...props} />
   );
 }
 
@@ -42,6 +51,6 @@ export function TH({ className, ...props }: ComponentProps<'th'>) {
 
 export function TD({ className, ...props }: ComponentProps<'td'>) {
   return (
-    <td className={cn('py-1 px-4 not-last:border-r', className)} {...props} />
+    <td className={cn('py-1 px-4', className)} {...props} />
   );
 }
