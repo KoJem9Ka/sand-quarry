@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useReducer, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from 'react';
 import { cn } from '@/utils/cn';
 import { Nav } from '@/components/Nav';
 import { Transition } from '@headlessui/react';
@@ -23,7 +23,12 @@ export function Header() {
   const [isVisible, setIsVisible] = useState(true);
   const [isSpreadOpen, setIsSpreadOpen] = useState(false);
   const [isBackground, updateBgVisibility] = useReducer(() => isSpreadOpen || window.scrollY > 150, false);
-  useUnfocus([hamburgerRef, mobileNavRef], useCallback(() => setIsSpreadOpen(false), []), isSpreadOpen);
+
+  useUnfocus({
+    refs: useMemo(() => [hamburgerRef, mobileNavRef], []),
+    callback: useCallback(() => setIsSpreadOpen(false), []),
+    isEnabled: isSpreadOpen,
+  });
 
   const onSpreadToggle = useCallback(() => setIsSpreadOpen(v => !v), []);
 
@@ -42,6 +47,7 @@ export function Header() {
     }, 150);
 
     if (!isSpreadOpen) handleScroll();
+    else updateBgVisibility();
     const abortController = new AbortController();
     window.addEventListener('scroll', handleScroll, { signal: abortController.signal });
     return () => abortController.abort();

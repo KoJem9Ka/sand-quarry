@@ -1,14 +1,18 @@
-import { useEffect, type RefObject } from 'react';
+import { type RefObject, useEffect } from 'react';
 
 
 /**
  * Хук вызывает callback при нажатии вне всех элементов refs или нажатии клавиши Escape.
  */
-export function useUnfocus(
+export function useUnfocus({
+  refs,
+  callback,
+  isEnabled = true,
+}: {
   refs: Array<RefObject<HTMLOrSVGElement | null>>,
   callback: VoidFunction,
-  isEnabled: boolean = true,
-) {
+  isEnabled: boolean,
+}) {
   useEffect(() => {
     if (!isEnabled) return;
     const handleEvent = (event: MouseEvent | KeyboardEvent) => {

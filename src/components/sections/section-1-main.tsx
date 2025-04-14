@@ -15,7 +15,8 @@ import { useTranslations } from 'next-intl';
 
 
 export function Section1Main() {
-  const t = useTranslations('hero');
+  const tHero = useTranslations('hero');
+  const tConsultation = useTranslations('consultation');
   // const [{ bgScale, bgInset }, setScreen] = useState({
   //   bgScale: 100,
   //   bgInset: 0,
@@ -58,21 +59,21 @@ export function Section1Main() {
       >
         <h1 className="space-y-3 *:block text-center font-bold">
           <span className="text-4xl sm:text-5xl lg:text-7xl text-balance uppercase leading-normal">
-            {t('title')}
+            {tHero('title')}
           </span>
           {' '}
-          <span className="text-3xl lg:text-4xl text-quarry-brown">{t('subtitle1')}</span>
+          <span className="text-3xl lg:text-4xl text-quarry-brown">{tHero('subtitle1')}</span>
           {' '}
           <span className="text-3xl lg:text-4xl">
-            {t('subtitle2')}
+            {tHero('subtitle2')}
             {' '}
-            <span className='text-4xl sm:text-5xl lg:text-7xl'>{t('subtitle3').replace(/\s/g, NBSP)}</span>
+            <span className='text-4xl sm:text-5xl lg:text-7xl'>{tHero('subtitle3').replace(/\s/g, NBSP)}</span>
             {' '}
-            {t('subtitle4')}
+            {tHero('subtitle4')}
           </span>
         </h1>
         <Button onClick={modalConsultationOpen} color="brown" className="mt-3">
-          Получить консультацию
+          {tConsultation('buttonLong')}
           <IconSolarPhoneBold />
         </Button>
       </Container>

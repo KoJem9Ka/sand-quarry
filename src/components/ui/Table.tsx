@@ -45,7 +45,7 @@ export function TR({ className, ...props }: ComponentProps<'tr'>) {
 
 export function TH({ className, ...props }: ComponentProps<'th'>) {
   return (
-    <th className={cn('py-2 px-4 text-lg text-balance', className)} {...props} />
+    <th className={cn('py-2 px-4 text-balance', className)} {...props} />
   );
 }
 

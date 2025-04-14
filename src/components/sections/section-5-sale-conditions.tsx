@@ -8,6 +8,8 @@ import { navScroll } from '@/utils/nav-scroll';
 import { useTranslations } from 'next-intl';
 import { Markdown } from '@/components/ui/Markdown';
 import { Table, TBody, TD, TH, THead, TR } from '@/components/ui/Table';
+import type { QuarryFromTable } from '@/i18n/types';
+import { IconQlementineIconsExternalLink16 } from '@/components/icons/IconQlementineIconsExternalLink16';
 
 
 export function Section5SaleConditions() {
@@ -28,55 +30,50 @@ export function Section5SaleConditions() {
           <TabContent className="prose-in"><Markdown>{t.raw('tabMarketValue.text')}</Markdown></TabContent>
           <TabContent className="prose-in">
             <Markdown>{t.raw('tabQuarriesForSale.text1')}</Markdown>
-            <div className=''>
-              <div className="relative max-h-[350px] overflow-y-auto rounded-radius-md border-2 border-quarry-brown">
-                <Table className="not-prose text-center min-w-max" wrapperClassName="![overflow:unset]" isNoBroder>
-                  <THead className="sticky top-[0]">
-                    <TR>
-                      <TH>Карьер</TH>
-                      <TH>Местоположение</TH>
-                      <TH className="">Цена</TH>
-                      <TH>Запасы</TH>
-                    </TR>
-                  </THead>
-                  <TBody className="[&_tr]:even:bg-black/4">
-                    <TR><TD>Карьер песчаный №1</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №2</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №3</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №4</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №5</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №6</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №7</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №8</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №9</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №10</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №11</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №12</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №13</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №14</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №15</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №16</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №17</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №18</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №19</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №20</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №21</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №22</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №23</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №24</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №25</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №26</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №27</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                    <TR><TD>Карьер песчаный №28</TD><TD>Владимирская область</TD><TD>100 000 000</TD><TD>7 млн м3</TD></TR>
-                  </TBody>
-                </Table>
-              </div>
-            </div>
+            <QuarriesTable/>
             <Markdown>{t.raw('tabQuarriesForSale.text2')}</Markdown>
           </TabContent>
           <TabContent className="prose-in"><Markdown>{t.raw('tabOurConditions.text')}</Markdown></TabContent>
         </TabContents>
       </Tabs>
     </Container>
+  );
+}
+
+function QuarriesTable() {
+  const t = useTranslations('saleConditions.tabQuarriesForSale');
+
+  const headings = t.raw('tableHeadings') as string[];
+  const quarries = t.raw('table') as QuarryFromTable[];
+
+  return (
+    <div className="not-prose relative max-h-[500px] overflow-y-auto rounded-radius-md border-2 border-quarry-brown">
+      <Table className="text-center min-w-max text-base" wrapperClassName="![overflow:unset]" isNoBroder>
+        <THead className="sticky top-[0]">
+          <TR>
+            {headings.map((heading, idx) => <TH key={idx}><Markdown>{heading}</Markdown></TH>)}
+          </TR>
+        </THead>
+        <TBody className="[&_tr]:even:bg-black/5">
+          {quarries.map((quarry, idx) => (
+            <TR key={idx}>
+              <TD>
+                <a className="text-blue-500" target="_blank" rel="noopener noreferrer" href={quarry.link}>
+                  {quarry.location}
+                  {' '}
+                  <IconQlementineIconsExternalLink16 className='inline'/>
+                </a>
+              </TD>
+              <TD>{quarry.reserves}</TD>
+              <TD><Markdown>{quarry.sandQuality}</Markdown></TD>
+              <TD><Markdown>{quarry.siteStatus}</Markdown></TD>
+              <TD><Markdown>{quarry.hasLicense}</Markdown></TD>
+              <TD>{quarry.quarryPriceMlnRub}</TD>
+              <TD>{quarry.pricePerM3Rub}</TD>
+            </TR>
+          ))}
+        </TBody>
+      </Table>
+    </div>
   );
 }

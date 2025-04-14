@@ -10,9 +10,11 @@ import { usePreventScroll } from '@/hooks/usePreventScroll';
 import { IconSolarCloseCircleBold } from '@/components/icons/IconSolarCloseCircleBold';
 import { cn } from '@/utils/cn';
 import { iconArrowCva } from '@/components/icons/IconArrow';
+import { useTranslations } from 'next-intl';
 
 
 export function ModalConsultation() {
+  const t = useTranslations('consultation.dialog');
   const isOpen = useIsModalConsultationOpen();
   usePreventScroll({ isActive: isOpen, delay: 150 });
 
@@ -39,11 +41,11 @@ export function ModalConsultation() {
         >
           <div className="relative px-6 py-2 text-center text-balance bg-white">
             <DialogTitle as="h3" className="text-xl font-bold">
-              Консультация
+              {t('title')}
             </DialogTitle>
 
             <p className="text-sm/6">
-              Выберите удобный способ связи
+              {t('description')}
             </p>
 
             <button

@@ -1,7 +1,7 @@
 'use client';
 
 import { Tab as _Tab, TabContent as _TabContent, TabContents as _TabContents, TabList as _TabList, Tabs as _Tabs, TabsArrow as _TabsArrow } from './TabsCore';
-import { type ComponentProps, useCallback, useEffect, useReducer, useRef } from 'react';
+import { type ComponentProps, useCallback, useLayoutEffect, useReducer, useRef } from 'react';
 import { cn } from '@/utils/cn';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { IconArrow, iconArrowCva } from '@/components/icons/IconArrow';
@@ -11,18 +11,19 @@ import { delay } from 'lodash-es';
 export function Tabs({ children, className, ...props }: ComponentProps<typeof _Tabs>) {
   const ref = useRef<HTMLDivElement>(null);
   const [isBiggerThanScreen, setIsBiggerThanScreen] = useReducer(() => true, false);
-
-  const onTabChange = useCallback(() => void (delay(() => {
+  
+  const onTabChangeImmediate = useCallback(() => {
     if (!ref.current) return;
-    console.log(ref.current.clientHeight, window.innerHeight * 0.75);
     if (ref.current.clientHeight > window.innerHeight * 0.75) setIsBiggerThanScreen();
-  }, 300)), []);
+  }, []);
 
-  useEffect(onTabChange, [onTabChange]);
+  const onTabChangeWaitAnimation = useCallback(() => void (delay(onTabChangeImmediate, 300)), [onTabChangeImmediate]);
+
+  useLayoutEffect(onTabChangeImmediate, [onTabChangeImmediate]);
 
   return <_Tabs
     ref={ref}
-    onTabChange={onTabChange}
+    onTabChange={onTabChangeWaitAnimation}
     className={cn('w-full flex flex-col self-start grow gap-[20px]', className)}
     {...props}
   >
