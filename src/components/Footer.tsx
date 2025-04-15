@@ -18,7 +18,7 @@ export function Footer() {
 
         <Button onClick={modalConsultationOpen} color='brown' className="text-sm uppercase">{t('buttonShort')}</Button>
 
-        <p>© ??? {year}</p>
+        <p>© {year}</p>
       </Container>
     </footer>
   );

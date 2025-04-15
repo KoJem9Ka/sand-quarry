@@ -109,7 +109,7 @@ export const MessagesRU = {
 - Модуль крупности выдержанный и изменяется от 0,9 до 2,8, средний – 1,38, при коэффициенте вариации – 0,0,44
 - Содержание зерен крупностью менее <nobr>0,16 мм</nobr> невыдержанное – от 0,5% до 92,2%, среднее – 17,48% при коэффициенте вариации – 0,62
 - Полный остаток зерен на сите <nobr>0,63 мм</nobr> невыдержанный – от 0,1% до 72,6%, среднее – 10,19%, при коэффициенте вариации – 1,15
-- Содержание пылевидных и глинистых частиц в песках равномерное и составляет от 0,5 % до 9,2 %, среднее – 3,62 %, при коэффициенте вариации – 0,53
+- Содержание пылевидных частиц в песках равномерное и составляет от 0,5 % до 9,2 %, среднее – 3,62 %, при коэффициенте вариации – 0,53
 - Зерна размером <nobr>5–10 мм</nobr> и крупнее <nobr>10 мм</nobr> в песках месторождения отсутствуют
       `.trim(),
     },
@@ -221,7 +221,7 @@ export const MessagesRU = {
 
 ### Производство тротуарной плитки
 
-Кварцевый песок перспективно использовать в качестве сырья для изготовления обжиговых керамических дорожно - строительных изделий, в том числе плитки. Кроме этого, песок используется для затирки плиточных швов.
+Кварцевый песок перспективно использовать в качестве сырья для изготовления обжиговых керамических дорожно-строительных изделий, в том числе плитки. Кроме этого, песок используется для затирки плиточных швов.
 
 ### Строительные материалы
 
@@ -243,20 +243,19 @@ export const MessagesRU = {
     tabOptimalModel: {
       title: 'Индустриальный парк',
       text: `
-Предлагается реализовать концепцию создания **индустриального парка** на базе месторождения кварцевых песков, который будет представлять собой комплекс предприятий по переработке добываемых полезных ископаемых на общем земельном участке. Территория, свободная от месторождения, имеет площадь <nobr>187 Га</nobr>. Ее вполне достаточно для реализации проекта подобного масштаба.
+В основе концепции **индустриального парка** находится идея по созданию рядом с месторождением комплекса предприятий по переработке добываемых полезных ископаемых. Территория земельного участка площадью <nobr>187 Га</nobr> не занята недрами, поэтому может быть использована для реализации данного проекта.
 
 Сферы деятельности предприятий индустриального парка:
-- **Обогащение полезных ископаемых** (подготовка исходного сырья для нужд предприятий парка и за его пределами)
+- **Обогащение полезных ископаемых** (подготовка исходного сырья для нужд предприятий парка и других потребителей за его пределами)
 - **Стекольная промышленность** (производство листового и тарного стекла, стеновых стеклоблоков, флоат-стекла и др.)
 - **Строительная промышленность** (производство газобетона, кирпича, сухих строительных смесей, строительных материалов, керамических изделий)
 - **Электронная промышленность** (производство компонентов для микроэлектроники)
 - **Металлургическая промышленность** (производство формовочного материала для стального, чугунного и цветного литья)
 
-Строительство горно-обогатительной фабрики на собственных землях и при использовании сырьевых ресурсов, добываемых на принадлежащих ей месторождениях, позволяют максимально уменьшить себестоимость производимой продукции.
-
-Уникальность данного проекта состоит в том, что создается единый цикл предприятий от добычи до производства конечного продукта на собственной территории. Данная система позволяет убрать все риски, связанные со снабжением сырьем для производства и обеспечить полную независимость от сторонних поставщиков, а также значительно снизить себестоимость конечного продукта. Земельные участки для участников проекта могут передаваться в собственность или в аренду (в зависимости от специфики предприятий).
-
-Индустриальный парк в виде площадки, обеспеченной необходимой инженерной и транспортной инфраструктурой и энергоносителями, способен привлечь в качестве участников проекта не только компании Волгоградской области и России, но также инвесторов из СНГ, Китая, Индии и многих других стран.
+Этапы реализации проекта:
+- Строительство горно-обогатительной фабрики для обеспечения сырьем участников парка (базовый производственный комплекс проекта)
+- Обеспечение площадки парка необходимой инженерной, транспортной и энергетической инфраструктурой 
+- Привлечение в качестве участников парка компаний из России, СНГ, Китая путем продажи земельных участков для постройки производственных объектов
       `.trim(),
     },
   },
@@ -294,13 +293,13 @@ export const MessagesRU = {
 Представляем выборку по песчаным карьерам РФ, которые находятся на данный момент в публичной продаже. Особое внимание было уделено месторождениям, расположенным недалеко от крупных городов, обладающими запасами качественного необводненного песка, которые допустимо добывать открытым способом. Было обращено внимание на наличие лицензии и правовой статус земель предлагаемых к продаже природных объектов. На основании полученных сведений сделаны расчеты средней стоимости м³ песка в недрах.
       `.trim(),
       text2: `
-Разброс цен на месторождения очень большой. Самый дешевый м³ недр песка найден во Владимирской области – <nobr>8 ₽</nobr> за м³ песка 2-го класса. Это почти в 2 раза дороже базовой оценки кварцевого песка, который на порядок ценнее. Самый дорогой м³ из нашего анализа находится в Мордовии и стоит рекордные <nobr>145 ₽</nobr> за недра песка того же 2-го класса.
+Разброс цен на месторождения очень большой. Самый дешевый м³ недр песка найден во Владимирской области – <nobr>8 ₽</nobr> за м³ песка 2-го класса. Это почти в 2 раза дороже базовой оценки кварцевого песка нашего карьера, который на порядок ценнее. Самый дорогой м³ из нашего анализа находится в Мордовии и стоит рекордные <nobr>145 ₽</nobr> за недра песка того же 2-го класса.
 
-Карьеров с кварцевым песком в текущей продаже находится очень мало. Обнаружено около десятка кварцевых карьеров, проданных за прошедшие 3 года, что подтверждает наличие спроса на данный вид природных ресурсов. Самое крупное месторождение кварцевого песка в публичной продаже найдено в Воронежской области - запасы <nobr>7 млн м³</nobr> (<nobr>11 млн т</nobr>), земельный участок находится в аренде, имеется лицензия на разведку и добычу недр в течение <nobr>16 лет</nobr>, стоимость объекта – <nobr>300 млн ₽</nobr> (средняя цена <nobr>1 м³</nobr> – 42,85).
+Карьеров с кварцевым песком, применение которых значительно шире «строительной марки», в текущей продаже находится очень мало. Обнаружено около десятка кварцевых карьеров, проданных за прошедшие 3 года, что подтверждает наличие спроса на данный вид природных ресурсов. Самое крупное месторождение кварцевого песка в публичной продаже найдено в Воронежской области - запасы <nobr>7 млн м³</nobr> (<nobr>11 млн т</nobr>), земельный участок находится в аренде, имеется лицензия на разведку и добычу недр в течение <nobr>16 лет</nobr>, стоимость объекта – <nobr>300 млн ₽</nobr> (средняя цена <nobr>1 м³</nobr> – 42,85).
 
 В результате проведенного анализа мы не смогли выявить объекты недр для какого-либо объективного сравнения с нашим предложением – ни по объему и качеству запасов, ни по стоимости месторождения, ни по другим сопутствующим условиям.
 
-Выводы на основе анализа рынка продаж песчаных месторождений:
+**Выводы на основе анализа рынка продаж песчаных месторождений**:
 - Средняя стоимость песчаных недр по РФ составляет <nobr>39,21 ₽</nobr> за <nobr>1 м³</nobr> (на основе обработки данных всех предложений по песчаным карьерам, находящимся в продаже)
 - Чем больше запасы карьера, тем дешевле средняя цена м³ (действует закон оптового рынка)
 - Диапазон цен на кварцевый песок в недрах варьируется от <nobr>18,63 ₽</nobr> до <nobr>42,85 ₽</nobr> за <nobr>1 м³</nobr>
@@ -317,257 +316,266 @@ export const MessagesRU = {
         '₽ за м³<br>песка',
       ],
       table: [{
-        location: 'Ростовская область',
-        reserves: 0.7,
-        sandQuality: '2-й класс',
-        siteStatus: 'Аренда',
-        hasLicense: 'Нет',
-        quarryPriceMlnRub: 23,
-        pricePerM3Rub: 32.85,
-        link: 'https://business-asset.com/ru/rostovskaya-oblast/belaya-kalitva/prodazha-biznesa/ru549779/',
-      }, {
-        location: 'Тульская область',
-        reserves: 0.85,
-        sandQuality: '2-й класс',
+        location: 'Саратовская область',
+        reserves: 2.23,
+        sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 26,
-        pricePerM3Rub: 30.58,
-        link: 'https://business-asset.com/ru/tulskaya-oblast/tula/prodazha-biznesa/ru093929/',
+        quarryPriceMlnRub: 25.0,
+        pricePerM3Rub: 11.21,
+        link: 'https://www.avito.ru/saratov/gotoviy_biznes/peschanyy_karer_4491290226?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
       }, {
         location: 'Калужская область',
         reserves: 0.2,
-        sandQuality: '2-й класс',
+        sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 25,
-        pricePerM3Rub: 125,
-        link: 'https://business-asset.com/ru/kaluzhskaya-oblast/detchino/prodazha-biznesa/ru488113/',
+        quarryPriceMlnRub: 25.0,
+        pricePerM3Rub: 125.0,
+        link: 'https://www.avito.ru/detchino/gotoviy_biznes/prodayu_peschanyy_karer_7265504882?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
+      }, {
+        location: 'Тульская область',
+        reserves: 0.85,
+        sandQuality: 'Строительный',
+        siteStatus: 'Нет информации',
+        hasLicense: 'Есть',
+        quarryPriceMlnRub: 26.0,
+        pricePerM3Rub: 30.58,
+        link: 'https://business-asset.com/ru/tulskaya-oblast/tula/prodazha-biznesa/ru093929/',
+      }, {
+        location: 'Краснодарский край',
+        reserves: 0.44,
+        sandQuality: 'Строительный',
+        siteStatus: 'Нет информации',
+        hasLicense: 'Есть',
+        quarryPriceMlnRub: 27.0,
+        pricePerM3Rub: 61.36,
+        link: 'https://www.avito.ru/krymsk/gotoviy_biznes/peschanyy_karer_v_krymskom_r-ne_2467187737?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
       }, {
         location: 'Республика Мордовия',
         reserves: 0.2,
-        sandQuality: '2-й класс',
+        sandQuality: 'Строительный',
         siteStatus: 'Аренда',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 30,
+        quarryPriceMlnRub: 30.0,
         pricePerM3Rub: 145.7,
         link: 'https://www.avito.ru/saransk/gotoviy_biznes/karer_stroitelnogo_peska_7274557182',
       }, {
         location: 'Калужская область',
         reserves: 3.1,
-        sandQuality: '2-й класс',
+        sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 32,
+        quarryPriceMlnRub: 32.0,
         pricePerM3Rub: 10.32,
         link: 'https://business-asset.com/ru/kaluzhskaya-oblast/galkino/prodazha-biznesa/ru674745/',
       }, {
         location: 'Рязанская область',
         reserves: 1.8,
-        sandQuality: '2-й класс',
+        sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Нет',
-        quarryPriceMlnRub: 32,
+        quarryPriceMlnRub: 32.0,
         pricePerM3Rub: 17.77,
         link: 'https://business-asset.com/ru/ryazanskaya-oblast/dubrovichi/prodazha-biznesa/ru242812/',
       }, {
         location: 'Республика Коми',
         reserves: 1.657,
-        sandQuality: '2-й класс',
+        sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Нет',
         quarryPriceMlnRub: 32.38,
         pricePerM3Rub: 19.54,
         link: 'https://www.avito.ru/syktyvkar/gotoviy_biznes/pesochnye_karery_v_respublike_komi_4632361052',
       }, {
-        location: 'Томская область',
-        reserves: 7,
-        sandQuality: '2-й класс',
-        siteStatus: 'Аренда',
+        location: 'Рязанская область',
+        reserves: 1.532,
+        sandQuality: 'Строительный',
+        siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 39,
-        pricePerM3Rub: 5.57,
-        link: 'https://business-asset.com/ru/tomskaya-oblast/asino/prodazha-biznesa/ru505992/',
+        quarryPriceMlnRub: 34.5,
+        pricePerM3Rub: 22.51,
+        link: 'https://www.avito.ru/putyatino/gotoviy_biznes/peschanyy_karer_2716239865?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
+      }, {
+        location: 'Тамбовская область',
+        reserves: 0.7,
+        sandQuality: 'Строительный',
+        siteStatus: 'Нет информации',
+        hasLicense: 'Есть',
+        quarryPriceMlnRub: 40.0,
+        pricePerM3Rub: 57.14,
+        link: 'https://www.avito.ru/tambov/gotoviy_biznes/peschanyy_karer_4579334720?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
       }, {
         location: 'Ульяновская область',
-        reserves: 2,
-        sandQuality: '2-й класс',
+        reserves: 2.0,
+        sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 41,
+        quarryPriceMlnRub: 41.0,
         pricePerM3Rub: 20.5,
         link: 'https://business-asset.com/ru/ulyanovskaya-oblast/ulyanovsk/prodazha-biznesa/ru192306/',
       }, {
         location: 'Ставропольский край',
         reserves: 2.2,
-        sandQuality: 'Кварцевый',
+        sandQuality: '**Кварцевый**',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 41,
+        quarryPriceMlnRub: 41.0,
         pricePerM3Rub: 18.63,
         link: 'https://business-asset.com/ru/stavropolskij-kraj/blagodarnyj/prodazha-biznesa/ru253373/',
       }, {
         location: 'Челябинская область',
-        reserves: 7,
-        sandQuality: '2-й класс',
+        reserves: 7.0,
+        sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 51,
+        quarryPriceMlnRub: 51.0,
         pricePerM3Rub: 7.28,
         link: 'https://business-asset.com/ru/chelyabinskaya-oblast/chelyabinsk/prodazha-biznesa/ru103477/',
       }, {
         location: 'Калужская область',
         reserves: 0.784,
-        sandQuality: '2-й класс',
+        sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 61,
+        quarryPriceMlnRub: 61.0,
         pricePerM3Rub: 77.8,
         link: 'https://business-asset.com/ru/kaluzhskaya-oblast/maloyaroslavecz/prodazha-biznesa/ru393499/',
       }, {
         location: 'Ростовская область',
-        reserves: 0.62,
-        sandQuality: '2-й класс',
-        siteStatus: 'Собственность',
-        hasLicense: 'Есть',
-        quarryPriceMlnRub: 80,
-        pricePerM3Rub: 129,
-        link: 'https://www.avito.ru/samarskoe/gotoviy_biznes/peschanyy_karer_4173815214',
-      }, {
-        location: 'Ростовская область',
         reserves: 0.8,
-        sandQuality: '2-й класс',
+        sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 80,
-        pricePerM3Rub: 101,
-        link: 'https://www.avito.ru/tarasovskiy/gotoviy_biznes/prodam_peschanyy_karer_4435438384',
+        quarryPriceMlnRub: 80.0,
+        pricePerM3Rub: 101.0,
+        link: 'https://www.avito.ru/samarskoe/gotoviy_biznes/peschanyy_karer_4173815214?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
       }, {
-        location: 'Орловская область',
+        location: 'Орловкая область',
         reserves: 3.84,
-        sandQuality: '2-й класс',
+        sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 86,
+        quarryPriceMlnRub: 86.0,
         pricePerM3Rub: 22.39,
         link: 'https://business-asset.com/ru/orlovskaya-oblast/orel/prodazha-biznesa/ru467175/',
       }, {
         location: 'Хабаровский край',
         reserves: 1.2,
-        sandQuality: '2-й класс',
+        sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 89,
+        quarryPriceMlnRub: 89.0,
         pricePerM3Rub: 74.16,
         link: 'https://www.avito.ru/habarovsk/gotoviy_biznes/prodazha_peschannogo_karera_7251168755',
       }, {
         location: 'Владимирская область',
         reserves: 12.6,
-        sandQuality: '2-й класс',
+        sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 101,
-        pricePerM3Rub: 8,
+        quarryPriceMlnRub: 101.0,
+        pricePerM3Rub: 8.0,
         link: 'https://business-asset.com/ru/vladimirskaya-oblast/vladimir/prodazha-biznesa/ru279623/',
       }, {
         location: 'Воронежская область',
         reserves: 5.8,
-        sandQuality: '2-й класс',
+        sandQuality: 'Строительный',
         siteStatus: 'Аренда',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 101,
+        quarryPriceMlnRub: 101.0,
         pricePerM3Rub: 17.41,
         link: 'https://business-asset.com/ru/voronezhskaya-oblast/voronezh/prodazha-biznesa/ru012076/',
       }, {
         location: 'Калужская область',
         reserves: 2.76,
-        sandQuality: '2-й класс',
+        sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 110,
+        quarryPriceMlnRub: 110.0,
         pricePerM3Rub: 39.86,
         link: 'https://www.avito.ru/detchino/gotoviy_biznes/prodaetsya_peschanyy_karer_4543851347',
       }, {
         location: 'Владимирская область',
-        reserves: 5,
-        sandQuality: '2-й класс',
+        reserves: 5.0,
+        sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 111,
+        quarryPriceMlnRub: 111.0,
         pricePerM3Rub: 22.2,
         link: 'https://business-asset.com/ru/vladimirskaya-oblast/aleksandrov/prodazha-biznesa/ru020344/',
       }, {
         location: 'Красноярский край',
         reserves: 6.2,
-        sandQuality: 'Кварцевый<br>(с примесями)',
+        sandQuality: '**Кварцевый<br> с примесями**',
         siteStatus: 'Собственность',
         hasLicense: 'Нет',
-        quarryPriceMlnRub: 136,
+        quarryPriceMlnRub: 136.0,
         pricePerM3Rub: 21.93,
         link: 'https://business-asset.com/ru/krasnoyarskij-kraj/krasnoyarsk/prodazha-biznesa/ru714122/',
       }, {
         location: 'Владимирская область',
         reserves: 7.948,
-        sandQuality: '2-й класс',
+        sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 186,
+        quarryPriceMlnRub: 186.0,
         pricePerM3Rub: 23.4,
         link: 'https://business-asset.com/ru/vladimirskaya-oblast/aleksandrov/prodazha-biznesa/ru709505/',
       }, {
         location: 'Тверская область',
-        reserves: 15,
-        sandQuality: '2-й класс',
+        reserves: 15.0,
+        sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Нет',
-        quarryPriceMlnRub: 200,
+        quarryPriceMlnRub: 200.0,
         pricePerM3Rub: 13.3,
         link: 'https://business-asset.com/ru/index.php?page=business&item=20057621',
       }, {
         location: 'Калужская область',
-        reserves: 14,
-        sandQuality: '2-й класс',
+        reserves: 14.0,
+        sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 260,
+        quarryPriceMlnRub: 260.0,
         pricePerM3Rub: 18.57,
         link: 'https://business-asset.com/ru/kaluzhskaya-oblast/kaluga/prodazha-biznesa/ru179844/',
       }, {
+        location: 'Краснодарский край',
+        reserves: 7.0,
+        sandQuality: 'Строительный',
+        siteStatus: 'Собственность',
+        hasLicense: 'Есть',
+        quarryPriceMlnRub: 357.0,
+        pricePerM3Rub: 51.0,
+        link: 'https://www.avito.ru/beloe/gotoviy_biznes/karer_90ga_proizvod_plosch_97ga_litsenziya_227ga_4881451798',
+      }, {
         location: 'Воронежская область',
-        reserves: 7,
-        sandQuality: 'Кварцевый',
+        reserves: 7.0,
+        sandQuality: '**Кварцевый**',
         siteStatus: 'Аренда',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 300,
+        quarryPriceMlnRub: 300.0,
         pricePerM3Rub: 42.85,
         link: 'https://tv-gubernia.ru/novosti/obwestvo/v-voronezhskoj-oblasti-vystavili-na-prodazhu-karer-kvarcevyh-peskov-za-300-mln-rublej/',
       }, {
-        location: 'Тюменская область',
-        reserves: 51,
-        sandQuality: '2-й класс',
-        siteStatus: 'Собственность',
-        hasLicense: 'Есть',
-        quarryPriceMlnRub: 315,
-        pricePerM3Rub: 6.14,
-        link: 'https://www.avito.ru/tyumen/gotoviy_biznes/peschanye_karery_4487089190',
-      }, {
-        location: 'Краснодарский край',
-        reserves: 7,
-        sandQuality: '2-й класс',
-        siteStatus: 'Собственность',
-        hasLicense: 'Есть',
-        quarryPriceMlnRub: 357,
-        pricePerM3Rub: 51,
-        link: 'https://www.avito.ru/beloe/gotoviy_biznes/karer_90ga_proizvod_plosch_97ga_litsenziya_227ga_4881451798',
-      }, {
         location: 'Республика Марий Эл',
         reserves: 17.9,
-        sandQuality: '2-й класс',
+        sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 500,
-        pricePerM3Rub: 27.93,
+        quarryPriceMlnRub: 350.0,
+        pricePerM3Rub: 19.55,
         link: 'https://www.avito.ru/novocheboksarsk/gotoviy_biznes/peschanyy_karer_3802075498',
+      }, {
+        location: 'Ярославская область',
+        reserves: 15.0,
+        sandQuality: 'Строительный',
+        siteStatus: 'Аренда',
+        hasLicense: 'Есть',
+        quarryPriceMlnRub: 470.0,
+        pricePerM3Rub: 31.3,
+        link: 'https://www.avito.ru/yaroslavskaya_oblast_petrovskoe/gotoviy_biznes/karer_pgs_poselok_lesnoy_7265598399?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
       }],
     },
     tabOurConditions: {

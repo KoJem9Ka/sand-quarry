@@ -70,7 +70,6 @@ export const viewport: Viewport = {
 export default async function RootLayout(
   { children, params }: Readonly<PropsWithChildren<{ params: Promise<{ locale: string }> }>>,
 ) {
-  // Ensure that the incoming `locale` is valid
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
 
