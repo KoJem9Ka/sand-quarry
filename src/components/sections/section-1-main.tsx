@@ -55,10 +55,10 @@ export function Section1Main() {
 
       <Container
         style={{ paddingTop: `${headerHeight}px` }}
-        className="flex flex-col justify-center items-center gap-3 min-h-screen py-space-md text-white transition-[padding-top] text-balance"
+        className="flex flex-col justify-center items-center gap-3 min-h-screen py-space-md text-white transition-[padding-top]"
       >
-        <h1 className="space-y-3 *:block text-center font-bold">
-          <span className="text-4xl sm:text-5xl lg:text-7xl text-balance uppercase leading-normal">
+        <h1 className="space-y-3 *:block text-center font-bold text-balance">
+          <span className="text-4xl sm:text-5xl lg:text-6xl uppercase leading-normal">
             {tHero('title')}
           </span>
           {' '}
@@ -67,7 +67,7 @@ export function Section1Main() {
           <span className="text-3xl lg:text-4xl">
             {tHero('subtitle2')}
             {' '}
-            <span className='text-4xl sm:text-5xl lg:text-7xl'>{tHero('subtitle3').replace(/\s/g, NBSP)}</span>
+            <span className='text-4xl sm:text-5xl lg:text-6xl'>{tHero('subtitle3').replace(/\s/g, NBSP)}</span>
             {' '}
             {tHero('subtitle4')}
           </span>
