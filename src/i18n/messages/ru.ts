@@ -51,7 +51,7 @@ export const MessagesRU = {
       text: `
 ООО «Песчаный карьер» является правообладателем **разрешительной документации**:
 - **Свидетельство** об установлении факта открытия месторождения полезных ископаемых <nobr>№ 01/22-фо</nobr>
-- **Лицензия** на пользование недрами <nobr>ВЛГ 030224 ТЭ</nobr> сроком до 11.12.2201 г. (вид пользования недрами: разведка и добыча полезных ископаемых) от 28.12.2024
+- **Лицензия** на пользование недрами <nobr>ВЛГ 030224 ТЭ</nobr> сроком до <nobr>11.12.2201 г.</nobr> (вид пользования недрами: разведка и добыча полезных ископаемых) от 28.12.2024 (оформлена на строительные пески, но по факту карьер полностью состоит из кварцевых песков)
 - **Заключение** государственной экспертизы о подсчете запасов полезных ископаемых и готовности месторождения для промышленного освоения от 24.12.2021
       `.trim(),
     },
@@ -270,9 +270,9 @@ export const MessagesRU = {
 
 Стартовый размер разового платежа дает понимание того, как государство оценивает недра исходя из учета среднегодового объема добычи полезного ископаемого и среднегодовой величина суммы налога на добычу полезных ископаемых. Зная общий объем балансовых запасов полезного ископаемого и средний годовой объем добычи, можно рассчитать количество лет отработки участка недр.
 
-На основе указанных методик специалистами госучреждения в области геологии был произведен расчет стартового платежа по нашему карьеру (в том случае, если бы объект участвовал в аукционе на право пользования недрами сроком на <nobr>49 лет</nobr>). Его размер составил <nobr>327 млн ₽</nobr>. Для того чтобы сделка состоялась, необходимо также оплатить стоимость одного шага аукциона. Согласно Постановлению Правительства РФ от 28.12.2021 №2499, размер шага аукциона на право пользования участком недр составляет 10% величины минимального (стартового) размера разового платежа за пользование недрами. Таким образом, базовая стоимость аренды карьера на <nobr>49 лет</nobr> составит: <nobr>327 млн ₽</nobr> (стартовая цена аукциона) + <nobr>32,7 млн ₽</nobr> (минимальный размер одного шага аукциона) = <nobr>359,7 млн ₽</nobr>.
+На основе указанных методик специалистами госучреждения в области геологии был произведен расчет стартового платежа по нашему карьеру (в том случае, если бы объект участвовал в аукционе на право пользования недрами сроком на <nobr>49 лет</nobr>). Его размер составил <nobr>327 млн ₽</nobr>. Для того чтобы сделка состоялась, необходимо также оплатить стоимость одного шага аукциона. Согласно Постановлению Правительства РФ от 28.12.2021 №2499, размер шага аукциона на право пользования участком недр составляет 10% величины минимального (стартового) размера разового платежа за пользование недрами. Таким образом, **базовая стоимость** аренды карьера на <nobr>49 лет</nobr> составит: <nobr>327 млн ₽</nobr> (стартовая цена аукциона) + <nobr>32,7 млн ₽</nobr> (минимальный размер одного шага аукциона) = <nobr>**359,7 млн ₽**</nobr>.
 
-В нашем случае карьер находится в частной собственности, что является его несомненным преимуществом. Кроме этого, собственник карьера имеет право добывать полезные ископаемые в течение <nobr>177 лет</nobr>. Таким образом, делаем вывод о том, что **нижний порог стоимости нашего месторождения в размере <nobr>359,7 млн ₽</nobr>** является не совсем справедливым.
+В нашем случае карьер находится в частной собственности, что является его несомненным преимуществом. Кроме этого, собственник карьера имеет право добывать полезные ископаемые в течение <nobr>177 лет</nobr>.
       `.trim(),
     },
     tabMarketValue: {
@@ -290,20 +290,16 @@ export const MessagesRU = {
     tabQuarriesForSale: {
       title: 'Карьеры в продаже',
       text1: `
-Представляем выборку по песчаным карьерам РФ, которые находятся на данный момент в публичной продаже. Особое внимание было уделено месторождениям, расположенным недалеко от крупных городов, обладающими запасами качественного необводненного песка, которые допустимо добывать открытым способом. Было обращено внимание на наличие лицензии и правовой статус земель предлагаемых к продаже природных объектов. На основании полученных сведений сделаны расчеты средней стоимости м³ песка в недрах.
+Представляем выборку по песчаным карьерам РФ, которые находятся на данный момент в публичной продаже. В основном, это объекты с песком стандартной «строительной марки». Карьеров с кварцевым песком «стекольной марки» в продаже очень мало, поэтому для объективности исследуемой информации, в их список добавлены объекты, которые ранее выставлялись на продажу, и скорее всего, на данный момент проданы. На основании полученных сведений сделаны расчеты средней стоимости м³ песка в недрах.
       `.trim(),
       text2: `
-Разброс цен на месторождения очень большой. Самый дешевый м³ недр песка найден во Владимирской области – <nobr>8 ₽</nobr> за м³ песка 2-го класса. Это почти в 2 раза дороже базовой оценки кварцевого песка нашего карьера, который на порядок ценнее. Самый дорогой м³ из нашего анализа находится в Мордовии и стоит рекордные <nobr>145 ₽</nobr> за недра песка того же 2-го класса.
+Разброс цен на месторождения очень большой. Самый дешевый м³ недр песка найден в Челябинской области – <nobr>7,28 ₽</nobr> за м³ песка, используемого исключительно для строительных нужд. Самый дорогой м³ из нашего анализа находится в Мордовии и стоит рекордные <nobr>145 ₽</nobr> за недра песка того же качества.
 
-Карьеров с кварцевым песком, применение которых значительно шире «строительной марки», в текущей продаже находится очень мало. Обнаружено около десятка кварцевых карьеров, проданных за прошедшие 3 года, что подтверждает наличие спроса на данный вид природных ресурсов. Самое крупное месторождение кварцевого песка в публичной продаже найдено в Воронежской области - запасы <nobr>7 млн м³</nobr> (<nobr>11 млн т</nobr>), земельный участок находится в аренде, имеется лицензия на разведку и добычу недр в течение <nobr>16 лет</nobr>, стоимость объекта – <nobr>300 млн ₽</nobr> (средняя цена <nobr>1 м³</nobr> – 42,85).
-
-В результате проведенного анализа мы не смогли выявить объекты недр для какого-либо объективного сравнения с нашим предложением – ни по объему и качеству запасов, ни по стоимости месторождения, ни по другим сопутствующим условиям.
+Карьеров с кварцевым песком «стекольной марки» в текущей продаже находится крайне мало. Самое крупное месторождение с запасами более <nobr>100 т</nobr> (запасы кварцевого песка <nobr>50 т</nobr>) было продано в Липецкой области. Стартовая цена объекта составляла около <nobr>1,096 млрд. ₽</nobr> (включая некоторые постройки и технику). Продавец утверждал, что в развитие предприятия было вложено порядка <nobr>450 млн ₽.</nobr> Соответственно, цена самого карьера в структуре цены предприятия составила примерно <nobr>646 млн ₽.</nobr>
 
 **Выводы на основе анализа рынка продаж песчаных месторождений**:
-- Средняя стоимость песчаных недр по РФ составляет <nobr>39,21 ₽</nobr> за <nobr>1 м³</nobr> (на основе обработки данных всех предложений по песчаным карьерам, находящимся в продаже)
-- Чем больше запасы карьера, тем дешевле средняя цена м³ (действует закон оптового рынка)
-- Диапазон цен на кварцевый песок в недрах варьируется от <nobr>18,63 ₽</nobr> до <nobr>42,85 ₽</nobr> за <nobr>1 м³</nobr>
-- На рынке не представлено карьеров кварцевого песка, которые можно было бы сопоставить с нашим предложением (по количеству запасов и качеству песка, а также совокупности других критериев)
+- Средняя стоимость недр песка «строительной марки» составляет <nobr>40,3 ₽</nobr> за <nobr>1 м³,</nobr> «стекольной марки» - <nobr>42,3 ₽</nobr> за <nobr>1 м³</nobr> (на основе обработки всех публичных данных по продажам карьеров в настоящем и прошедшем времени по РФ)
+- На стоимость месторождения оказывает большое влияние его транспортная доступность, а также величина запасов полезных ископаемых - чем больше запасы карьера, тем дешевле средняя цена м³ (действует закон оптового рынка)
 - Стоимость большинства предложений недостаточно обоснована и носит стихийный характер
       `.trim(),
       tableHeadings: [
@@ -321,7 +317,7 @@ export const MessagesRU = {
         sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 25.0,
+        quarryPriceMlnRub: 25,
         pricePerM3Rub: 11.21,
         link: 'https://www.avito.ru/saratov/gotoviy_biznes/peschanyy_karer_4491290226?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
       }, {
@@ -330,8 +326,8 @@ export const MessagesRU = {
         sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 25.0,
-        pricePerM3Rub: 125.0,
+        quarryPriceMlnRub: 25,
+        pricePerM3Rub: 125,
         link: 'https://www.avito.ru/detchino/gotoviy_biznes/prodayu_peschanyy_karer_7265504882?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
       }, {
         location: 'Тульская область',
@@ -339,7 +335,7 @@ export const MessagesRU = {
         sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 26.0,
+        quarryPriceMlnRub: 26,
         pricePerM3Rub: 30.58,
         link: 'https://business-asset.com/ru/tulskaya-oblast/tula/prodazha-biznesa/ru093929/',
       }, {
@@ -348,7 +344,7 @@ export const MessagesRU = {
         sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 27.0,
+        quarryPriceMlnRub: 27,
         pricePerM3Rub: 61.36,
         link: 'https://www.avito.ru/krymsk/gotoviy_biznes/peschanyy_karer_v_krymskom_r-ne_2467187737?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
       }, {
@@ -357,7 +353,7 @@ export const MessagesRU = {
         sandQuality: 'Строительный',
         siteStatus: 'Аренда',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 30.0,
+        quarryPriceMlnRub: 30,
         pricePerM3Rub: 145.7,
         link: 'https://www.avito.ru/saransk/gotoviy_biznes/karer_stroitelnogo_peska_7274557182',
       }, {
@@ -366,7 +362,7 @@ export const MessagesRU = {
         sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 32.0,
+        quarryPriceMlnRub: 32,
         pricePerM3Rub: 10.32,
         link: 'https://business-asset.com/ru/kaluzhskaya-oblast/galkino/prodazha-biznesa/ru674745/',
       }, {
@@ -375,7 +371,7 @@ export const MessagesRU = {
         sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Нет',
-        quarryPriceMlnRub: 32.0,
+        quarryPriceMlnRub: 32,
         pricePerM3Rub: 17.77,
         link: 'https://business-asset.com/ru/ryazanskaya-oblast/dubrovichi/prodazha-biznesa/ru242812/',
       }, {
@@ -402,16 +398,16 @@ export const MessagesRU = {
         sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 40.0,
+        quarryPriceMlnRub: 40,
         pricePerM3Rub: 57.14,
         link: 'https://www.avito.ru/tambov/gotoviy_biznes/peschanyy_karer_4579334720?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
       }, {
         location: 'Ульяновская область',
-        reserves: 2.0,
+        reserves: 2,
         sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 41.0,
+        quarryPriceMlnRub: 41,
         pricePerM3Rub: 20.5,
         link: 'https://business-asset.com/ru/ulyanovskaya-oblast/ulyanovsk/prodazha-biznesa/ru192306/',
       }, {
@@ -420,25 +416,43 @@ export const MessagesRU = {
         sandQuality: '**Кварцевый**',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 41.0,
+        quarryPriceMlnRub: 41,
         pricePerM3Rub: 18.63,
         link: 'https://business-asset.com/ru/stavropolskij-kraj/blagodarnyj/prodazha-biznesa/ru253373/',
       }, {
+        location: 'Ростовская область',
+        reserves: 2.4,
+        sandQuality: '**Кварцевый**',
+        siteStatus: 'Нет информации',
+        hasLicense: 'Есть',
+        quarryPriceMlnRub: 47,
+        pricePerM3Rub: 19.58,
+        link: 'https://rostov-na-donu.tradedir.ru/good/p161633-prodam_peschanyj_karer_kvarcevogo_peska_zapasy_24_mln_m3.htm',
+      }, {
         location: 'Челябинская область',
-        reserves: 7.0,
+        reserves: 7,
         sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 51.0,
+        quarryPriceMlnRub: 51,
         pricePerM3Rub: 7.28,
         link: 'https://business-asset.com/ru/chelyabinskaya-oblast/chelyabinsk/prodazha-biznesa/ru103477/',
+      }, {
+        location: 'Оренбургская область',
+        reserves: 5,
+        sandQuality: '**Кварцевый**',
+        siteStatus: 'Нет информации',
+        hasLicense: 'Есть',
+        quarryPriceMlnRub: 60,
+        pricePerM3Rub: 12,
+        link: 'https://alterainvest.ru/orn/products/detail/16734799/',
       }, {
         location: 'Калужская область',
         reserves: 0.784,
         sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 61.0,
+        quarryPriceMlnRub: 61,
         pricePerM3Rub: 77.8,
         link: 'https://business-asset.com/ru/kaluzhskaya-oblast/maloyaroslavecz/prodazha-biznesa/ru393499/',
       }, {
@@ -447,8 +461,8 @@ export const MessagesRU = {
         sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 80.0,
-        pricePerM3Rub: 101.0,
+        quarryPriceMlnRub: 80,
+        pricePerM3Rub: 101,
         link: 'https://www.avito.ru/samarskoe/gotoviy_biznes/peschanyy_karer_4173815214?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
       }, {
         location: 'Орловкая область',
@@ -456,7 +470,7 @@ export const MessagesRU = {
         sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 86.0,
+        quarryPriceMlnRub: 86,
         pricePerM3Rub: 22.39,
         link: 'https://business-asset.com/ru/orlovskaya-oblast/orel/prodazha-biznesa/ru467175/',
       }, {
@@ -465,7 +479,7 @@ export const MessagesRU = {
         sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 89.0,
+        quarryPriceMlnRub: 89,
         pricePerM3Rub: 74.16,
         link: 'https://www.avito.ru/habarovsk/gotoviy_biznes/prodazha_peschannogo_karera_7251168755',
       }, {
@@ -474,8 +488,8 @@ export const MessagesRU = {
         sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 101.0,
-        pricePerM3Rub: 8.0,
+        quarryPriceMlnRub: 101,
+        pricePerM3Rub: 8,
         link: 'https://business-asset.com/ru/vladimirskaya-oblast/vladimir/prodazha-biznesa/ru279623/',
       }, {
         location: 'Воронежская область',
@@ -483,7 +497,7 @@ export const MessagesRU = {
         sandQuality: 'Строительный',
         siteStatus: 'Аренда',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 101.0,
+        quarryPriceMlnRub: 101,
         pricePerM3Rub: 17.41,
         link: 'https://business-asset.com/ru/voronezhskaya-oblast/voronezh/prodazha-biznesa/ru012076/',
       }, {
@@ -492,16 +506,16 @@ export const MessagesRU = {
         sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 110.0,
+        quarryPriceMlnRub: 110,
         pricePerM3Rub: 39.86,
         link: 'https://www.avito.ru/detchino/gotoviy_biznes/prodaetsya_peschanyy_karer_4543851347',
       }, {
         location: 'Владимирская область',
-        reserves: 5.0,
+        reserves: 5,
         sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 111.0,
+        quarryPriceMlnRub: 111,
         pricePerM3Rub: 22.2,
         link: 'https://business-asset.com/ru/vladimirskaya-oblast/aleksandrov/prodazha-biznesa/ru020344/',
       }, {
@@ -510,52 +524,70 @@ export const MessagesRU = {
         sandQuality: '**Кварцевый<br> с примесями**',
         siteStatus: 'Собственность',
         hasLicense: 'Нет',
-        quarryPriceMlnRub: 136.0,
+        quarryPriceMlnRub: 136,
         pricePerM3Rub: 21.93,
         link: 'https://business-asset.com/ru/krasnoyarskij-kraj/krasnoyarsk/prodazha-biznesa/ru714122/',
+      }, {
+        location: 'Ростовская область',
+        reserves: 4,
+        sandQuality: '**Кварцевый**',
+        siteStatus: 'Нет информации',
+        hasLicense: 'Нет',
+        quarryPriceMlnRub: 160,
+        pricePerM3Rub: 40,
+        link: 'https://old.business-platform.ru/projects/p47641/',
       }, {
         location: 'Владимирская область',
         reserves: 7.948,
         sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 186.0,
+        quarryPriceMlnRub: 186,
         pricePerM3Rub: 23.4,
         link: 'https://business-asset.com/ru/vladimirskaya-oblast/aleksandrov/prodazha-biznesa/ru709505/',
       }, {
         location: 'Тверская область',
-        reserves: 15.0,
+        reserves: 15,
         sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Нет',
-        quarryPriceMlnRub: 200.0,
+        quarryPriceMlnRub: 200,
         pricePerM3Rub: 13.3,
         link: 'https://business-asset.com/ru/index.php?page=business&item=20057621',
       }, {
+        location: 'Чувашская Республика',
+        reserves: 3.72,
+        sandQuality: '**Кварцевый**',
+        siteStatus: 'Собственность',
+        hasLicense: 'Есть',
+        quarryPriceMlnRub: 250,
+        pricePerM3Rub: 67.2,
+        link: 'https://business.msk.proms.ru/moscow/item/1551056',
+      }, {
         location: 'Калужская область',
-        reserves: 14.0,
+        reserves: 14,
         sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 260.0,
+        quarryPriceMlnRub: 260,
         pricePerM3Rub: 18.57,
         link: 'https://business-asset.com/ru/kaluzhskaya-oblast/kaluga/prodazha-biznesa/ru179844/',
       }, {
         location: 'Краснодарский край',
-        reserves: 7.0,
+        reserves: 7,
         sandQuality: 'Строительный',
         siteStatus: 'Собственность',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 357.0,
-        pricePerM3Rub: 51.0,
+        quarryPriceMlnRub: 357,
+        pricePerM3Rub: 51,
         link: 'https://www.avito.ru/beloe/gotoviy_biznes/karer_90ga_proizvod_plosch_97ga_litsenziya_227ga_4881451798',
       }, {
         location: 'Воронежская область',
-        reserves: 7.0,
+        reserves: 7,
         sandQuality: '**Кварцевый**',
         siteStatus: 'Аренда',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 300.0,
+        quarryPriceMlnRub: 300,
         pricePerM3Rub: 42.85,
         link: 'https://tv-gubernia.ru/novosti/obwestvo/v-voronezhskoj-oblasti-vystavili-na-prodazhu-karer-kvarcevyh-peskov-za-300-mln-rublej/',
       }, {
@@ -564,42 +596,69 @@ export const MessagesRU = {
         sandQuality: 'Строительный',
         siteStatus: 'Нет информации',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 350.0,
+        quarryPriceMlnRub: 350,
         pricePerM3Rub: 19.55,
-        link: 'https://www.avito.ru/novocheboksarsk/gotoviy_biznes/peschanyy_karer_3802075498',
+        link: 'https://alterainvest.ru/cbk/products/detail/16723386/',
+      }, {
+        location: 'Воронежская область',
+        reserves: 3,
+        sandQuality: '**Кварцевый**',
+        siteStatus: 'Собственность',
+        hasLicense: 'Нет',
+        quarryPriceMlnRub: 400,
+        pricePerM3Rub: 133,
+        link: 'https://xn--d1abbnoievn.xn--p1ai/aukciony/business_sales/career_and_field/997-36-12211.html',
       }, {
         location: 'Ярославская область',
-        reserves: 15.0,
+        reserves: 15,
         sandQuality: 'Строительный',
         siteStatus: 'Аренда',
         hasLicense: 'Есть',
-        quarryPriceMlnRub: 470.0,
+        quarryPriceMlnRub: 470,
         pricePerM3Rub: 31.3,
         link: 'https://www.avito.ru/yaroslavskaya_oblast_petrovskoe/gotoviy_biznes/karer_pgs_poselok_lesnoy_7265598399?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
+      }, {
+        location: 'Липецкая область',
+        reserves: 62,
+        sandQuality: '**Кварцевый**',
+        siteStatus: 'Собственность',
+        hasLicense: 'Есть',
+        quarryPriceMlnRub: 646,
+        pricePerM3Rub: 17.67,
+        link: 'https://skaniainvest.ru/prodazha-biznesa/object/dobycha_peska/',
+      }, {
+        location: 'Тверская область',
+        reserves: 12.4,
+        sandQuality: '**Кварцевый**',
+        siteStatus: 'Собственность',
+        hasLicense: 'Нет',
+        quarryPriceMlnRub: 715,
+        pricePerM3Rub: 57.6,
+        link: 'https://reab.pro/ru/catalog/business-for-sale/quartz-sand-quarry-tver-region-40',
       }],
     },
     tabOurConditions: {
       title: 'Наши условия',
       text: `
 **Стоимость запасов полезных ископаемых в недрах нашего карьера (без учета операционных расходов их извлечения и переработки)**:
-- Извлекаемые запасы месторождения в тоннах = <nobr>81 586 563 м³</nobr> (количество подтвержденных запасов) − 10% (потери при добыче полезных ископаемых) = <nobr>73 427 906,7 м³</nobr> (количество извлекаемых запасов) ÷ 0,62 = <nobr>118 432 107 т</nobr> (извлекаемые запасы в тоннах)
-- Средняя стоимость строительного песка базового качества = <nobr>380 ₽/т</nobr>
-- Средняя стоимость кварцевого («стекольного») песка = <nobr>2500 ₽/т</nobr>
-- Справедливая цена кварцевого песка для участников проекта «индустриальный парк» = <nobr>1000 ₽/т</nobr>
+- Извлекаемые запасы месторождения в тоннах = <nobr>81 586 563 м³</nobr> (количество подтвержденных запасов) − 10% (потери при добыче полезных ископаемых) = <nobr>73 427 906,7 м³</nobr> (количество извлекаемых запасов) ÷ 0,62 = <nobr>**118 432 107 т**</nobr> (извлекаемые запасы в тоннах)
+- Средняя стоимость строительного песка базового качества = <nobr>**380 ₽/т**</nobr>
+- Средняя стоимость кварцевого («стекольного») песка = <nobr>**2500 ₽/т**</nobr>
+- Справедливая цена кварцевого песка для участников проекта «индустриальный парк» = <nobr>**1000 ₽/т**</nobr>
 
-Таким образом, виды деятельности добывающего предприятия могут сильно повлиять на конечную стоимость реализации песка. В том случае, если карьер использовать для узкого профиля по снабжению контрагентов строительной отрасли, запасы оцениваются на сумму <nobr>45 млрд ₽</nobr> (<nobr>118 432 107 т</nobr> × <nobr>380 ₽</nobr>). В том случае, если на базе месторождения развивать индустриальный парк (или строительство собственных производственных мощностей), стоимость запасов составит <nobr>от 120 млрд ₽</nobr> (<nobr>118 432 107 т</nobr> × 1000 ₽) <nobr>до 300 млрд ₽</nobr> (<nobr>118 432 107 т</nobr> × <nobr>2500 ₽</nobr>).
+Таким образом, виды деятельности добывающего предприятия могут сильно повлиять на конечную стоимость реализации песка. В том случае, если карьер использовать для узкого профиля по снабжению контрагентов строительной отрасли, запасы оцениваются на сумму <nobr>**45 млрд ₽**</nobr> (<nobr>118 432 107 т</nobr> × <nobr>380 ₽</nobr>). В том случае, если на базе месторождения развивать индустриальный парк (или строительство собственных производственных мощностей), стоимость запасов составит <nobr>**от 120 млрд ₽**</nobr> (<nobr>118 432 107 т</nobr> × 1000 ₽) <nobr>**до 300 млрд ₽**</nobr> (<nobr>118 432 107 т</nobr> × <nobr>2500 ₽</nobr>).
 
 **Наша оценка карьера**
 
-Учитывая тенденцию рыночного удешевления стоимости месторождения относительно величины его запасов (чем больше объект, тем дешевле базовая стоимость <nobr>1 м³</nobr> полезных ископаемых), считаем наиболее справедливую оценку предлагаемого к покупке объекта в районе <nobr>6,5 ₽</nobr> за <nobr>1 м³</nobr>, а общую стоимость карьера в районе <nobr>530 млн ₽</nobr> (<nobr>81 586 563 м³</nobr> × <nobr>6,5 ₽</nobr>). Надо принять во внимание, что самый дешевый кубометр ископаемого песка (не кварцевого, а 2-го класса) на рынке РФ составляет <nobr>8 ₽</nobr> за <nobr>1 м³</nobr> (см. таблицу).
+Учитывая тенденцию рыночного удешевления стоимости месторождения относительно величины его запасов (чем больше объект, тем дешевле базовая стоимость <nobr>1 м³</nobr> полезных ископаемых), считаем наиболее справедливую оценку предлагаемого к покупке объекта в районе <nobr>6,5 ₽</nobr> за <nobr>1 м³</nobr>, а общую стоимость карьера в районе <nobr>530 млн ₽</nobr> (<nobr>81 586 563 м³</nobr> × <nobr>6,5 ₽</nobr>). Надо принять во внимание, что самый дешевый кубометр ископаемого песка на российском рынке «строительной марки» составляет <nobr>7,28 ₽,</nobr> а «стекольной марки» - <nobr>17,67 ₽</nobr> (см. таблицу).
 
-Однако, учитывая тот факт, что наше месторождение очень большое (аналогов нет на рынке), а также имеется заинтересованность в быстрой реализации объекта, нами было сформировано специальное ценовое предложение, рассчитанное по формуле: базовая государственная оценка объекта + 5%.
+Однако, учитывая тот факт, что наше месторождение очень большое (аналогов нет на рынке), а также имеется заинтересованность в быстрой реализации объекта, нами было сформировано специальное ценовое предложение, рассчитанное по формуле: **базовая государственная оценка объекта + 5%**.
 
 **Итоговая продажная стоимость** месторождения составила:  
-<nobr>359,7 млн ₽</nobr> + 5% = <nobr>377,7 млн ₽</nobr>
+<nobr>359,7 млн ₽</nobr> + 5% = <nobr>**377,7 млн ₽**</nobr>
 
 **Расчет средней стоимости <nobr>1 м³</nobr>**:  
-<nobr>377 700 000 ₽</nobr> (общая стоимость) ÷ <nobr>81 586 563 м³</nobr> (количество запасов) = <nobr>4,63 ₽</nobr>
+<nobr>377 700 000 ₽</nobr> (общая стоимость) ÷ <nobr>81 586 563 м³</nobr> (количество запасов) = <nobr>**4,63 ₽**</nobr>
 
 **Выгода очевидна!**
       `.trim(),

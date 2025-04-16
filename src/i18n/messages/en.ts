@@ -53,7 +53,7 @@ Upon closing the deal, we are ready to offer qualified geological assistance and
       text: `
 LLC «Peschanuy Karer» holds the following permits:
 - Certificate confirming the discovery of a mineral deposit <nobr>No. 01/22-fo</nobr>
-- License for subsoil use <nobr>VLG 030224 TE</nobr> valid until 11.12.2201 (type of subsoil use: exploration and extraction of mineral resources) dated 28.12.2024
+- License for subsoil use <nobr>VLG 030224 TE</nobr> valid until 11.12.2201 (type of subsoil use: exploration and extraction of mineral resources) dated 28.12.2024 (issued for construction sands, but in fact the quarry consists entirely of quartz sands)
 - Conclusion of the state expertise on the calculation of mineral reserves and the readiness of the deposit for industrial development dated 24.12.2021
       `.trim(),
     },
@@ -94,7 +94,7 @@ Total land plot area - <nobr>**432 Ha**</nobr>, including the deposit area - <no
 Cadastral number 34:05:020003:287
 
 Transport infrastructure: federal highway R228 «Volgograd-Saratov» (<nobr>13 km</nobr> from the deposit), paved road «Loznoye-Dubovka» (<nobr>0.3 km</nobr>), Dubovka town port (<nobr>17 km</nobr>); «Volzhsky» railway terminal (<nobr>48 km</nobr>)
-      `.trim(),// TODO: YANDEX MAP HERE
+      `.trim(),
     },
     tabGeology: {
       title: 'Geology',
@@ -272,9 +272,9 @@ The state, when conducting a tender or auction for the right to use a subsoil pl
 
 The starting one-time payment provides an understanding of how the state values the subsoil resources based on the average annual volume of mineral extraction and the average annual amount of mineral extraction tax. Knowing the total volume of balance reserves and the average annual extraction volume, one can calculate the number of years for deposit development.
 
-Based on these methodologies, specialists from a state geological institution calculated the starting payment for our quarry (if the object were auctioned for the right to use the subsoil for <nobr>49 years</nobr>). It's size amounted to <nobr>327 million ₽</nobr>. In order for the transaction to go through, the cost of one auction step must also be paid. According to the Decree of the Government of the Russian Federation No. 2499 dated December 28, 2021, the size of the auction step for the right to use a subsoil plot is 10% of the minimum (starting) size of the one-time payment. Thus, the base cost of leasing the quarry for <nobr>49 years</nobr> would be: <nobr>327 million ₽</nobr> (starting auction price) + <nobr>32.7 million ₽</nobr> (minimum size of one auction step) = <nobr>359.7 million ₽</nobr>.
+Based on these methodologies, specialists from a state geological institution calculated the starting payment for our quarry (if the object were auctioned for the right to use the subsoil for <nobr>49 years</nobr>). It's size amounted to <nobr>327 million ₽</nobr>. In order for the transaction to go through, the cost of one auction step must also be paid. According to the Decree of the Government of the Russian Federation No. 2499 dated December 28, 2021, the size of the auction step for the right to use a subsoil plot is 10% of the minimum (starting) size of the one-time payment. Thus, the **base cost** of leasing the quarry for <nobr>49 years</nobr> would be: <nobr>327 million ₽</nobr> (starting auction price) + <nobr>32.7 million ₽</nobr> (minimum size of one auction step) = <nobr>**359.7 million ₽**</nobr>.
 
-In our case, the quarry is privately owned, which is its undeniable advantage. Furthermore, the quarry owner has the right to extract minerals for <nobr>177 years</nobr>. Therefore, the **minimum value of our deposit is established at <nobr>359.7 million ₽</nobr>**.
+In our case, the quarry is privately owned, which is its undeniable advantage. Furthermore, the quarry owner has the right to extract minerals for <nobr>177 years</nobr>.
       `.trim(),
     },
     tabMarketValue: {
@@ -292,20 +292,16 @@ We have analysed ALL offers for the sale of sand quarries in the Russian Federat
     tabQuarriesForSale: {
       title: 'Other Quarries for Sale',
       text1: `
-We present a selection of sand quarries currently available for public sale in the Russian Federation. We mainly focused on deposits near major cities, possessing reserves of high-quality non-waterlogged sand suitable for open-pit mining. Our attention was focused on licence availability and legal status of the lands. Based on the obtained data, we have made calculations of the average cost per m³ of sand in the subsurface.
+We present a selection of sand quarries currently available for public sale in the Russian Federation. These are mainly objects with sand of standard «construction grade». There are very few quarries with quartz sand of «glass grade» for sale, so for objectivity of the researched information, the list of quarries includes objects that were previously offered for sale, and most likely, at the moment are sold out. Based on the obtained data, we have made calculations of the average cost per m³ of sand in the subsurface.
       `.trim(),
       text2: `
-The variation in field prices is significant. The cheapest m³ of sand resources found was in the Vladimir Oblast – <nobr>8 ₽</nobr> per m³ of 2nd class sand. This is almost twice the base valuation of our quarry's quartz sand. The most expensive m³ from our analysis is in Mordovia and costs a record <nobr>145 ₽</nobr> per subsoil of sand of the same 2nd class.
+The variation in field prices is significant. The cheapest m³ of sand resources found was in the Chelyabinsk region - <nobr>7.28 ₽</nobr> per m³ of sand used exclusively for construction needs. The most expensive m³ from our analysis is in Mordovia and costs a record <nobr>145 ₽</nobr> per subsoil of sand of the same quality.
 
-Quartz sand quarries, whose usage range are broader than «construction grade», are very few in current market. But we also discovered about a dozen quartz quarries that have been sold over the past 3 years, which confirms that there is a strong demand for this type of natural resource. The largest publicly sold quartz sand deposit was found in the Voronezh Oblast - reserves of <nobr>7 million m³</nobr> (<nobr>11 million tonnes</nobr>), land plot is leased, license for exploration and extraction for <nobr>16 years</nobr>, object cost – <nobr>300 million ₽</nobr> (average price per m³ – 42.85 ₽).
-
-As a result of the analysis, we could not identify subsoil objects for any objective comparison with our offer – neither by volume and quality of reserves, nor by deposit cost, nor by other related terms.
+There are very few quarries with «glass grade» quartz sand in the current sale. The largest deposit with reserves of more than <nobr>100 tons</nobr> (quartz sand reserves of <nobr>50 tons</nobr>) was sold in the Lipetsk region. The starting price of the facility was about <nobr>1.096 billion ₽</nobr> (including some buildings and machinery). The seller claimed that about <nobr>450 million ₽.</nobr> Accordingly, the price of the quarry itself in the price structure of the enterprise amounted to about <nobr>646 million ₽.</nobr>.
 
 Conclusions based on our analysis of the sand quarries sales market:
-- The average cost of sand resources in the Russian Federation is <nobr>39.21 ₽</nobr> per <nobr>1 m³</nobr> (based on processing data from all other offers for sand quarries currently on sale)
-- The larger the quarry reserves, the cheaper the average price per m³ (the law of the wholesale market applies)
-- The price range for quartz sand in the subsoil varies from <nobr>18.63 ₽</nobr> to <nobr>42.85 ₽</nobr> per <nobr>1 m³</nobr>
-- There are no quartz sand quarries on the market that can be compared to our offer (in terms of quantity of reserves and quality of sand, as well as a combination of other criteria)
+- The average cost of subsoil sand of «construction grade» is <nobr>40.3 ₽</nobr> per <nobr>1 m³,</nobr> «glass grade» - <nobr>42.3 ₽</nobr> per <nobr>1 m³</nobr> (based on the processing of all public data on sales of quarries in the present and past time in the Russian Federation)
+- The cost of a deposit is greatly influenced by its transportation accessibility, as well as the size of mineral reserves - the larger the reserves of a quarry, the cheaper the average price per m³ (the law of the wholesale market applies)
 - The pricing of most market offers lacks clear justification and appears arbitrary
       `.trim(),
       tableHeadings: [
@@ -323,7 +319,7 @@ Conclusions based on our analysis of the sand quarries sales market:
         sandQuality: 'Construction',
         siteStatus: 'No information',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 25.0,
+        quarryPriceMlnRub: 25,
         pricePerM3Rub: 11.21,
         link: 'https://www.avito.ru/saratov/gotoviy_biznes/peschanyy_karer_4491290226?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
       }, {
@@ -332,8 +328,8 @@ Conclusions based on our analysis of the sand quarries sales market:
         sandQuality: 'Construction',
         siteStatus: 'Ownership',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 25.0,
-        pricePerM3Rub: 125.0,
+        quarryPriceMlnRub: 25,
+        pricePerM3Rub: 125,
         link: 'https://www.avito.ru/detchino/gotoviy_biznes/prodayu_peschanyy_karer_7265504882?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
       }, {
         location: 'Tula region',
@@ -341,7 +337,7 @@ Conclusions based on our analysis of the sand quarries sales market:
         sandQuality: 'Construction',
         siteStatus: 'No information',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 26.0,
+        quarryPriceMlnRub: 26,
         pricePerM3Rub: 30.58,
         link: 'https://business-asset.com/ru/tulskaya-oblast/tula/prodazha-biznesa/ru093929/',
       }, {
@@ -350,7 +346,7 @@ Conclusions based on our analysis of the sand quarries sales market:
         sandQuality: 'Construction',
         siteStatus: 'No information',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 27.0,
+        quarryPriceMlnRub: 27,
         pricePerM3Rub: 61.36,
         link: 'https://www.avito.ru/krymsk/gotoviy_biznes/peschanyy_karer_v_krymskom_r-ne_2467187737?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
       }, {
@@ -359,7 +355,7 @@ Conclusions based on our analysis of the sand quarries sales market:
         sandQuality: 'Construction',
         siteStatus: 'Lease',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 30.0,
+        quarryPriceMlnRub: 30,
         pricePerM3Rub: 145.7,
         link: 'https://www.avito.ru/saransk/gotoviy_biznes/karer_stroitelnogo_peska_7274557182',
       }, {
@@ -368,7 +364,7 @@ Conclusions based on our analysis of the sand quarries sales market:
         sandQuality: 'Construction',
         siteStatus: 'Ownership',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 32.0,
+        quarryPriceMlnRub: 32,
         pricePerM3Rub: 10.32,
         link: 'https://business-asset.com/ru/kaluzhskaya-oblast/galkino/prodazha-biznesa/ru674745/',
       }, {
@@ -377,7 +373,7 @@ Conclusions based on our analysis of the sand quarries sales market:
         sandQuality: 'Construction',
         siteStatus: 'No information',
         hasLicense: 'No',
-        quarryPriceMlnRub: 32.0,
+        quarryPriceMlnRub: 32,
         pricePerM3Rub: 17.77,
         link: 'https://business-asset.com/ru/ryazanskaya-oblast/dubrovichi/prodazha-biznesa/ru242812/',
       }, {
@@ -404,16 +400,16 @@ Conclusions based on our analysis of the sand quarries sales market:
         sandQuality: 'Construction',
         siteStatus: 'No information',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 40.0,
+        quarryPriceMlnRub: 40,
         pricePerM3Rub: 57.14,
         link: 'https://www.avito.ru/tambov/gotoviy_biznes/peschanyy_karer_4579334720?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
       }, {
         location: 'Ulyanovsk region',
-        reserves: 2.0,
+        reserves: 2,
         sandQuality: 'Construction',
         siteStatus: 'Ownership',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 41.0,
+        quarryPriceMlnRub: 41,
         pricePerM3Rub: 20.5,
         link: 'https://business-asset.com/ru/ulyanovskaya-oblast/ulyanovsk/prodazha-biznesa/ru192306/',
       }, {
@@ -422,25 +418,43 @@ Conclusions based on our analysis of the sand quarries sales market:
         sandQuality: '**Quartz**',
         siteStatus: 'No information',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 41.0,
+        quarryPriceMlnRub: 41,
         pricePerM3Rub: 18.63,
         link: 'https://business-asset.com/ru/stavropolskij-kraj/blagodarnyj/prodazha-biznesa/ru253373/',
       }, {
+        location: 'Rostov region',
+        reserves: 2.4,
+        sandQuality: '**Quartz**',
+        siteStatus: 'No information',
+        hasLicense: 'Yes',
+        quarryPriceMlnRub: 47,
+        pricePerM3Rub: 19.58,
+        link: 'https://rostov-na-donu.tradedir.ru/good/p161633-prodam_peschanyj_karer_kvarcevogo_peska_zapasy_24_mln_m3.htm',
+      }, {
         location: 'Chelyabinsk region',
-        reserves: 7.0,
+        reserves: 7,
         sandQuality: 'Construction',
         siteStatus: 'No information',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 51.0,
+        quarryPriceMlnRub: 51,
         pricePerM3Rub: 7.28,
         link: 'https://business-asset.com/ru/chelyabinskaya-oblast/chelyabinsk/prodazha-biznesa/ru103477/',
+      }, {
+        location: 'Orenburg region',
+        reserves: 5,
+        sandQuality: '**Quartz**',
+        siteStatus: 'No information',
+        hasLicense: 'Yes',
+        quarryPriceMlnRub: 60,
+        pricePerM3Rub: 12,
+        link: 'https://alterainvest.ru/orn/products/detail/16734799/',
       }, {
         location: 'Kaluga region',
         reserves: 0.784,
         sandQuality: 'Construction',
         siteStatus: 'No information',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 61.0,
+        quarryPriceMlnRub: 61,
         pricePerM3Rub: 77.8,
         link: 'https://business-asset.com/ru/kaluzhskaya-oblast/maloyaroslavecz/prodazha-biznesa/ru393499/',
       }, {
@@ -449,8 +463,8 @@ Conclusions based on our analysis of the sand quarries sales market:
         sandQuality: 'Construction',
         siteStatus: 'Ownership',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 80.0,
-        pricePerM3Rub: 101.0,
+        quarryPriceMlnRub: 80,
+        pricePerM3Rub: 101,
         link: 'https://www.avito.ru/samarskoe/gotoviy_biznes/peschanyy_karer_4173815214?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
       }, {
         location: 'Oryol region',
@@ -458,7 +472,7 @@ Conclusions based on our analysis of the sand quarries sales market:
         sandQuality: 'Construction',
         siteStatus: 'Ownership',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 86.0,
+        quarryPriceMlnRub: 86,
         pricePerM3Rub: 22.39,
         link: 'https://business-asset.com/ru/orlovskaya-oblast/orel/prodazha-biznesa/ru467175/',
       }, {
@@ -467,7 +481,7 @@ Conclusions based on our analysis of the sand quarries sales market:
         sandQuality: 'Construction',
         siteStatus: 'No information',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 89.0,
+        quarryPriceMlnRub: 89,
         pricePerM3Rub: 74.16,
         link: 'https://www.avito.ru/habarovsk/gotoviy_biznes/prodazha_peschannogo_karera_7251168755',
       }, {
@@ -476,8 +490,8 @@ Conclusions based on our analysis of the sand quarries sales market:
         sandQuality: 'Construction',
         siteStatus: 'No information',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 101.0,
-        pricePerM3Rub: 8.0,
+        quarryPriceMlnRub: 101,
+        pricePerM3Rub: 8,
         link: 'https://business-asset.com/ru/vladimirskaya-oblast/vladimir/prodazha-biznesa/ru279623/',
       }, {
         location: 'Voronezh region',
@@ -485,7 +499,7 @@ Conclusions based on our analysis of the sand quarries sales market:
         sandQuality: 'Construction',
         siteStatus: 'Lease',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 101.0,
+        quarryPriceMlnRub: 101,
         pricePerM3Rub: 17.41,
         link: 'https://business-asset.com/ru/voronezhskaya-oblast/voronezh/prodazha-biznesa/ru012076/',
       }, {
@@ -494,16 +508,16 @@ Conclusions based on our analysis of the sand quarries sales market:
         sandQuality: 'Construction',
         siteStatus: 'Ownership',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 110.0,
+        quarryPriceMlnRub: 110,
         pricePerM3Rub: 39.86,
         link: 'https://www.avito.ru/detchino/gotoviy_biznes/prodaetsya_peschanyy_karer_4543851347',
       }, {
         location: 'Vladimir region',
-        reserves: 5.0,
+        reserves: 5,
         sandQuality: 'Construction',
         siteStatus: 'Ownership',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 111.0,
+        quarryPriceMlnRub: 111,
         pricePerM3Rub: 22.2,
         link: 'https://business-asset.com/ru/vladimirskaya-oblast/aleksandrov/prodazha-biznesa/ru020344/',
       }, {
@@ -512,52 +526,70 @@ Conclusions based on our analysis of the sand quarries sales market:
         sandQuality: '**Quartz<br> with impurities**',
         siteStatus: 'Ownership',
         hasLicense: 'No',
-        quarryPriceMlnRub: 136.0,
+        quarryPriceMlnRub: 136,
         pricePerM3Rub: 21.93,
         link: 'https://business-asset.com/ru/krasnoyarskij-kraj/krasnoyarsk/prodazha-biznesa/ru714122/',
+      }, {
+        location: 'Rostov region',
+        reserves: 4,
+        sandQuality: '**Quartz**',
+        siteStatus: 'No information',
+        hasLicense: 'No',
+        quarryPriceMlnRub: 160,
+        pricePerM3Rub: 40,
+        link: 'https://old.business-platform.ru/projects/p47641/',
       }, {
         location: 'Vladimir region',
         reserves: 7.948,
         sandQuality: 'Construction',
         siteStatus: 'Ownership',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 186.0,
+        quarryPriceMlnRub: 186,
         pricePerM3Rub: 23.4,
         link: 'https://business-asset.com/ru/vladimirskaya-oblast/aleksandrov/prodazha-biznesa/ru709505/',
       }, {
         location: 'Tver region',
-        reserves: 15.0,
+        reserves: 15,
         sandQuality: 'Construction',
         siteStatus: 'Ownership',
         hasLicense: 'No',
-        quarryPriceMlnRub: 200.0,
+        quarryPriceMlnRub: 200,
         pricePerM3Rub: 13.3,
         link: 'https://business-asset.com/ru/index.php?page=business&item=20057621',
       }, {
+        location: 'Chuvash Republic',
+        reserves: 3.72,
+        sandQuality: '**Quartz**',
+        siteStatus: 'Ownership',
+        hasLicense: 'Yes',
+        quarryPriceMlnRub: 250,
+        pricePerM3Rub: 67.2,
+        link: 'https://business.msk.proms.ru/moscow/item/1551056',
+      }, {
         location: 'Kaluga region',
-        reserves: 14.0,
+        reserves: 14,
         sandQuality: 'Construction',
         siteStatus: 'No information',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 260.0,
+        quarryPriceMlnRub: 260,
         pricePerM3Rub: 18.57,
         link: 'https://business-asset.com/ru/kaluzhskaya-oblast/kaluga/prodazha-biznesa/ru179844/',
       }, {
         location: 'Krasnodar territory',
-        reserves: 7.0,
+        reserves: 7,
         sandQuality: 'Construction',
         siteStatus: 'Ownership',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 357.0,
-        pricePerM3Rub: 51.0,
+        quarryPriceMlnRub: 357,
+        pricePerM3Rub: 51,
         link: 'https://www.avito.ru/beloe/gotoviy_biznes/karer_90ga_proizvod_plosch_97ga_litsenziya_227ga_4881451798',
       }, {
         location: 'Voronezh region',
-        reserves: 7.0,
+        reserves: 7,
         sandQuality: '**Quartz**',
         siteStatus: 'Lease',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 300.0,
+        quarryPriceMlnRub: 300,
         pricePerM3Rub: 42.85,
         link: 'https://tv-gubernia.ru/novosti/obwestvo/v-voronezhskoj-oblasti-vystavili-na-prodazhu-karer-kvarcevyh-peskov-za-300-mln-rublej/',
       }, {
@@ -566,42 +598,69 @@ Conclusions based on our analysis of the sand quarries sales market:
         sandQuality: 'Construction',
         siteStatus: 'No information',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 350.0,
+        quarryPriceMlnRub: 350,
         pricePerM3Rub: 19.55,
-        link: 'https://www.avito.ru/novocheboksarsk/gotoviy_biznes/peschanyy_karer_3802075498',
+        link: 'https://alterainvest.ru/cbk/products/detail/16723386/',
+      }, {
+        location: 'Voronezh region',
+        reserves: 3,
+        sandQuality: '**Quartz**',
+        siteStatus: 'Ownership',
+        hasLicense: 'No',
+        quarryPriceMlnRub: 400,
+        pricePerM3Rub: 133,
+        link: 'https://xn--d1abbnoievn.xn--p1ai/aukciony/business_sales/career_and_field/997-36-12211.html',
       }, {
         location: 'Yaroslavl region',
-        reserves: 15.0,
+        reserves: 15,
         sandQuality: 'Construction',
         siteStatus: 'Lease',
         hasLicense: 'Yes',
-        quarryPriceMlnRub: 470.0,
+        quarryPriceMlnRub: 470,
         pricePerM3Rub: 31.3,
         link: 'https://www.avito.ru/yaroslavskaya_oblast_petrovskoe/gotoviy_biznes/karer_pgs_poselok_lesnoy_7265598399?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
+      }, {
+        location: 'Lipetsk region',
+        reserves: 62,
+        sandQuality: '**Quartz**',
+        siteStatus: 'Ownership',
+        hasLicense: 'Yes',
+        quarryPriceMlnRub: 646,
+        pricePerM3Rub: 17.67,
+        link: 'https://skaniainvest.ru/prodazha-biznesa/object/dobycha_peska/',
+      }, {
+        location: 'Tver region',
+        reserves: 12.4,
+        sandQuality: '**Quartz**',
+        siteStatus: 'Ownership',
+        hasLicense: 'No',
+        quarryPriceMlnRub: 715,
+        pricePerM3Rub: 57.6,
+        link: 'https://reab.pro/ru/catalog/business-for-sale/quartz-sand-quarry-tver-region-40',
       }],
     },
     tabOurConditions: {
       title: 'Our Conditions',
       text: `
 **The cost of mineral reserves in the subsoil of our quarry (excluding operating costs of extraction and processing)**:
-- Extractable reserves in tonnes = <nobr>81,586,563 m³</nobr> (confirmed reserves) − 10% (losses during mineral extraction) = <nobr>73,427,906.7 m³</nobr> (amount of extractable reserves) / 0.62 = <nobr>118,432,107 tonnes</nobr> (extractable reserves in tonnes).
-- Average cost of basic quality construction sand = <nobr>380 ₽/tonne</nobr>
-- Average cost of quartz («glass») sand = <nobr>2,500 ₽/tonne</nobr>
-- Fair price of quartz sand for participants of the «industrial park» project = <nobr>1,000 ₽/tonne</nobr>
+- Extractable reserves in tonnes = <nobr>81,586,563 m³</nobr> (confirmed reserves) − 10% (losses during mineral extraction) = <nobr>73,427,906.7 m³</nobr> (amount of extractable reserves) / 0.62 = <nobr>**118,432,107 tonnes**</nobr> (extractable reserves in tonnes).
+- Average cost of basic quality construction sand = <nobr>**380 ₽/tonne**</nobr>
+- Average cost of quartz («glass») sand = <nobr>**2,500 ₽/tonne**</nobr>
+- Fair price of quartz sand for participants of the «industrial park» project = <nobr>**1,000 ₽/tonne**</nobr>
 
-Thus, the types of mining activities can significantly impact the final selling price of the sand. If the quarry is used narrowly for supplying construction industry counterparties, the reserves are valued at <nobr>45 billion ₽</nobr> (<nobr>118,432,107 t</nobr> × <nobr>380 ₽</nobr>). If an industrial park is to be developed on the territory of the deposit (or own production facilities are to be built), the value of reserves will be as follows: <nobr>120 billion ₽</nobr> (<nobr>118,432,107 tonnes</nobr> × RUB 1000) <nobr>to RUB 300 billion</nobr> (<nobr>118,432,107 tonnes</nobr> × ₽ 2500).
+Thus, the types of mining activities can significantly impact the final selling price of the sand. If the quarry is used narrowly for supplying construction industry counterparties, the reserves are valued at <nobr>**45 billion ₽**</nobr> (<nobr>118,432,107 t</nobr> × <nobr>380 ₽</nobr>). If an industrial park is to be developed on the territory of the deposit (or own production facilities are to be built), the value of reserves will be as follows: <nobr>**120 billion ₽**</nobr> (<nobr>118,432,107 tonnes</nobr> × 1000 ₽) <nobr>to **300 billion ₽**</nobr> (<nobr>118,432,107 tonnes</nobr> × ₽ 2500).
 
 **Our Quarry Valuation**
 
-Considering the market trend of decreasing deposit value relative to its reserve size (the larger the object, the cheaper the base cost per <nobr>1 m³</nobr> of minerals), we believe a fair valuation for this property is approximately <nobr>6.5 ₽</nobr> per <nobr>1 m³</nobr>, and the total quarry cost around <nobr>530 million ₽</nobr> (<nobr>81,586,563 m³</nobr> × <nobr>6.5 ₽</nobr>). Note that the cheapest cubic meter of extracted sand (not quartz, but 2nd class) on the Russian Federation market is <nobr>8 ₽</nobr> per <nobr>1 m³</nobr> (refer to the table).
+Considering the market trend of decreasing deposit value relative to its reserve size (the larger the object, the cheaper the base cost per <nobr>1 m³</nobr> of minerals), we believe a fair valuation for this property is approximately <nobr>6.5 ₽</nobr> per <nobr>1 m³</nobr>, and the total quarry cost around <nobr>530 million ₽</nobr> (<nobr>81,586,563 m³</nobr> × <nobr>6.5 ₽</nobr>). Note that the cheapest cubic meter of extracted sand (not quartz, but 2nd class) on the Russian Federation market for «construction grade» is <nobr>7.28 ₽,</nobr> and for «glass grade» is <nobr>17.67 ₽</nobr> (refer to the table).
 
-However, considering that our deposit is very large (and has no equivalent on the market), also we are interested in a quick sale of the property, and have formed a special price offer calculated based on the state valuation of the object + 5%.
+However, considering that our deposit is very large (and has no equivalent on the market), also we are interested in a quick sale of the property, and have formed a special price offer calculated based on the **state valuation of the object + 5%**.
 
 **The final selling price** of the deposit is:  
-<nobr>359.7 million ₽</nobr> + 5% = <nobr>377.7 million ₽</nobr>.
+<nobr>359.7 million ₽</nobr> + 5% = <nobr>**377.7 million ₽**</nobr>.
 
 **Calculation of the average cost per <nobr>1 m³</nobr>**:  
-<nobr>377,700,000 ₽</nobr> (total cost) ÷ <nobr>81,586,563 m³</nobr> (quantity of reserves) = <nobr>4.63 ₽</nobr>.
+<nobr>377,700,000 ₽</nobr> (total cost) ÷ <nobr>81,586,563 m³</nobr> (quantity of reserves) = <nobr>**4.63 ₽**</nobr>.
 
 **Your advantage is obvious!**.
       `.trim(),
