@@ -26,19 +26,26 @@ export async function generateMetadata({ params }: Readonly<{ params: Promise<{ 
     metadataBase: config.domain,
     title: t('title'),
     description: t('description'),
-    alternates: { canonical: config.domain, languages: { 'x-default': '/', 'ru': '/ru', 'en': '/en' } },
+    alternates: {
+      canonical: locale === 'ru' ? config.domain : new URL(locale, config.domain),
+      languages: {
+        'ru': new URL('ru', config.domain),
+        'en': new URL('en', config.domain),
+        'x-default': new URL('ru', config.domain),
+      },
+    },
     openGraph: {
       type: 'website',
       locale,
       url: config.domain,
-      title: 'Ипотека ОАЭ повысит доход от инвестиций в 3 раза',
-      description: 'Оформим за 3 месяца «под ключ» с юридической гарантией',
-      siteName: 'EMIROCKS',
+      title: t('title'),
+      description: t('description'),
+      siteName: t('title'),
       images: {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Ипотека ОАЭ',
+        alt: t('description'),
       },
     },
     icons: {
@@ -50,13 +57,10 @@ export async function generateMetadata({ params }: Readonly<{ params: Promise<{ 
       apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
       // other: [{ rel: 'mask-icon', url: '/safari-pinned-tab.svg', color: '#ffffff' }],
     },
-    applicationName: 'EMIROCKS',
-    appleWebApp: { capable: true, title: 'EMIROCKS', statusBarStyle: 'default' },
+    applicationName: t('title'),
+    appleWebApp: { capable: true, title: t('title'), statusBarStyle: 'default' },
     formatDetection: { telephone: true, date: true, address: true, email: true, url: true },
     robots: { index: true, follow: true },
-    keywords: 'ипотека ОАЭ, недвижимость Дубай, золотая виза, инвестиции в ОАЭ, доходность недвижимости, ипотечное кредитование, Эмираты',
-    category: 'finance',
-    classification: 'real estate, mortgage, investment',
   };
 }
 
