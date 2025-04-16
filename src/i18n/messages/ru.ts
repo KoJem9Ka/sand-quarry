@@ -311,6 +311,7 @@ export const MessagesRU = {
         'Цена<br>(млн ₽)',
         '₽ за м³<br>песка',
       ],
+      tableRelevantDate: 'Таблица актуальна на 16 апр. 2025',
       table: [{
         location: 'Саратовская область',
         reserves: 2.23,

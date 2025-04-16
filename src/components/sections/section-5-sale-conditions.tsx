@@ -47,33 +47,36 @@ function QuarriesTable() {
   const quarries = t.raw('table') as QuarryFromTable[];
 
   return (
-    <div className="not-prose relative max-h-[500px] overflow-y-auto rounded-radius-md border-2 border-quarry-brown">
-      <Table className="text-center min-w-max text-base" wrapperClassName="![overflow:unset]" isNoBroder>
-        <THead className="sticky top-[0]">
-          <TR>
-            {headings.map((heading, idx) => <TH key={idx}><Markdown>{heading}</Markdown></TH>)}
-          </TR>
-        </THead>
-        <TBody className="[&_tr]:even:bg-black/5">
-          {quarries.map((quarry, idx) => (
-            <TR key={idx}>
-              <TD>
-                <a className="text-blue-500" target="_blank" rel="noopener noreferrer" href={quarry.link}>
-                  {quarry.location}
-                  {' '}
-                  <IconQlementineIconsExternalLink16 className='inline'/>
-                </a>
-              </TD>
-              <TD>{quarry.reserves}</TD>
-              <TD><Markdown>{quarry.sandQuality}</Markdown></TD>
-              <TD><Markdown>{quarry.siteStatus}</Markdown></TD>
-              <TD><Markdown>{quarry.hasLicense}</Markdown></TD>
-              <TD>{quarry.quarryPriceMlnRub}</TD>
-              <TD>{quarry.pricePerM3Rub}</TD>
+    <div className="not-prose">
+      <div className="relative max-h-[500px] overflow-y-auto rounded-radius-md border-2 border-quarry-brown">
+        <Table className="text-center min-w-max text-base" wrapperClassName="![overflow:unset]" isNoBroder>
+          <THead className="sticky top-[0]">
+            <TR>
+              {headings.map((heading, idx) => <TH key={idx}><Markdown>{heading}</Markdown></TH>)}
             </TR>
-          ))}
-        </TBody>
-      </Table>
+          </THead>
+          <TBody className="[&_tr]:even:bg-black/5">
+            {quarries.map((quarry, idx) => (
+              <TR key={idx}>
+                <TD>
+                  <a className="text-blue-500" target="_blank" rel="noopener noreferrer" href={quarry.link}>
+                    {quarry.location}
+                    {' '}
+                    <IconQlementineIconsExternalLink16 className="inline"/>
+                  </a>
+                </TD>
+                <TD>{quarry.reserves}</TD>
+                <TD><Markdown>{quarry.sandQuality}</Markdown></TD>
+                <TD><Markdown>{quarry.siteStatus}</Markdown></TD>
+                <TD><Markdown>{quarry.hasLicense}</Markdown></TD>
+                <TD>{quarry.quarryPriceMlnRub}</TD>
+                <TD>{quarry.pricePerM3Rub}</TD>
+              </TR>
+            ))}
+          </TBody>
+        </Table>
+      </div>
+      <p className="mt-3 text-right text-sm text-black/50">{t('tableRelevantDate')}</p>
     </div>
   );
 }

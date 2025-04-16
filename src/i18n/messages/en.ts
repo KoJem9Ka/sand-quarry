@@ -313,6 +313,7 @@ Conclusions based on our analysis of the sand quarries sales market:
         'Price<br>(million ₽)',
         '₽ per m³<br>of sand',
       ],
+      tableRelevantDate: 'Table info relevant as of Apr. 16, 2025',
       table: [{
         location: 'Saratov region',
         reserves: 2.23,
