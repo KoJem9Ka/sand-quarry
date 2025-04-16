@@ -297,10 +297,10 @@ We present a selection of sand quarries currently available for public sale in t
       text2: `
 The variation in field prices is significant. The cheapest m³ of sand resources found was in the Chelyabinsk region - <nobr>7.28 ₽</nobr> per m³ of sand used exclusively for construction needs. The most expensive m³ from our analysis is in Mordovia and costs a record <nobr>145 ₽</nobr> per subsoil of sand of the same quality.
 
-There are very few quarries with «glass grade» quartz sand in the current sale. The largest deposit with reserves of more than <nobr>100 tons</nobr> (quartz sand reserves of <nobr>50 tons</nobr>) was sold in the Lipetsk region. The starting price of the facility was about <nobr>1.096 billion ₽</nobr> (including some buildings and machinery). The seller claimed that about <nobr>450 million ₽.</nobr> Accordingly, the price of the quarry itself in the price structure of the enterprise amounted to about <nobr>646 million ₽.</nobr>.
+There are very few quarries with «glass grade» quartz sand in the current sale. The largest deposit with reserves of more than <nobr>100 tons</nobr> (quartz sand reserves of <nobr>50 tons</nobr>) was sold in the Lipetsk region. The starting price of the facility was about <nobr>1.096 billion ₽</nobr> (including some buildings and machinery). The seller claimed that about <nobr>450 million ₽.</nobr> Accordingly, the price of the quarry itself in the price structure of the enterprise amounted to about <nobr>646 million ₽.</nobr>
 
 Conclusions based on our analysis of the sand quarries sales market:
-- The average cost of subsoil sand of «construction grade» is <nobr>40.3 ₽</nobr> per <nobr>1 m³,</nobr> «glass grade» - <nobr>42.3 ₽</nobr> per <nobr>1 m³</nobr> (based on the processing of all public data on sales of quarries in the present and past time in the Russian Federation)
+- The average cost of subsoil sand of «construction grade» is <nobr>40.3 ₽</nobr> per <nobr>1 m³,</nobr> «glass grade» - <nobr>42.3 ₽</nobr> per <nobr>1 m³</nobr> (based on the processing of all public data on sales of quarries in the present and pastime in the Russian Federation)
 - The cost of a deposit is greatly influenced by its transportation accessibility, as well as the size of mineral reserves - the larger the reserves of a quarry, the cheaper the average price per m³ (the law of the wholesale market applies)
 - The pricing of most market offers lacks clear justification and appears arbitrary
       `.trim(),
