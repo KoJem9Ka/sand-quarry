@@ -8,7 +8,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const isGithubPages = process.env.BUILD_FOR === 'github';
 const basePath = isGithubPages ? '/sand-quarry' : undefined;
 
-console.log(`Building for ${isGithubPages ? 'GitHub Pages' : 'Production'}`);
+console.log(`NextJS mode for ${isGithubPages ? 'GitHub Pages' : process.env.NODE_ENV} with basePath="${basePath}"`);
 
 const nextConfig = {
   output: 'export',
