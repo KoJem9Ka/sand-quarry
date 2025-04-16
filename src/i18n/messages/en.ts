@@ -1,149 +1,148 @@
 import type MessagesRU from '@/i18n/messages/ru';
 
-
-export const MessagesEN = {
+export const MessagesEn = {
   meta: {
-    title: 'Sand quarry',
-    description: `For sale: Russia's largest new sand quarry`,
+    title: 'Sand Quarry',
+    description: 'New Largest Sand Quarry in Russia is currently on sale',
     openGraph: {
-      title: 'Sand quarry',
-      description: `For sale: Russia's largest new sand quarry`,
-      siteName: 'Sand quarry',
+      title: 'Sand Quarry',
+      description: 'New Largest Sand Quarry in Russia is currently on sale',
+      siteName: 'Sand Quarry',
     },
-    keywords: 'Sand quarry, sand, quarry, sand quarry, sand quarries, sand quarry volgograd, sand quarry volgograd region, sand quarry volgograd district, sand quarry volgograd region dubovsky district',
+    keywords: 'sand quarry, mineral resources, business models, sale conditions',
   },
   navigation: {
-    legalStatus: 'Legal status',
-    characteristics: 'Characteristics',
-    businessModels: 'Business models',
-    saleConditions: 'Sale conditions',
+    legalStatus: 'Legal Status',
+    characteristics: 'Specifications',
+    businessModels: 'Business Models',
+    saleConditions: 'Sales Terms',
   },
   consultation: {
-    buttonShort: 'Consultation',
-    buttonLong: 'Get consultation',
+    buttonShort: 'Contact Us',
+    buttonLong: 'Get Consultation',
     dialog: {
-      title: 'Consultation',
-      description: 'Choose a convenient way to contact us',
+      title: 'Contact Us',
+      description: 'Choose your preferred contact method',
     },
   },
   hero: {
-    title: 'For sale: Russia\'s largest new sand quarry',
-    subtitle1: 'deposit reserves –',
-    subtitle2: 'over',
+    title: 'New Largest Sand Quarry in Russia is currently on sale',
+    subtitle1: 'Deposit reserves –',
+    subtitle2: 'more than',
     subtitle3: '81.5 million m³',
     subtitle4: 'of quartz sand',
   },
   legalStatus: {
-    title: 'Legal status',
+    title: 'Legal Status',
     tabOwner: {
       title: 'Owner',
       text: `
-The sand deposit was identified for the first time in 2021. Mineral extraction has not been carried out on its territory.
+The sand deposit was first discovered in 2021. No mineral extraction has taken place on its territory.
 
-The land plot on which the deposit is located was transferred to the seller's ownership in August 2018. The holder of permits, including a license for subsoil extraction of the quarry for a period of <nobr>177 years</nobr> (until 2201) is LLC «Peschany karer».
+The land plot containing the deposit was transferred to the seller's ownership in August 2018. LLC «Peschanuy Karer» holds all permits, including a <nobr>177 years</nobr> license for subsoil resource extraction (valid until 2201).
 
-The rights to the land plot, legal entity and permits are transferred to the buyer of the quarry under the transaction.
+Rights to the land plot, the legal entity, and the permits are transferred to the quarry buyer upon the transaction.
 
-The new owner can start subsoil extraction of the quarry within <nobr>7–12 months</nobr> after its purchase.
+The new owner can commence subsoil resource extraction within <nobr>7–12 months</nobr> after purchase.
 
-Upon conclusion of the transaction, we will provide the buyer with professional assistance in the field of geology, as well as ensure support for processes related to business development in the object area.
+Upon closing the deal, we are ready to offer qualified geological assistance and provide professional support for further activities related to launching resource extraction and developing production activities on the land plot.
 `.trim(),
     },
     tabDocumentation: {
       title: 'Documentation',
       text: `
-LLC «Peschany karer» is the holder of **permits**:
-- **Certificate** of establishing the fact of discovery of a mineral deposit <nobr>No. 01/22-fo</nobr>
-- **License** for subsoil use <nobr>VLG 030224 TE</nobr> valid until <nobr>12/11/2201</nobr> (type of subsoil use: exploration and extraction of minerals) dated <nobr>12/28/2024</nobr>
-- **Conclusion** of the state expert review on the calculation of mineral reserves and the readiness of the deposit for industrial development dated <nobr>12/24/2021</nobr>
+LLC «Peschanuy Karer» holds the following permits:
+- Certificate confirming the discovery of a mineral deposit <nobr>No. 01/22-fo</nobr>
+- License for subsoil use <nobr>VLG 030224 TE</nobr> valid until 11.12.2201 (type of subsoil use: exploration and extraction of mineral resources) dated 28.12.2024
+- Conclusion of the state expertise on the calculation of mineral reserves and the readiness of the deposit for industrial development dated 24.12.2021
       `.trim(),
     },
   },
   quarryCharacteristics: {
-    title: 'Quarry characteristics',
+    title: 'Quarry Specifications',
     tabAdvantages: {
       title: 'Advantages',
       text: `
-### Location and logistics
-- Close location to the main production facilities and central logistics chains of the Volgograd region and the Southern Federal District opens up great opportunities for the supply of minerals (construction and industrial sand), as well as own-produced products (glass, bricks, enriched sand, microelectronics, etc.) to a wide range of counterparties in the region and beyond
-### Volume of reserves
-- In terms of reserves, the deposit is __one of the largest in Russia__
-- Total confirmed reserves – <nobr>__81.586 million m³__</nobr> (<nobr>130 million tons</nobr>)
-### Long-term business
-- The deposit is oriented for the deployment of a large and long-term business (optimally - an industrial park)
-- The quarry owner holds a license for subsoil extraction for a period of <nobr>177 years</nobr>, which allows building global strategic plans for monopolizing the regional market in a number of areas of activity
-- Business domination in the market of the Southern Federal District is ensured by replacing products supplied by competitors from other regions of the Russian Federation and countries
-### Raw material quality
-- The main rock-forming mineral in sands is quartz 98.26–99.31%, the grains of which are transparent and well-rounded
-- Quartz sands of the deposit are of high quality, free from impurities and can be used without restrictions in construction and industrial production
-### Ease of development
-- Sand minerals are located close to the surface
-- Open pit mining of the deposit is recommended
-- The established reserves of the deposit are dry (not waterlogged)
-- Radiation safety of rocks for mining operations has been confirmed
-- Tectonic and other processes complicating the mining of the deposit are absent
-- The boundary of the sanitary protection zone of the quarry is located outside residential areas and does not require special measures
-`.trim(),
+### Location and Logistics
+- The location near major production facilities and central logistics networks in Volgograd Oblast alongside the Southern Federal District creates excellent opportunities for supplying mineral resources (construction and industrial sand), as well as own production (glass, bricks, enriched sand, microelectronics, etc.) to a wide range of counterparties in the region and beyond
+### Reserves Volume
+- In terms of reserves volume, the deposit is one of the largest in Russia.
+- Total confirmed reserves – <nobr>**81.586 million m³**</nobr> (<nobr>130 million tonnes</nobr>)
+### Long-Term Business Opportunities
+- The deposit is ideal for establishing a large-scale, long-term business (optimally - an industrial park)
+- The quarry owner holds a license for resource extraction for <nobr>177 years</nobr>, allowing for global strategic plans to monopolize the regional market in several activity spheres
+- Business dominance in the Southern Federal District market is ensured by substituting products supplied by competitors from other regions of the Russian Federation and other countries
+### Raw Material Quality
+- The main rock-forming mineral in the sands is quartz (98.26–99.31%), it's grains are transparent and well-rounded.
+- The quartz sands of the deposit are high-quality, free from impurities, and can be used in construction and industrial production without any restrictions
+### Ease of Development
+- Sand deposits are close to the surface
+- Open-pit mining is recommended
+- The established reserves are dry (not waterlogged)
+- Radiation safety of the rocks for mining operations is confirmed
+- No tectonic and other processes complicating deposit development
+- The border of the quarry's sanitary protection zone is outside residential areas and does not require special measures
+      `.trim(),
     },
     tabLocation: {
       title: 'Location',
       text: `
-Location of the land plot on which the quarry is located: Volgograd region, Dubovsky district, Peskovatka village
+Location of the land plot where the quarry is situated: Volgograd Oblast, Dubovsky District, Peskovatka village
 
-Total area of the land plot - <nobr>**432 Ha**</nobr>, including the area of the deposit - <nobr>**245 Ha**</nobr> (there is a possibility for the construction of production facilities on the general plot with the deposit)
+Total land plot area - <nobr>**432 Ha**</nobr>, including the deposit area - <nobr>**245 Ha**</nobr> (there is a potential for constructing production facilities on the same plot as the deposit)
 
 Cadastral number 34:05:020003:287
 
-Transport infrastructure: **federal highway** R228 «Volgograd-Saratov» (distance <nobr>13 km</nobr> from the deposit), **asphalt road** «Loznoe-Dubovka» (<nobr>0.3 km</nobr>), **pier** of Dubovka (<nobr>17 km</nobr>); **railway terminal** «Volzhsky» (<nobr>48 km</nobr>)
-      `.trim(),
+Transport infrastructure: federal highway R228 «Volgograd-Saratov» (<nobr>13 km</nobr> from the deposit), paved road «Loznoye-Dubovka» (<nobr>0.3 km</nobr>), Dubovka town port (<nobr>17 km</nobr>); «Volzhsky» railway terminal (<nobr>48 km</nobr>)
+      `.trim(),// TODO: YANDEX MAP HERE
     },
     tabGeology: {
       title: 'Geology',
       text: `
-### Geological characteristics of the deposit
-- The surface of the deposit has a flat relief
-- The climate of the area is continental with short, snowy winters and hot summers
-- The geological structure of the deposit is composed of Neogene and Quaternary systems deposits
-- Neogene formations within the deposit are represented by sands and sandy loams of the Ergenin formation
-- The main rock-forming mineral in sands is quartz 98.26–99.31%, the grains of which are transparent and well-rounded
-- Quartz sands (from light gray to yellowish-light gray, разнозернистые, slightly clayey) in their chemical composition almost entirely consist of silicon oxide
-- Clay and organic impurities are absent
+### Geological Characteristics of the Deposit
+- The deposit has a flat surface topography
+- The climate of the area is continental with short, low-snow winters and hot summers
+- The geological structure of the deposit consists of Neogene and Quaternary system deposits
+- Neogene formations within the deposit are represented by sands and sandy loams of the Ergeni Formation
+- The main rock-forming mineral in the sands is quartz (98.26–99.31%), it's grains are transparent and well-rounded
+- Quartz sands (from light gray to yellowish-light gray, variably grained, slightly clayey) chemically consist almost entirely of silicon oxide
+- Contains no organic impurities or clay
 ### Grain size distribution of sand:
-- The fineness modulus is consistent and varies from <nobr>0.9</nobr> to <nobr>2.8</nobr>, average – <nobr>1.38</nobr>, with a coefficient of variation – <nobr>0.0.44</nobr>
-- The content of grains smaller than <nobr>0.16 mm</nobr> is inconsistent – from <nobr>0.5%</nobr> to <nobr>92.2%</nobr>, average – <nobr>17.48%</nobr> with a coefficient of variation – <nobr>0.62</nobr>
-- The total residue of grains on a <nobr>0.63 mm</nobr> sieve is inconsistent – from <nobr>0.1%</nobr> to <nobr>72.6%</nobr>, average – <nobr>10.19%</nobr>, with a coefficient of variation – <nobr>1.15</nobr>
-- The content of dust and clay particles in sands is uniform and ranges from <nobr>0.5 %</nobr> to <nobr>9.2 %</nobr>, average – <nobr>3.62 %</nobr>, with a coefficient of variation – <nobr>0.53</nobr>
-- Grains with a size of <nobr>5–10 mm</nobr> and larger than <nobr>10 mm</nobr> are absent in the deposit sands
+- Fineness modulus is consistent, varying from 0.9 to 2.8, average – 1.38, with a variation coefficient – 0.044
+- Content of grains smaller than <nobr>0.16 mm</nobr> varies from 0.5% to 92.2%, average – 17.48% with a variation coefficient – 0.62
+- Total residue of grains on the <nobr>0.63 mm</nobr> sieve varies from 0.1% to 72.6%, average – 10.19%, with a variation coefficient – 1.15
+- Content of dusty particles in the sands is uniform, ranging from 0.5% to 9.2%, average – 3.62%, with a variation coefficient – 0.53
+- Grains sized <nobr>5–10 mm</nobr> and larger than <nobr>10 mm</nobr> are absent in the deposit sands
       `.trim(),
     },
     tabExtraction: {
       title: 'Extraction',
       text: `
-### Natural conditions for subsoil extraction
-- Subsoil deposits are dry (not waterlogged)
-- Hydro-geological and mining-geological conditions of the deposit allow it to be developed by open pit mining
-- The surface of the plot has a flat relief, the location of mineral deposits is close to the surface
-- The linear stripping ratio is unstable and averages <nobr>0.192 m/m</nobr> (from <nobr>0.015 m/m</nobr> to <nobr>0.968 m/m</nobr>), the geological stripping ratio - <nobr>0.17 m³/m³</nobr>
-- The mineral-bearing stratum is an Ergenin sands deposit of size <nobr>1.5 × 1.6–1.7 km</nobr>
-- The boundary of the sanitary protection zone is free from residential development and does not require the organization of special measures
-- Geological reserves of the deposit are capable of providing a mining enterprise with high productivity (up to several <nobr>million m³</nobr> of sand per year) for <nobr>177 years</nobr> (license term for extraction) and total <nobr>81.586 million m³</nobr>
-- When preparing a quarry development project, the owner can set the optimal (taking into account the specifics of the enterprise) annual volume of subsoil extraction
-- In radiation terms, the subsoil is safe for mining operations
-- Tectonic and other processes complicating the mining of the deposit are absent
-- Associated minerals are absent within the mineral-bearing stratum of the deposit
-- Development of the deposit will not have a negative impact on the environment
+### Natural Conditions for Resource Extraction
+- The resource deposits are dry (not waterlogged)
+- Hydrogeological and mining-geological conditions of the deposit allow for open-pit development
+- The plot surface has a flat surface, the location of gemstones is close to the surface
+- The linear stripping ratio is unstable, averaging <nobr>0.192 m/m</nobr> (from <nobr>0.015 m/m</nobr> to <nobr>0.968 m/m</nobr>), the geological stripping ratio is <nobr>0.17 m³/m³</nobr>
+- The productive stratum consists of Yergenian sands covering an area of <nobr>1.5</nobr> × <nobr>1.6–1.7 km</nobr>
+- The border of the sanitary protection zone is free from residential development and does not require special measures
+- The geological reserves of the deposit can support a high-productivity mining enterprise (up to several <nobr>million m³</nobr> of sand per year) for <nobr>177 years</nobr> (license duration) and total <nobr>81.586 million m³</nobr>
+- When preparing the quarry development project, the owner can set an optimal annual extraction volume (considering the enterprise's specifics)
+- Radiation wise, the subsoil is safe for mining operations
+- No tectonic and other processes complicating deposit development
+- No associated minerals are present within the productive layer
+- Industrial development will not have a negative impact on the environment
       `.trim(),
     },
     tabReserves: {
       title: 'Reserves',
       text: `
-### Calculation of deposit reserves
-- Total geological reserves of the deposit amount to <nobr>81.586 million m³</nobr> (approximately <nobr>130 million tons</nobr>), including category C1 – <nobr>24.077 million m³</nobr> (<nobr>40 million tons</nobr>), category C2 – <nobr>57.508 million m³</nobr> (<nobr>90 million tons</nobr>)
-- Reserves calculation is performed by the method of geological blocks with a high degree of reliability
-- The given information meets the requirements set out in the Classification of reserves of deposits and прогнозных resources of solid minerals, approved by order of the Ministry of Natural Resources of Russia dated <nobr>12/11/2006 No. 278</nobr>
-- The geological structure, morphology of the mineral-bearing stratum and conditions of its occurrence have been studied to a sufficient extent by the work performed
-- The density of the exploration network allowed to qualify the deposit reserves by categories C1 and C2
-- The obtained information characterizes the material composition, as well as the technological properties of minerals and shows that the sand of the mineral-bearing stratum is suitable for the production of construction and industrial works, meets all necessary regulatory requirements
+### Deposit Reserves Calculation
+- Total geological reserves of the deposit amount to <nobr>81.586 million m³</nobr> (approximately <nobr>130 million tonnes</nobr>), including category C1 – <nobr>24.077 million m³</nobr> (<nobr>40 million tonnes</nobr>), category C2 – <nobr>57.508 million m³</nobr> (<nobr>90 million tonnes</nobr>)
+- The reserves calculation was performed using the geological block method with a high reliability
+- The provided information meets the requirements set forth in the Classification of Reserves of Deposits and Prospective Resources of Solid Minerals, approved by order of the Ministry of Natural Resources of Russia No. 278 dated 11.12.2006
+- The completed studies have adequately examined the geological structure, morphology of the productive stratum, and it's bedding conditions
+- The density of the exploration network allowed qualifying the deposit reserves under categories C1 and C2
+- The obtained data characterize the material composition and technological properties of the minerals and show that the sand of the productive stratum is suitable for construction and industrial works, meeting all necessary regulatory requirements
       `.trim(),
     },
     tabLaunch: {
@@ -154,7 +153,7 @@ Transport infrastructure: **federal highway** R228 «Volgograd-Saratov» (distan
 1. Preparation for industrial development
     - Ownership of the land plot
     - Conducting surveys
-    - Conclusion of the state expert review
+    - Obtaining state expert review conclusion
     - Certificate of establishing the fact of discovery of a mineral deposit <nobr>No. 01/22-fo</nobr>
 2. License for subsoil use <nobr>VLG 030224 TE</nobr> until <nobr>12/11/2201</nobr>
     - Type of subsoil use: exploration and extraction of minerals
@@ -166,155 +165,155 @@ Transport infrastructure: **federal highway** R228 «Volgograd-Saratov» (distan
     - Quarry launch
 
 ### Current status
-**Deposit prepared for industrial development** in accordance with the Conclusion of the state expert review of reserves calculation of the Spartakovskoye deposit of construction sands dated <nobr>12/24/2021</nobr>
+**Deposit is ready for industrial development** according to the Conclusion of the state expert review of reserves calculation of the Spartakovskoye deposit of construction sands dated <nobr>12/24/2021</nobr>
 - **Certificate of establishing the fact of discovery of a mineral deposit <nobr>No. 01/22-fo</nobr>** received
-- At the end of <nobr>2024</nobr>, **License for subsoil use <nobr>VLG 030224 TE</nobr> until <nobr>12/11/2201</nobr> (type of subsoil use: exploration and extraction of minerals)** received
+- At the end of <nobr>2024</nobr>, **License for subsoil use <nobr>VLG 030224 TE</nobr> until <nobr>12/11/2201</nobr> (type of subsoil use: exploration and extraction of minerals)** was received
 
 ### Quarry commissioning
 To commission the quarry, it is necessary to complete 2 more stages:
-- Prepare a quarry development project <nobr>(6 months)</nobr>
-- Prepare a mining allotment project <nobr>(3 months)</nobr>
+- Development of quarry development project <nobr>(6 months)</nobr>
+- Development of mining allotment project <nobr>(3 months)</nobr>
 
 ### Start of extraction
-Start of extraction can be planned **in the first half of <nobr>2026</nobr>**
+Start of extraction can begin **in the first half of <nobr>2026</nobr>**
       `.trim(),
     },
   },
   businessModels: {
-    title: 'Business models',
+    title: 'Business Models',
     tabInitialData: {
       title: 'General information',
       text: `
-- Total area of the land plot - <nobr>**432 Ha**</nobr>, including the area of the deposit - <nobr>**245 Ha**</nobr>
-- The availability of <nobr>**187 Ha**</nobr> of free territory allows to effectively use it in the process of subsoil extraction of the quarry, as well as for the construction of sand processing enterprises in close proximity to the deposit
-- High productivity of the quarry allows to serve simultaneously several enterprises of different profiles in the territory adjacent to it, which will allow to get the maximum return on investment
-- There is a technical possibility of connecting electricity, gas and water to the land plot
+- Total land plot area - <nobr>432 Ha</nobr>, including the deposit area - <nobr>245 Ha</nobr>
+- The available <nobr>187 Ha</nobr> of free territory can be effectively utilized during quarry resource extraction, as well as for the construction of sand processing enterprises in proximity to the deposit
+- The high productivity of the quarry allows servicing several enterprises of different profiles simultaneously on the adjacent territory, which will yield the maximum return on investment
+- It is technically possible to bring electricity, gas and water to the plot
       `.trim(),
     },
     tabMarketNiches: {
-      title: 'Types of business',
+      title: 'Market Niches',
       text: `
-### Mining and processing plant
+### Mining and Processing Plant
 
-The functions of the mining and processing plant include extraction, enrichment and sale of quartz sand for various industries. The technology involves crushing, magnetic separation, washing, drying, calcination and other methods of material processing to improve its characteristics. The quality of initial and enriched quartz sands is controlled by the content of iron, silicon, aluminum oxides in them, as well as granulometric composition, content of clay component and moisture. Plants provide the necessary raw materials to metallurgical, machine-building, construction companies.
+Functions include extraction, enrichment, and sale of quartz sand for various industries. Processing includes crushing, magnetic separation, washing, drying, calcining, and other methods to enhance material properties. Quality control measures track iron, silicon, aluminum oxides, grain size distribution, clay content, and moisture in both raw and enriched quartz sands. These plants provide essential raw materials for metallurgical, manufacturing, and construction industries.
 
-### Glass production
+### Glass Production
 
-Quartz sand is the main raw material for the production of various types of glass, including window glass, dishes, porcelain, mirrors and other glass products. Glass contains up to 65–73% of quartz sand of the so-called «glass grade», deposits of which our deposit is rich in.
+Quartz sand is the main raw material for various types of glass, including window glass, tableware, porcelain, mirrors, and other glass products. The glass contains up to 65-73% of quartz sand of the so-called ‘glass grade’, which is abundant in our deposit.
 
-### Steel industry
+### Steel Industry
 
-Molding type of sand is used. It contains at least 90% silicon dioxide and no more than 2% clay component. This gives the material a high degree of fire resistance and moisture resistance. Our deposit has raw materials of the required quality (and even exceeds in characteristics) for this type of activity.
+ A moulding type of sand is being used. It contains at least 90% silicon dioxide and no more than 2% clay component, giving the material high refractoriness and moisture resistance. Our deposit contains raw materials that meet and exceed the quality requirements for this purpose.
 
-### Brick production
+### Brick Production
 
-Quartz sand is used for the production of silicate bricks. It is the main component in the composition of the product, provides good adhesion and shape stability. For the manufacture of silicate bricks, quartz sand with a fraction of <nobr>0.1–5 mm</nobr> is used. Before use, it is pre-washed, dried and cleaned of impurities.
+Quartz sand is used for silicate brick production. It is the main component, ensuring good adhesion and shape stability. Quartz sand fraction <nobr>0.1–5 mm</nobr> is used. Before use, it is pre-washed, dried, and cleaned of impurities.
 
-### Microelectronics production
+### Microelectronics Production
 
-Quartz sand serves as a base material for the production of microelectronics, in particular processors. It contains silicon, which is a semiconductor and allows creating microcircuits of any structure. The production process is divided into several stages: transformation of raw material into the purest and correct structure (1), creation of a silicon single crystal (2), preparation of wafers from a single crystal (3), «printing» of the processor (4). Quartz sand of our deposit almost entirely consists of silicon oxide and is an excellent raw material for the production of microelectronics components.
+Quartz sand is the base material for microelectronics, particularly processors. It contains silicon, a semiconductor, allowing the creation of microcircuits of any structure. The process involves: converting raw material into the purest form with the correct structure (1), creating a silicon single crystal (2), preparing wafers from the single crystal (3), «printing» the processor (4). Our deposit's quartz sand, consisting almost entirely of silicon oxide, is excellent raw material for microelectronic components.
 
-### Road construction
+### Road Construction
 
-Sand is used at each stage of road construction – in the preparation of the road base, backfilling of intermediate layers, as well as the construction of the top coating. The sand deposit is located in a promising road construction zone near major transport interchanges (including in close proximity to the federal highway) and megacities (cities of Volgograd and Volzhsky).
+Sand is used at every stage of road construction – preparing the road base, backfilling intermediate layers, and constructing the top surface. The sand deposit is located in a promising road construction zone near major transport hubs (including proximity to a federal highway) and megacities (Volgograd and Volzhsky).
 
-### Production of reinforced concrete products
+### Reinforced Concrete Products Production
 
-Sand is used in the production of reinforced concrete products (RC products) as a fine aggregate. Its main task is to fill the voids between the grains of crushed stone to ensure the same strength characteristics throughout the volume of the concrete mix.
+Sand is used in reinforced concrete products (RCP) as a fine aggregate. It's main task is to fill voids between gravel grains to ensure uniform strength characteristics throughout the concrete mix volume.
 
-### Production of paving slabs
+### Paving Tile Production
 
-Quartz sand is promising to use as a raw material for the manufacture of fired ceramic road-building products, including tiles. In addition, sand is used for grouting tile joints.
+Quartz sand is promising as raw material for manufacturing fired ceramic road construction products, including tiles. Additionally, sand is used for grouting tile joints.
 
-### Building materials
+### Construction Materials
 
-Sand is one of the main building materials. It is included in the main dry mixes, masonry and plaster mixes, concretes.
+Sand is one of the main construction materials. It is included in basic dry mixes, masonry and plaster mixes, and concretes.
 
-### Landscape design
+### Landscaping
 
-Sand is a universal material for landscape design. With its help, you can create cozy corners, zone space, add texture. Sand is used for leveling plots, backfilling roads, sidewalks and площадок, arranging beaches, creating sandboxes.
+Sand is a universal material for landscaping. It can create cozy corners, zone spaces, add texture. Sand is used for leveling plots, backfilling roads, sidewalks, and platforms, arranging beaches, creating sandboxes.
 
-### Abrasive processing
+### Abrasive Blasting
 
-Quartz sand is used in sandblasting units for polishing, removing rust and contaminants from various surfaces.
+Quartz sand is used in sandblasting units for polishing, removing rust, and contaminants from various surfaces.
 
-### Filtration systems
+### Filtration Systems
 
-Household filters for water purification in water pipes and swimming pools and even industrial filtration stations use quartz sand.
+Household water filters for water pipes and pools, and even industrial filtration stations use quartz sand.
       `.trim(),
     },
     tabOptimalModel: {
       title: 'Industrial park',
       text: `
-The concept of **industrial park** is based on the idea of creating a complex of enterprises near the deposit for processing extracted minerals. The area of the land plot of <nobr>187 Ha</nobr> is not occupied by mineral deposits, so it can be used for the implementation of this project.
+The concept of **industrial park** is based on the idea of creating a complex of enterprises for processing mined minerals near the deposit. The land plot area of <nobr>187 ha</nobr> is not occupied by subsoil, so it can be used for the implementation of this project.
 
-Areas of activity of industrial park enterprises:
-- **Mineral enrichment** (preparation of raw materials for the needs of park enterprises and other consumers outside it)
-- **Glass industry** (production of sheet and container glass, glass blocks for walls, float glass, etc.)
-- **Construction industry** (production of aerated concrete, bricks, dry building mixes, building materials, ceramic products)
-- **Electronic industry** (production of components for microelectronics)
-- **Metallurgical industry** (production of molding material for steel, cast iron and non-ferrous casting)
+Activity Spheres of the Industrial Park Enterprises:
+- **Mineral Processing** (preparation of raw materials for the needs of the park's enterprises and beyond)
+- **Glass Industry** (production of sheet and container glass, wall glass blocks, float glass, etc.)
+- **Construction Industry** (production of aerated concrete, bricks, dry construction mixes, building materials, ceramic products)
+- **Electronics Industry** (production of components for microelectronics)
+- **Metallurgical Industry** (production of molding material for steel, cast iron, and non-ferrous casting)
 
-Stages of project implementation:
-- Construction of a mining and processing plant to provide raw materials to park participants (basic production complex of the project)
-- Provision of the park site with the necessary engineering, transport and energy infrastructure
-- Attraction of companies from Russia, CIS, China as park participants by selling land plots for the construction of production facilities
+Project implementation stages:
+- Construction of a mining and processing plant to provide raw materials for the park participants (basic production complex of the project)
+- Provision of the park site with the necessary engineering, transport and energy infrastructure 
+- Attracting companies from Russia, CIS and China as park participants by selling land plots for construction of production facilities
       `.trim(),
     },
   },
   saleConditions: {
-    title: 'Sale conditions',
+    title: 'Sale Conditions',
     tabBaseCost: {
-      title: 'Base cost',
+      title: 'Base Cost',
       text: `
-When determining the cost of a quarry, it is necessary to take into account that this is not quite a typical object. The range of price offers in this niche market can be very significant. Most professional appraisers do not have special knowledge in the field of subsoil use, therefore, in this matter, the assistance of geologists and mining engineers is required.
+It is important to recognize that this quarry is not a typical asset when determining its value. Price ranges in this specialized market can vary considerably. Professional valuators typically require assistance from geologists and mining engineers due to the specialized nature of subsoil use valuation.
 
-When holding a competition or auction for the right to use a subsoil plot, the state usually calculates the amount of the starting payment in accordance with the order of the Ministry of Natural Resources of Russia dated September 30, 2008 N 232 «On approval of the Methodology for determining the starting amount of a one-time payment for subsoil use». The amount of the starting payment is not the market value of the deposit, however, this is the first step to understanding the **minimum valuation of the object**.
+The state, when conducting a tender or auction for the right to use a subsoil plot, usually calculates the starting payment size according to the order of the Ministry of Natural Resources of Russia No. 232 dated September 30, 2008 «On approval of the Methodology for determining the starting size of a one-time payment for subsoil use». The starting payment size is not the market value of the deposit, but it is the first step to understanding the **minimum valuation of the object**.
 
-The starting amount of a one-time payment gives an understanding of how the state assesses subsoil based on the average annual volume of mineral extraction and the average annual amount of mineral extraction tax. Knowing the total volume of balance reserves of a mineral and the average annual volume of extraction, it is possible to calculate the number of years of development of a subsoil plot.
+The starting one-time payment provides an understanding of how the state values the subsoil resources based on the average annual volume of mineral extraction and the average annual amount of mineral extraction tax. Knowing the total volume of balance reserves and the average annual extraction volume, one can calculate the number of years for deposit development.
 
-Based on these methods, specialists of a state institution in the field of geology calculated the starting payment for our quarry (in the event that the object participated in an auction for the right to use subsoil for a period of <nobr>49 years</nobr>). Its amount was <nobr>327 million ₽</nobr>. In order for the transaction to take place, it is also necessary to pay the cost of one auction step. According to the Decree of the Government of the Russian Federation dated <nobr>12/28/2021 No. 2499</nobr>, the size of the auction step for the right to use a subsoil plot is 10% of the minimum (starting) size of a one-time payment for subsoil use. Thus, the base cost of renting a quarry for <nobr>49 years</nobr> will be: <nobr>327 million ₽</nobr> (starting auction price) + <nobr>32.7 million ₽</nobr> (minimum size of one auction step) = <nobr>359.7 million ₽</nobr>.
+Based on these methodologies, specialists from a state geological institution calculated the starting payment for our quarry (if the object were auctioned for the right to use the subsoil for <nobr>49 years</nobr>). It's size amounted to <nobr>327 million ₽</nobr>. In order for the transaction to go through, the cost of one auction step must also be paid. According to the Decree of the Government of the Russian Federation No. 2499 dated December 28, 2021, the size of the auction step for the right to use a subsoil plot is 10% of the minimum (starting) size of the one-time payment. Thus, the base cost of leasing the quarry for <nobr>49 years</nobr> would be: <nobr>327 million ₽</nobr> (starting auction price) + <nobr>32.7 million ₽</nobr> (minimum size of one auction step) = <nobr>359.7 million ₽</nobr>.
 
-In our case, the quarry is privately owned, which is its undoubted advantage. In addition, the quarry owner has the right to extract minerals for <nobr>177 years</nobr>. Thus, we conclude that the **lower threshold of the cost of our deposit in the amount of <nobr>359.7 million ₽</nobr>** is not entirely fair.
+In our case, the quarry is privately owned, which is its undeniable advantage. Furthermore, the quarry owner has the right to extract minerals for <nobr>177 years</nobr>. Therefore, the **minimum value of our deposit is established at <nobr>359.7 million ₽</nobr>**.
       `.trim(),
     },
     tabMarketValue: {
-      title: 'Market value',
+      title: 'Market Value',
       text: `
-Market value is the most probable price at which an object can be sold on the open market in a competitive environment, when the parties to the transaction act reasonably, having all the necessary information, and the transaction price is not affected by any significant circumstances.
+Market value is the most probable price at which an asset can be sold on the open market under competitive conditions, where the parties to the transaction act reasonably, possessing all necessary information, and the transaction price is not affected by any significant circumstances.
 
-The development of our deposit implies the deployment of a diversified business in various market niches. The combination of such characteristics as convenient location (1), exceptional quality of minerals (2), huge volume of reserves (3), availability of a long-term license (4), favorable extraction conditions (5), availability of vast lands for the construction of production complexes near the quarry (6), technical possibility of supplying the enterprise with electricity, gas and water (7) – strongly distinguish the object against the background of most mining enterprises in Russia, narrowly focused primarily on the sale of sand for the construction industry.
+The development of our deposit implies deploying a multi-profile business in various market niches. The combined advantages of convenient location (1), exceptional mineral quality (2), huge volume of reserves (3), long-term license (4), favorable extraction conditions (5), availability of extensive land for constructing production complexes near the quarry (6), technical capability of supplying the enterprise with electricity, gas and water (7) - all that significantly distinguish the object from the majority of mining enterprises in Russia, which are narrowly focused primarily on selling sand for the construction industry.
 
-When determining the market value, we propose to focus on the price of similar objects, information about the sale of which is published on various Internet resources. But the problem is that it is difficult to find an object with a similar area, volume of reserves, logistics and other factors.
+When determining the market value, we suggest to be guided by the price of similar objects, information about the sale of which is published on various Internet resources. But the problem is that finding an object with analogous area, reserves volume, logistics, and other factors is difficult.
 
-We analyzed ALL sand quarries for sale in Russia, but could not find a comparable analogue to our offer, which would simultaneously have all of the above advantages. Nevertheless, we have identified some trends in the pricing of deposits, which we propose to familiarize ourselves with in the next section.
+We have analysed ALL offers for the sale of sand quarries in the Russian Federation. However, we could not find a similar analogue to our quarry. Nevertheless, we have found some tendencies in field pricing, which we propose you to review in the next section.
       `.trim(),
     },
     tabQuarriesForSale: {
-      title: 'Quarries for sale',
+      title: 'Other Quarries for Sale',
       text1: `
-We present a selection of sand quarries of the Russian Federation that are currently publicly for sale. Special attention was paid to deposits located near large cities, having reserves of high-quality non-waterlogged sand, which can be extracted by open pit mining. Attention was paid to the availability of a license and the legal status of land offered for sale of natural objects. Based on the information received, calculations of the average cost of <nobr>1 m³</nobr> of sand in the subsoil were made.
+We present a selection of sand quarries currently available for public sale in the Russian Federation. We mainly focused on deposits near major cities, possessing reserves of high-quality non-waterlogged sand suitable for open-pit mining. Our attention was focused on licence availability and legal status of the lands. Based on the obtained data, we have made calculations of the average cost per m³ of sand in the subsurface.
       `.trim(),
       text2: `
-The price range for deposits is very large. The cheapest <nobr>1 m³</nobr> of sand subsoil was found in the Vladimir region – <nobr>8 ₽</nobr> per <nobr>1 m³</nobr> of 2nd class sand. This is almost 2 times more expensive than the basic assessment of quartz sand of our quarry, which is an order of magnitude more valuable. The most expensive <nobr>1 m³</nobr> from our analysis is located in Mordovia and costs a record <nobr>145 ₽</nobr> per sand subsoil of the same 2nd class.
+The variation in field prices is significant. The cheapest m³ of sand resources found was in the Vladimir Oblast – <nobr>8 ₽</nobr> per m³ of 2nd class sand. This is almost twice the base valuation of our quarry's quartz sand. The most expensive m³ from our analysis is in Mordovia and costs a record <nobr>145 ₽</nobr> per subsoil of sand of the same 2nd class.
 
-There are very few quarries with quartz sand, the use of which is much wider than the «construction grade», currently on sale. About a dozen quartz quarries sold over the past 3 years have been found, which confirms the demand for this type of natural resources. The largest quartz sand deposit in public sale was found in the Voronezh region - reserves of <nobr>7 million m³</nobr> (<nobr>11 million tons</nobr>), the land plot is leased, there is a license for exploration and extraction of subsoil for <nobr>16 years</nobr>, the cost of the object – <nobr>300 million ₽</nobr> (average price <nobr>1 m³</nobr> – <nobr>42.85</nobr>).
+Quartz sand quarries, whose usage range are broader than «construction grade», are very few in current market. But we also discovered about a dozen quartz quarries that have been sold over the past 3 years, which confirms that there is a strong demand for this type of natural resource. The largest publicly sold quartz sand deposit was found in the Voronezh Oblast - reserves of <nobr>7 million m³</nobr> (<nobr>11 million tonnes</nobr>), land plot is leased, license for exploration and extraction for <nobr>16 years</nobr>, object cost – <nobr>300 million ₽</nobr> (average price per m³ – 42.85 ₽).
 
-As a result of the analysis, we could not identify subsoil objects for any objective comparison with our offer – neither in terms of volume and quality of reserves, nor in terms of deposit cost, nor in terms of other related conditions.
+As a result of the analysis, we could not identify subsoil objects for any objective comparison with our offer – neither by volume and quality of reserves, nor by deposit cost, nor by other related terms.
 
-**Conclusions based on the analysis of the market for the sale of sand deposits**:
-- The average cost of sand subsoil in the Russian Federation is <nobr>39.21 ₽</nobr> per <nobr>1 m³</nobr> (based on processing data from all offers for sand quarries for sale)
-- The larger the reserves of the quarry, the cheaper the average price of <nobr>1 m³</nobr> (the law of the wholesale market applies)
+Conclusions based on our analysis of the sand quarries sales market:
+- The average cost of sand resources in the Russian Federation is <nobr>39.21 ₽</nobr> per <nobr>1 m³</nobr> (based on processing data from all other offers for sand quarries currently on sale)
+- The larger the quarry reserves, the cheaper the average price per m³ (the law of the wholesale market applies)
 - The price range for quartz sand in the subsoil varies from <nobr>18.63 ₽</nobr> to <nobr>42.85 ₽</nobr> per <nobr>1 m³</nobr>
-- There are no quartz sand quarries on the market that could be compared with our offer (in terms of the amount of reserves and quality of sand, as well as a combination of other criteria)
-- The cost of most offers is not sufficiently justified and is spontaneous in nature
+- There are no quartz sand quarries on the market that can be compared to our offer (in terms of quantity of reserves and quality of sand, as well as a combination of other criteria)
+- The pricing of most market offers lacks clear justification and appears arbitrary
       `.trim(),
       tableHeadings: [
         'Location',
         'Reserves<br>(million m³)',
-        'Sand<br>quality',
-        'Site<br>status',
-        'License',
+        'Sand quality',
+        'Land plot<br>legal status',
+        'Licence',
         'Price<br>(million ₽)',
         '₽ per m³<br>of sand',
       ],
@@ -331,7 +330,7 @@ As a result of the analysis, we could not identify subsoil objects for any objec
         location: 'Kaluga region',
         reserves: 0.2,
         sandQuality: 'Construction',
-        siteStatus: 'Property',
+        siteStatus: 'Ownership',
         hasLicense: 'Yes',
         quarryPriceMlnRub: 25.0,
         pricePerM3Rub: 125.0,
@@ -346,7 +345,7 @@ As a result of the analysis, we could not identify subsoil objects for any objec
         pricePerM3Rub: 30.58,
         link: 'https://business-asset.com/ru/tulskaya-oblast/tula/prodazha-biznesa/ru093929/',
       }, {
-        location: 'Krasnodar Territory',
+        location: 'Krasnodar territory',
         reserves: 0.44,
         sandQuality: 'Construction',
         siteStatus: 'No information',
@@ -367,7 +366,7 @@ As a result of the analysis, we could not identify subsoil objects for any objec
         location: 'Kaluga region',
         reserves: 3.1,
         sandQuality: 'Construction',
-        siteStatus: 'Property',
+        siteStatus: 'Ownership',
         hasLicense: 'Yes',
         quarryPriceMlnRub: 32.0,
         pricePerM3Rub: 10.32,
@@ -382,7 +381,7 @@ As a result of the analysis, we could not identify subsoil objects for any objec
         pricePerM3Rub: 17.77,
         link: 'https://business-asset.com/ru/ryazanskaya-oblast/dubrovichi/prodazha-biznesa/ru242812/',
       }, {
-        location: 'Komi Republic',
+        location: 'Republic of Komi',
         reserves: 1.657,
         sandQuality: 'Construction',
         siteStatus: 'No information',
@@ -412,13 +411,13 @@ As a result of the analysis, we could not identify subsoil objects for any objec
         location: 'Ulyanovsk region',
         reserves: 2.0,
         sandQuality: 'Construction',
-        siteStatus: 'Property',
+        siteStatus: 'Ownership',
         hasLicense: 'Yes',
         quarryPriceMlnRub: 41.0,
         pricePerM3Rub: 20.5,
         link: 'https://business-asset.com/ru/ulyanovskaya-oblast/ulyanovsk/prodazha-biznesa/ru192306/',
       }, {
-        location: 'Stavropol Territory',
+        location: 'Stavropol territory',
         reserves: 2.2,
         sandQuality: '**Quartz**',
         siteStatus: 'No information',
@@ -448,22 +447,22 @@ As a result of the analysis, we could not identify subsoil objects for any objec
         location: 'Rostov region',
         reserves: 0.8,
         sandQuality: 'Construction',
-        siteStatus: 'Property',
+        siteStatus: 'Ownership',
         hasLicense: 'Yes',
         quarryPriceMlnRub: 80.0,
         pricePerM3Rub: 101.0,
         link: 'https://www.avito.ru/samarskoe/gotoviy_biznes/peschanyy_karer_4173815214?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ2OXg4QjQxN2ZiVjJTVWRIIjt9FRBShj8AAAA',
       }, {
-        location: 'Orlov region',
+        location: 'Oryol region',
         reserves: 3.84,
         sandQuality: 'Construction',
-        siteStatus: 'Property',
+        siteStatus: 'Ownership',
         hasLicense: 'Yes',
         quarryPriceMlnRub: 86.0,
         pricePerM3Rub: 22.39,
         link: 'https://business-asset.com/ru/orlovskaya-oblast/orel/prodazha-biznesa/ru467175/',
       }, {
-        location: 'Khabarovsk Territory',
+        location: 'Khabarovsk territory',
         reserves: 1.2,
         sandQuality: 'Construction',
         siteStatus: 'No information',
@@ -493,7 +492,7 @@ As a result of the analysis, we could not identify subsoil objects for any objec
         location: 'Kaluga region',
         reserves: 2.76,
         sandQuality: 'Construction',
-        siteStatus: 'Property',
+        siteStatus: 'Ownership',
         hasLicense: 'Yes',
         quarryPriceMlnRub: 110.0,
         pricePerM3Rub: 39.86,
@@ -502,16 +501,16 @@ As a result of the analysis, we could not identify subsoil objects for any objec
         location: 'Vladimir region',
         reserves: 5.0,
         sandQuality: 'Construction',
-        siteStatus: 'Property',
+        siteStatus: 'Ownership',
         hasLicense: 'Yes',
         quarryPriceMlnRub: 111.0,
         pricePerM3Rub: 22.2,
         link: 'https://business-asset.com/ru/vladimirskaya-oblast/aleksandrov/prodazha-biznesa/ru020344/',
       }, {
-        location: 'Krasnoyarsk Territory',
+        location: 'Krasnoyarsk territory',
         reserves: 6.2,
         sandQuality: '**Quartz<br> with impurities**',
-        siteStatus: 'Property',
+        siteStatus: 'Ownership',
         hasLicense: 'No',
         quarryPriceMlnRub: 136.0,
         pricePerM3Rub: 21.93,
@@ -520,7 +519,7 @@ As a result of the analysis, we could not identify subsoil objects for any objec
         location: 'Vladimir region',
         reserves: 7.948,
         sandQuality: 'Construction',
-        siteStatus: 'Property',
+        siteStatus: 'Ownership',
         hasLicense: 'Yes',
         quarryPriceMlnRub: 186.0,
         pricePerM3Rub: 23.4,
@@ -529,7 +528,7 @@ As a result of the analysis, we could not identify subsoil objects for any objec
         location: 'Tver region',
         reserves: 15.0,
         sandQuality: 'Construction',
-        siteStatus: 'Property',
+        siteStatus: 'Ownership',
         hasLicense: 'No',
         quarryPriceMlnRub: 200.0,
         pricePerM3Rub: 13.3,
@@ -544,10 +543,10 @@ As a result of the analysis, we could not identify subsoil objects for any objec
         pricePerM3Rub: 18.57,
         link: 'https://business-asset.com/ru/kaluzhskaya-oblast/kaluga/prodazha-biznesa/ru179844/',
       }, {
-        location: 'Krasnodar Territory',
+        location: 'Krasnodar territory',
         reserves: 7.0,
         sandQuality: 'Construction',
-        siteStatus: 'Property',
+        siteStatus: 'Ownership',
         hasLicense: 'Yes',
         quarryPriceMlnRub: 357.0,
         pricePerM3Rub: 51.0,
@@ -562,7 +561,7 @@ As a result of the analysis, we could not identify subsoil objects for any objec
         pricePerM3Rub: 42.85,
         link: 'https://tv-gubernia.ru/novosti/obwestvo/v-voronezhskoj-oblasti-vystavili-na-prodazhu-karer-kvarcevyh-peskov-za-300-mln-rublej/',
       }, {
-        location: 'Mari El Republic',
+        location: 'Republic of Mari El',
         reserves: 17.9,
         sandQuality: 'Construction',
         siteStatus: 'No information',
@@ -582,31 +581,31 @@ As a result of the analysis, we could not identify subsoil objects for any objec
       }],
     },
     tabOurConditions: {
-      title: 'Our conditions',
+      title: 'Our Conditions',
       text: `
-**Cost of mineral reserves in the subsoil of our quarry (excluding operating expenses for their extraction and processing)**:
-- Extractable reserves of the deposit in tons = <nobr>81,586,563 m³</nobr> (amount of confirmed reserves) − 10% (mineral extraction losses) = <nobr>73,427,906.7 m³</nobr> (amount of extractable reserves) ÷ <nobr>0.62</nobr> = <nobr>118,432,107 t</nobr> (extractable reserves in tons)
-- Average cost of basic quality construction sand = <nobr>380 ₽/t</nobr>
-- Average cost of quartz («glass») sand = <nobr>2,500 ₽/t</nobr>
-- Fair price of quartz sand for participants of the «industrial park» project = <nobr>1,000 ₽/t</nobr>
+**The cost of mineral reserves in the subsoil of our quarry (excluding operating costs of extraction and processing)**:
+- Extractable reserves in tonnes = <nobr>81,586,563 m³</nobr> (confirmed reserves) − 10% (losses during mineral extraction) = <nobr>73,427,906.7 m³</nobr> (amount of extractable reserves) / 0.62 = <nobr>118,432,107 tonnes</nobr> (extractable reserves in tonnes).
+- Average cost of basic quality construction sand = <nobr>380 ₽/tonne</nobr>
+- Average cost of quartz («glass») sand = <nobr>2,500 ₽/tonne</nobr>
+- Fair price of quartz sand for participants of the «industrial park» project = <nobr>1,000 ₽/tonne</nobr>
 
-Thus, the types of activity of a mining enterprise can greatly affect the final cost of sand sales. If the quarry is used for a narrow profile to supply counterparties in the construction industry, reserves are estimated at <nobr>45 billion ₽</nobr> (<nobr>118,432,107 t</nobr> × <nobr>380 ₽</nobr>). If an industrial park (or construction of own production facilities) is developed on the basis of the deposit, the cost of reserves will be <nobr>from 120 billion ₽</nobr> (<nobr>118,432,107 t</nobr> × <nobr>1000 ₽</nobr>) <nobr>to 300 billion ₽</nobr> (<nobr>118,432,107 t</nobr> × <nobr>2,500 ₽</nobr>).
+Thus, the types of mining activities can significantly impact the final selling price of the sand. If the quarry is used narrowly for supplying construction industry counterparties, the reserves are valued at <nobr>45 billion ₽</nobr> (<nobr>118,432,107 t</nobr> × <nobr>380 ₽</nobr>). If an industrial park is to be developed on the territory of the deposit (or own production facilities are to be built), the value of reserves will be as follows: <nobr>120 billion ₽</nobr> (<nobr>118,432,107 tonnes</nobr> × RUB 1000) <nobr>to RUB 300 billion</nobr> (<nobr>118,432,107 tonnes</nobr> × ₽ 2500).
 
-**Our quarry valuation**
+**Our Quarry Valuation**
 
-Taking into account the trend of market depreciation of the deposit cost relative to the size of its reserves (the larger the object, the cheaper the base cost of <nobr>1 m³</nobr> of minerals), we consider the most fair valuation of the object offered for purchase in the region of <nobr>6.5 ₽</nobr> per <nobr>1 m³</nobr>, and the total cost of the quarry in the region of <nobr>530 million ₽</nobr> (<nobr>81,586,563 m³</nobr> × <nobr>6.5 ₽</nobr>). It should be taken into account that the cheapest cubic meter of fossil sand (not quartz, but 2nd class) in the Russian market is <nobr>8 ₽</nobr> per <nobr>1 m³</nobr> (see table).
+Considering the market trend of decreasing deposit value relative to its reserve size (the larger the object, the cheaper the base cost per <nobr>1 m³</nobr> of minerals), we believe a fair valuation for this property is approximately <nobr>6.5 ₽</nobr> per <nobr>1 m³</nobr>, and the total quarry cost around <nobr>530 million ₽</nobr> (<nobr>81,586,563 m³</nobr> × <nobr>6.5 ₽</nobr>). Note that the cheapest cubic meter of extracted sand (not quartz, but 2nd class) on the Russian Federation market is <nobr>8 ₽</nobr> per <nobr>1 m³</nobr> (refer to the table).
 
-However, taking into account the fact that our deposit is very large (there are no analogues in the market), and there is also an interest in the rapid sale of the object, we have formed a special price offer, calculated by the formula: basic state valuation of the object + 5%.
+However, considering that our deposit is very large (and has no equivalent on the market), also we are interested in a quick sale of the property, and have formed a special price offer calculated based on the state valuation of the object + 5%.
 
-**Total selling price** of the deposit amounted to:  
-<nobr>359.7 million ₽</nobr> + 5% = <nobr>377.7 million ₽</nobr>
+**The final selling price** of the deposit is:  
+<nobr>359.7 million ₽</nobr> + 5% = <nobr>377.7 million ₽</nobr>.
 
-**Calculation of the average cost of <nobr>1 m³</nobr>**:  
-<nobr>377,700,000 ₽</nobr> (total cost) ÷ <nobr>81,586,563 m³</nobr> (amount of reserves) = <nobr>4.63 ₽</nobr>
+**Calculation of the average cost per <nobr>1 m³</nobr>**:  
+<nobr>377,700,000 ₽</nobr> (total cost) ÷ <nobr>81,586,563 m³</nobr> (quantity of reserves) = <nobr>4.63 ₽</nobr>.
 
-**The benefit is obvious!**
+**Your advantage is obvious!**.
       `.trim(),
     },
   },
-} as const satisfies typeof MessagesRU;
-export default MessagesEN;
+} satisfies typeof MessagesRU;
+export default MessagesEn;
