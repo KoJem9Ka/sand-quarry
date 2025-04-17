@@ -1,32 +1,31 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy NextJS to GitHub Pages
+# Workflow for deploying to GitHub Pages and Production (FTP)
+name: Deployments
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs on pushes targeting the main branch
   push:
     branches: [ 'main' ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
+# Sets the necessary permissions for GitHub Pages deployment
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
-concurrency:
-  group: 'pages'
-  cancel-in-progress: true
-
 jobs:
-  deploy:
+  deploy-gh-pages:
+    name: Deploy to GitHub Pages
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-22.04
+    concurrency:
+      group: 'gh-pages'
+      cancel-in-progress: true
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
       # https://bun.sh/guides/runtime/cicd
@@ -38,13 +37,13 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
-      - name: Build
+      - name: Build for GitHub Pages
         run: bun run build:github
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload artifact
+      - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
@@ -52,3 +51,37 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  deploy-production:
+    name: Deploy to Production (REG.RU FTP)
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: 'production-reg-ru-ftp'
+      cancel-in-progress: true
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # https://bun.sh/guides/runtime/cicd
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.2
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build for Production
+        run: bun run build
+
+      - name: Deploy to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.REG_RU_FTP_SERVER_IP }}
+          username: ${{ secrets.REG_RU_FTP_USERNAME }}
+          password: ${{ secrets.REG_RU_FTP_PASSWORD }}
+          port: ${{ secrets.REG_RU_FTP_PORT }}
+          security: strict
+          local-dir: ./out/
+          server-dir: ./
+          dangerous-clean-slate: true
