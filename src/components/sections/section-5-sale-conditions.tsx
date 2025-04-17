@@ -10,6 +10,9 @@ import { Markdown } from '@/components/ui/Markdown';
 import { Table, TBody, TD, TH, THead, TR } from '@/components/ui/Table';
 import type { QuarryFromTable } from '@/i18n/types';
 import { IconQlementineIconsExternalLink16 } from '@/components/icons/IconQlementineIconsExternalLink16';
+import { useLayoutEffect, useRef } from 'react';
+import { StreamlineOneFingerDragHorizontalSolid } from '@/components/icons/IconStreamlineFingerDragSolid';
+import { clsx } from 'clsx';
 
 
 export function Section5SaleConditions() {
@@ -41,14 +44,40 @@ export function Section5SaleConditions() {
 }
 
 function QuarriesTable() {
+  const dragHintRef = useRef<SVGSVGElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const isDragHintVisibleRef = useRef(true);
   const t = useTranslations('saleConditions.tabQuarriesForSale');
 
   const headings = t.raw('tableHeadings') as string[];
   const quarries = t.raw('table') as QuarryFromTable[];
 
+  useLayoutEffect(() => {
+    if (!dragHintRef.current || !isDragHintVisibleRef.current || !scrollRef.current) return;
+
+    const hideDragHint = () => {
+      isDragHintVisibleRef.current = false;
+      dragHintRef.current?.remove();
+      dragHintRef.current = null;
+    };
+
+    const isHasHorizontalScroll = scrollRef.current.scrollWidth > scrollRef.current.clientWidth;
+    if (!isHasHorizontalScroll) return void (hideDragHint());
+
+    const abortController = new AbortController();
+    scrollRef.current.addEventListener('scroll', hideDragHint, { signal: abortController.signal, once: true });
+    return () => abortController.abort();
+  }, []);
+
   return (
     <div className="not-prose">
-      <div className="relative max-h-[500px] overflow-y-auto rounded-radius-md border-2 border-quarry-brown">
+      <div ref={scrollRef} className="relative max-h-[500px] overflow-y-auto rounded-radius-md border-2 border-quarry-brown">
+        {isDragHintVisibleRef.current ? (
+          <StreamlineOneFingerDragHorizontalSolid ref={dragHintRef} className={clsx(
+            'absolute right-10 bottom-10 size-24 text-quarry-gray',
+            'drop-shadow-sm drop-shadow-quarry-gray',
+          )}/>
+        ) : null}
         <Table className="text-center min-w-max text-base" wrapperClassName="![overflow:unset]" isNoBroder>
           <THead className="sticky top-[0]">
             <TR>
