@@ -27,11 +27,11 @@ export async function generateMetadata({ params }: Readonly<{ params: Promise<{ 
     title: t('title'),
     description: t('description'),
     alternates: {
-      canonical: locale === 'ru' ? config.domain : new URL(locale, config.domain),
+      canonical: locale === 'ru' ? config.domain.href : new URL(locale, config.domain).href,
       languages: {
-        'ru': new URL('ru', config.domain),
-        'en': new URL('en', config.domain),
-        'x-default': new URL('ru', config.domain),
+        'ru': new URL('ru', config.domain).href,
+        'en': new URL('en', config.domain).href,
+        'x-default': new URL('ru', config.domain).href,
       },
     },
     openGraph: {

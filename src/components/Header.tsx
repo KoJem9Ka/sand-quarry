@@ -78,7 +78,7 @@ export function Header() {
             <div className="shrink-0 space-x-3 flex items-center max-lg:mr-3">
               <MessengerButton service="telegram"/>
               <MessengerButton service="whatsapp"/>
-              <Link href="/" locale={locale === 'en' ? 'ru' : 'en'}>
+              <Link className='hover:text-quarry-brown' href="/" locale={locale === 'en' ? 'ru' : 'en'}>
                 {locale === 'en' ? 'RU' : 'EN'}
               </Link>
             </div>

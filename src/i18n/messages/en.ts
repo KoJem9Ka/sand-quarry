@@ -66,7 +66,7 @@ LLC «Peschanuy Karer» holds the following permits:
 ### Location and Logistics
 - The location near major production facilities and central logistics networks in Volgograd Oblast alongside the Southern Federal District creates excellent opportunities for supplying mineral resources (construction and industrial sand), as well as own production (glass, bricks, enriched sand, microelectronics, etc.) to a wide range of counterparties in the region and beyond
 ### Reserves Volume
-- In terms of reserves volume, the deposit is one of the largest in Russia.
+- In terms of reserves volume, the deposit is one of the **largest in Russia**.
 - Total confirmed reserves – <nobr>**81.586 million m³**</nobr> (<nobr>130 million tonnes</nobr>)
 ### Long-Term Business Opportunities
 - The deposit is ideal for establishing a large-scale, long-term business (optimally - an industrial park)
@@ -93,7 +93,7 @@ Total land plot area - <nobr>**432 Ha**</nobr>, including the deposit area - <no
 
 Cadastral number 34:05:020003:287
 
-Transport infrastructure: federal highway R228 «Volgograd-Saratov» (<nobr>13 km</nobr> from the deposit), paved road «Loznoye-Dubovka» (<nobr>0.3 km</nobr>), Dubovka town port (<nobr>17 km</nobr>); «Volzhsky» railway terminal (<nobr>48 km</nobr>)
+Transport infrastructure: **federal highway** R228 «Volgograd-Saratov» (<nobr>13 km</nobr> from the deposit), **paved road** «Loznoye-Dubovka» (<nobr>0.3 km</nobr>), Dubovka **town port** (<nobr>17 km</nobr>); «Volzhsky» **railway terminal** (<nobr>48 km</nobr>)
       `.trim(),
     },
     tabGeology: {
@@ -184,8 +184,8 @@ Start of extraction can begin **in the first half of <nobr>2026</nobr>**
     tabInitialData: {
       title: 'General information',
       text: `
-- Total land plot area - <nobr>432 Ha</nobr>, including the deposit area - <nobr>245 Ha</nobr>
-- The available <nobr>187 Ha</nobr> of free territory can be effectively utilized during quarry resource extraction, as well as for the construction of sand processing enterprises in proximity to the deposit
+- Total land plot area - <nobr>**432 Ha**</nobr>, including the deposit area - <nobr>**245 Ha**</nobr>
+- The available <nobr>**187 Ha**</nobr> of free territory can be effectively utilized during quarry resource extraction, as well as for the construction of sand processing enterprises in proximity to the deposit
 - The high productivity of the quarry allows servicing several enterprises of different profiles simultaneously on the adjacent territory, which will yield the maximum return on investment
 - It is technically possible to bring electricity, gas and water to the plot
       `.trim(),
@@ -297,9 +297,9 @@ We present a selection of sand quarries currently available for public sale in t
       text2: `
 The variation in field prices is significant. The cheapest m³ of sand resources found was in the Chelyabinsk region - <nobr>7.28 ₽</nobr> per m³ of sand used exclusively for construction needs. The most expensive m³ from our analysis is in Mordovia and costs a record <nobr>145 ₽</nobr> per subsoil of sand of the same quality.
 
-There are very few quarries with «glass grade» quartz sand in the current sale. The largest deposit with reserves of more than <nobr>100 tons</nobr> (quartz sand reserves of <nobr>50 tons</nobr>) was sold in the Lipetsk region. The starting price of the facility was about <nobr>1.096 billion ₽</nobr> (including some buildings and machinery). The seller claimed that about <nobr>450 million ₽.</nobr> Accordingly, the price of the quarry itself in the price structure of the enterprise amounted to about <nobr>646 million ₽.</nobr>
+There are very few quarries with «glass grade» quartz sand in the current sale. The largest deposit with reserves of more than <nobr>100 million tons</nobr> (quartz sand reserves of <nobr>50 million tons</nobr>) was sold in the Lipetsk region. The starting price of the facility was about <nobr>1.096 billion ₽</nobr> (including some buildings and machinery). The seller claimed that about <nobr>450 million ₽.</nobr> Accordingly, the price of the quarry itself in the price structure of the enterprise amounted to about <nobr>646 million ₽.</nobr>
 
-Conclusions based on our analysis of the sand quarries sales market:
+**Conclusions based on our analysis of the sand quarries sales market**:
 - The average cost of subsoil sand of «construction grade» is <nobr>40.3 ₽</nobr> per <nobr>1 m³,</nobr> «glass grade» - <nobr>42.3 ₽</nobr> per <nobr>1 m³</nobr> (based on the processing of all public data on sales of quarries in the present and pastime in the Russian Federation)
 - The cost of a deposit is greatly influenced by its transportation accessibility, as well as the size of mineral reserves - the larger the reserves of a quarry, the cheaper the average price per m³ (the law of the wholesale market applies)
 - The pricing of most market offers lacks clear justification and appears arbitrary
@@ -663,7 +663,7 @@ However, considering that our deposit is very large (and has no equivalent on th
 **Calculation of the average cost per <nobr>1 m³</nobr>**:  
 <nobr>377,700,000 ₽</nobr> (total cost) ÷ <nobr>81,586,563 m³</nobr> (quantity of reserves) = <nobr>**4.63 ₽**</nobr>.
 
-**Your advantage is obvious!**.
+**Your advantage is obvious!**
       `.trim(),
     },
   },
