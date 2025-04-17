@@ -292,17 +292,18 @@ We have analysed ALL offers for the sale of sand quarries in the Russian Federat
     tabQuarriesForSale: {
       title: 'Other Quarries for Sale',
       text1: `
-We present a selection of sand quarries currently available for public sale in the Russian Federation. These are mainly objects with sand of standard «construction grade». There are very few quarries with quartz sand of «glass grade» for sale, so for objectivity of the researched information, the list of quarries includes objects that were previously offered for sale, and most likely, at the moment are sold out. Based on the obtained data, we have made calculations of the average cost per m³ of sand in the subsurface.
+We present a selection of sand quarries in Russia that are currently on public sale. These are mostly sites with standard «construction grade» sand, the use of which is limited to construction industries. There are very few quarries with quartz sand of «glass grade» on sale, so for completeness of information several sold objects are added to the list. Based on the obtained information, calculations of the average cost per m³ of sand in the subsoil are made.
       `.trim(),
       text2: `
-The variation in field prices is significant. The cheapest m³ of sand resources found was in the Chelyabinsk region - <nobr>7.28 ₽</nobr> per m³ of sand used exclusively for construction needs. The most expensive m³ from our analysis is in Mordovia and costs a record <nobr>145 ₽</nobr> per subsoil of sand of the same quality.
+The spread of prices for mineral deposits is very large. The cheapest m³ of «construction grade» sand was found in the Chelyabinsk region at the price of <nobr>7.28 ₽</nobr> per m³ of sand, and the most expensive - in the Mordovia Republic at a record price of <nobr>145 ₽ per m³</nobrr>.
 
-There are very few quarries with «glass grade» quartz sand in the current sale. The largest deposit with reserves of more than <nobr>100 million tons</nobr> (quartz sand reserves of <nobr>50 million tons</nobr>) was sold in the Lipetsk region. The starting price of the facility was about <nobr>1.096 billion ₽</nobr> (including some buildings and machinery). The seller claimed that about <nobr>450 million ₽.</nobr> Accordingly, the price of the quarry itself in the price structure of the enterprise amounted to about <nobr>646 million ₽.</nobr>
+The largest «glass grade» quartz sand deposit, which can be compared to our quarry, was sold in the Lipetsk region. The reserves of the deposit are more than <nobr>100 million tons</nobr>. The quarry was sold as part of a mining company, which had machinery and buildings on its balance sheet. The total value of this complex totaled <nobr>1.096 billion ₽</nobr>. The seller invested an amount of <nobr>450 million ₽</nobr> in the development of the enterprise (purchase of machinery, construction of a building, documentation for the deposit). Accordingly, the estimated cost of the quarry in the enterprise price structure amounted to <nobr>646 million ₽</nobr>.
 
-**Conclusions based on our analysis of the sand quarries sales market**:
-- The average cost of subsoil sand of «construction grade» is <nobr>40.3 ₽</nobr> per <nobr>1 m³,</nobr> «glass grade» - <nobr>42.3 ₽</nobr> per <nobr>1 m³</nobr> (based on the processing of all public data on sales of quarries in the present and pastime in the Russian Federation)
-- The cost of a deposit is greatly influenced by its transportation accessibility, as well as the size of mineral reserves - the larger the reserves of a quarry, the cheaper the average price per m³ (the law of the wholesale market applies)
-- The pricing of most market offers lacks clear justification and appears arbitrary
+**Conclusions based on the analysis of the sand deposit sales market**:
+- The average subsoil price of «construction grade» sand is <nobr>40.3 ₽</nobr> per m³, «glass grade» sand is <nobr>42.3 ₽</nobr> per m³ (based on processing all public data on quarry sales in the present and past tense for the Russian Federation)
+- Prices for «construction» and «glass» sands differ insignificantly, while the value of their commercial use is not comparable
+- Quartz sand deposits are very rare (especially for «glass grades»), their demand is growing due to economic development of application areas
+- The larger the reserves of the deposit, the cheaper the cost of extraction m³ of mineral resource
       `.trim(),
       tableHeadings: [
         'Location',
