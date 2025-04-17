@@ -1,3 +1,5 @@
+// noinspection HtmlRequiredTitleElement
+
 import type { Metadata, Viewport } from 'next';
 import type { PropsWithChildren } from 'react';
 import localFont from 'next/font/local';

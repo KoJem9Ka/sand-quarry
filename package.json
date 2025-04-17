@@ -6,15 +6,15 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "rm -rf out && next build",
-    "build:github": "rm -rf out && cross-env BUILD_FOR=github next build",
+    "build:github": "rm -rf out && cross-env NEXT_PUBLIC_BUILD_FOR=github next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "2.2.1",
-    "@maskito/core": "3.7.0",
-    "@maskito/kit": "3.7.0",
-    "@maskito/react": "3.7.0",
+    "@headlessui/react": "2.2.2",
+    "@maskito/core": "3.7.1",
+    "@maskito/kit": "3.7.1",
+    "@maskito/react": "3.7.1",
     "ahooks": "3.8.4",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
@@ -24,7 +24,7 @@
     "embla-carousel-react": "8.6.0",
     "embla-carousel-wheel-gestures": "8.0.2",
     "lodash-es": "4.17.21",
-    "next": "15.3.0",
+    "next": "15.3.1",
     "next-intl": "4.0.2",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -46,7 +46,7 @@
     "cross-env": "7.0.3",
     "cssnano": "7.0.6",
     "eslint": "9.24.0",
-    "eslint-config-next": "15.3.0",
+    "eslint-config-next": "15.3.1",
     "postcss": "8.5.3",
     "postcss-flexbugs-fixes": "5.0.2",
     "postcss-preset-env": "10.1.5",
@@ -54,5 +54,11 @@
     "tailwindcss": "4.1.4",
     "type-fest": "4.40.0",
     "typescript": "5.8.3"
-  }
+  },
+  "browserslist": [
+    "last 10 versions",
+    "not dead",
+    "not ie 11",
+    "ios >= 14"
+  ]
 }

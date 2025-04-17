@@ -1,7 +1,8 @@
-// import { config } from '@/backbone/config';
+import { config } from '@/backbone/config';
 
 
 export function YandexMetrics() {
+  if (!config.isProd || config.isGutHubPages) return null;
   return null;
 
   // return (

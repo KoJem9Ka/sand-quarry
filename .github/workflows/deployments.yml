@@ -14,6 +14,11 @@ permissions:
   pages: write
   id-token: write
 
+# Allow one concurrent deployment
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
 jobs:
   deploy-gh-pages:
     name: Deploy to GitHub Pages
@@ -21,9 +26,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-22.04
-    concurrency:
-      group: 'gh-pages'
-      cancel-in-progress: true
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -55,9 +57,6 @@ jobs:
   deploy-production:
     name: Deploy to Production (REG.RU FTP)
     runs-on: ubuntu-22.04
-    concurrency:
-      group: 'production-reg-ru-ftp'
-      cancel-in-progress: true
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -84,4 +83,4 @@ jobs:
           security: strict
           local-dir: ./out/
           server-dir: ./
-          dangerous-clean-slate: true
+#          dangerous-clean-slate: true
