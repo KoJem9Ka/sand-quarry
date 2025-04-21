@@ -137,7 +137,7 @@ Transport infrastructure: **federal highway** R228 «Volgograd-Saratov» (<nobr>
       title: 'Reserves',
       text: `
 ### Deposit Reserves Calculation
-- Total geological reserves of the deposit amount to <nobr>81.586 million m³</nobr> (approximately <nobr>130 million tonnes</nobr>), including category C1 – <nobr>24.077 million m³</nobr> (<nobr>40 million tonnes</nobr>), category C2 – <nobr>57.508 million m³</nobr> (<nobr>90 million tonnes</nobr>)
+- Total geological reserves of the deposit amount to <nobr>81.586 million m³</nobr> <nobr>(130 million tonnes),</nobr> including category C1 – <nobr>24.077 million m³</nobr> (<nobr>40 million tonnes</nobr>), category C2 – <nobr>57.508 million m³</nobr> (<nobr>90 million tonnes</nobr>)
 - The reserves calculation was performed using the geological block method with a high reliability
 - The provided information meets the requirements set forth in the Classification of Reserves of Deposits and Prospective Resources of Solid Minerals, approved by order of the Ministry of Natural Resources of Russia No. 278 dated 11.12.2006
 - The completed studies have adequately examined the geological structure, morphology of the productive stratum, and it's bedding conditions
