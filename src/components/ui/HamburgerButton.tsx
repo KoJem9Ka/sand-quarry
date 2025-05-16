@@ -1,6 +1,4 @@
-'use client';
-
-import { ComponentPropsWithoutRef, forwardRef, useMemo, useReducer, memo, useRef } from 'react';
+import { ComponentPropsWithoutRef, forwardRef, memo } from 'react';
 import { cn } from '@/utils/cn';
 
 
@@ -9,20 +7,7 @@ type HamburgerButtonProps = {
 } & ComponentPropsWithoutRef<'button'>;
 
 export const HamburgerButton = memo(forwardRef<HTMLButtonElement, HamburgerButtonProps>(({ isOpen = false, className, ...props }, ref) => {
-  const timeoutRef = useRef<ReturnType<typeof setTimeout>>(undefined);
-  const [, forceUpdate] = useReducer((x: boolean) => !x, true);
-  const isOpenChangedAt = useMemo(() => {
-    clearTimeout(timeoutRef.current);
-    timeoutRef.current = setTimeout(forceUpdate, ANIMATION_DURATION);
-    return Date.now();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isOpen]);
-
-  const lineClassName = 'rounded-full h-[2px] w-full bg-current' + (
-    Date.now() - isOpenChangedAt < ANIMATION_DURATION
-      ? ' transition-all duration-500'
-      : ''
-  );
+  const lineClassName = 'rounded-full h-[2px] w-full bg-current transition-all duration-500';
 
   return (
     <button className={cn(
@@ -36,7 +21,5 @@ export const HamburgerButton = memo(forwardRef<HTMLButtonElement, HamburgerButto
     </button>
   );
 }));
-
-const ANIMATION_DURATION = 500;
 
 HamburgerButton.displayName = 'HamburgerButton';

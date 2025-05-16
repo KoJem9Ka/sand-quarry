@@ -30,6 +30,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # https://nextjs.org/docs/app/guides/ci-build-caching#github-actions
+      # https://github.com/actions/cache/blob/main/examples.md#bun
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.bun/install/cache
+            ${{ github.workspace }}/.next/cache
+          key: ${{ runner.os }}-nextjs-bun-ghpages-${{ hashFiles('**/bun.lock') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-bun-ghpages-${{ hashFiles('**/bun.lock') }}-
+
       # https://bun.sh/guides/runtime/cicd
       - name: Install Bun
         uses: oven-sh/setup-bun@v2
@@ -61,6 +72,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # https://nextjs.org/docs/app/guides/ci-build-caching#github-actions
+      # https://github.com/actions/cache/blob/main/examples.md#bun
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.bun/install/cache
+            ${{ github.workspace }}/.next/cache
+          key: ${{ runner.os }}-nextjs-bun-regru-${{ hashFiles('**/bun.lock') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-bun-regru-${{ hashFiles('**/bun.lock') }}-
+
       # https://bun.sh/guides/runtime/cicd
       - name: Install Bun
         uses: oven-sh/setup-bun@v2
@@ -83,4 +105,3 @@ jobs:
           security: strict
           local-dir: ./out/
           server-dir: ./
-#          dangerous-clean-slate: true

@@ -1,12 +1,14 @@
 'use client';
 
-import { type ComponentProps, type ReactNode, createContext, useContext, useState, useEffect, Children, cloneElement, isValidElement, useMemo, useRef, useReducer, useCallback } from 'react';
-import { Transition } from '@headlessui/react';
+import { Children, cloneElement, type ComponentProps, createContext, isValidElement, type ReactNode, useCallback, useContext, useEffect, useId, useMemo, useReducer, useRef, useState } from 'react';
 import type { RequireOneOrNone } from 'type-fest';
 import { waitScrollEnd } from '@/utils/wait-scroll-end';
+import { useAnimation } from '@/hooks/useAnimation';
 
 
 type TabsContext = {
+  tabsId: string;
+
   tabsCount: number;
   setTabsCount: (count: number) => void;
 
@@ -35,6 +37,7 @@ export function Tabs({
   scrollUpTargetSelector: string,
   scrollUpTargetId: string,
 }>) {
+  const tabsId = `Tabs-${useId()}`;
   const ref = useRef<HTMLDivElement>(null);
   const [tabsCount, setTabsCount] = useState(0);
   const [[currentTabIndex, isMovingRightToLeft, isMovingLeftToRight], _setCurrentTabIndex] = useReducer((prev, next: number) => {
@@ -45,6 +48,7 @@ export function Tabs({
   const setCurrentTabIndex = useCallback(async (index: number) => {
     let next = index % tabsCount;
     if (next < 0) next += tabsCount;
+    if (tabsCount === 0) next = 0; // Handle case where tabsCount might be 0 initially
 
     const targetBySelector = scrollUpTargetSelector ? document.querySelector<HTMLElement>(scrollUpTargetSelector) : undefined;
     const targetById = scrollUpTargetId ? document.getElementById(scrollUpTargetId) : undefined;
@@ -62,6 +66,7 @@ export function Tabs({
   }, [tabsCount, scrollUpTargetSelector, scrollUpTargetId, scrollUpTarget, onTabChange, scrollUpFn]);
 
   const tabsContext: TabsContext = {
+    tabsId,
     tabsCount,
     setTabsCount,
     currentTabIndex,
@@ -86,21 +91,27 @@ export function Tabs({
 export function TabList({ children: childrenRaw, ...props }: ComponentProps<'div'>) {
   const children = useMemo(() => childrenInsertIndex(childrenRaw), [childrenRaw]);
 
-  return (
-    <div {...props}>{children}</div>
-  );
+  return <div role='tablist' {...props}>{children}</div>;
 }
 
 export function Tab(propsRaw: Omit<ComponentProps<'button'>, 'onClick'>) {
   const { index, ...props } = propsRaw as typeof propsRaw & { index: number };
-  const { currentTabIndex, setCurrentTabIndex } = useTabsContext();
+  const { tabsId, currentTabIndex, setCurrentTabIndex } = useTabsContext();
+  const isSelected = currentTabIndex === index;
 
   const onClick = () => setCurrentTabIndex(index);
 
   return (
     <button
+      // aria
+      role='tab'
+      id={`${tabsId}-tab-${index}`}
+      aria-controls={`${tabsId}-tabpanel-${index}`}
+      aria-selected={isSelected}
+      tabIndex={isSelected ? 0 : -1}
+      // other props
       onClick={onClick}
-      data-selected={currentTabIndex === index ? '' : undefined}
+      data-selected={isSelected ? '' : undefined}
       {...props}
     />
   );
@@ -112,19 +123,29 @@ export function TabContents({ children: childrenRaw, ...props }: ComponentProps<
   useEffect(() => setTabsCount(contentsCount), [contentsCount, setTabsCount]);
   const children = useMemo(() => childrenInsertIndex(childrenRaw), [childrenRaw]);
 
-  return (
-    <div {...props}>{children}</div>
-  );
+  return <div {...props}>{children}</div>;
 }
 
-export function TabContent(propsRaw: ComponentProps<'div'>) {
+export function TabContent({ delay, ...propsRaw }: ComponentProps<'div'> & { delay?: number }) {
   const { index, ...props } = propsRaw as typeof propsRaw & { index: number };
-  const isTabSelected = useTabsContext().currentTabIndex === index;
+  const { tabsId, currentTabIndex } = useTabsContext();
+  const isTabSelected = currentTabIndex === index;
+  const ref = useRef<HTMLDivElement>(null);
+  const animationData = useAnimation({ ref, isVisible: isTabSelected, delay });
 
   return (
-    <Transition show={isTabSelected}>
-      <div {...props} />
-    </Transition>
+    <div
+      // aria
+      role='tabpanel'
+      id={`${tabsId}-tabpanel-${index}`}
+      aria-labelledby={`${tabsId}-tab-${index}`}
+      aria-hidden={!isTabSelected}
+      tabIndex={isTabSelected ? 0 : -1}
+      // other props
+      ref={ref}
+      {...animationData}
+      {...props}
+    />
   );
 }
 
@@ -142,6 +163,7 @@ export function TabsArrow({ direction, isDisableOnEdge, ...props }: Omit<Compone
     <button
       onClick={isDisabled ? undefined : onClick}
       disabled={isDisabled}
+      aria-label={direction === 'left' ? 'Предыдущая вкладка' : 'Следующая вкладка'}
       {...props}
     />
   );
@@ -150,7 +172,7 @@ export function TabsArrow({ direction, isDisableOnEdge, ...props }: Omit<Compone
 
 function childrenInsertIndex(children: ReactNode): ReactNode {
   return Children.map(children, (child, index) => {
-    // @ts-expect-error - FIXME: How to fix?
+    // @ts-expect-error - FIXME: How to fix props types?
     return isValidElement(child) ? cloneElement(child, { ...child.props, index }) : child;
   });
 }

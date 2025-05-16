@@ -5,7 +5,6 @@ import { type ComponentProps, useCallback, useLayoutEffect, useReducer, useRef }
 import { cn } from '@/utils/cn';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { IconArrow, iconArrowCva } from '@/components/icons/IconArrow';
-import { delay } from 'lodash-es';
 
 
 export function Tabs({ children, className, ...props }: ComponentProps<typeof _Tabs>) {
@@ -17,7 +16,7 @@ export function Tabs({ children, className, ...props }: ComponentProps<typeof _T
     if (ref.current.clientHeight > window.innerHeight * 0.75) setIsBiggerThanScreen();
   }, []);
 
-  const onTabChangeWaitAnimation = useCallback(() => void (delay(onTabChangeImmediate, 300)), [onTabChangeImmediate]);
+  const onTabChangeWaitAnimation = useCallback(() => void (setTimeout(onTabChangeImmediate, TAB_TRANSITION_TIME)), [onTabChangeImmediate]);
 
   useLayoutEffect(onTabChangeImmediate, [onTabChangeImmediate]);
 
@@ -93,15 +92,20 @@ export function TabContents({ className, ...props }: ComponentProps<typeof _TabC
   return <_TabContents className={cn('relative', className)} {...props} />;
 }
 
+const TAB_TRANSITION_TIME = 300;
+
 export function TabContent({ className, ...props }: ComponentProps<'div'>) {
   return <_TabContent
+    delay={TAB_TRANSITION_TIME}
     className={cn([
-      'transition-all duration-300 opacity-100 z-0 translate-y-0 space-y-3',
+      'transition-all duration-300 space-y-3',
 
       'data-enter:opacity-0 data-enter:-translate-y-3',
 
-      'data-leave:absolute data-leave:top-0 data-leave:left-0 data-leave:w-full',
+      'data-leave:absolute data-leave:inset-0',
       'data-leave:opacity-0 data-leave:translate-y-6 data-leave:pointer-events-none',
+
+      'data-hidden:hidden',
     ], className)}
     {...props}
   />;
@@ -111,11 +115,19 @@ export function TabsArrows({ isDisableOnEdge, className, ...props }: Omit<Compon
 
   return (
     <div className={cn('flex justify-center gap-3', className)} {...props}>
-      <_TabsArrow className={iconArrowCva({ asButton: true })} direction="left" isDisableOnEdge={isDisableOnEdge}>
-        <IconArrow direction="left"/>
+      <_TabsArrow
+        className={iconArrowCva({ asButton: true })}
+        direction='left'
+        isDisableOnEdge={isDisableOnEdge}
+      >
+        <IconArrow direction='left' />
       </_TabsArrow>
-      <_TabsArrow className={iconArrowCva({ asButton: true })} direction="right" isDisableOnEdge={isDisableOnEdge}>
-        <IconArrow direction="right"/>
+      <_TabsArrow
+        className={iconArrowCva({ asButton: true })}
+        direction='right'
+        isDisableOnEdge={isDisableOnEdge}
+      >
+        <IconArrow direction='right' />
       </_TabsArrow>
     </div>
   );
