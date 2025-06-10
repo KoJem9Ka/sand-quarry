@@ -71,11 +71,11 @@ export function Header() {
               <IconSandQuarryLogo locale={locale} className="h-[36px] w-auto not-group-data-bg:[--icon-stroke:hsla(0,0%,100%,1)]"/>
             </Link>
 
-            <Nav className="max-lg:hidden text-md"/>
+            <Nav className="max-[1120px]:hidden text-md"/>
 
-            <div className="lg:hidden grow"/>
+            <div className="min-[1120px]:hidden grow"/>
 
-            <div className="shrink-0 space-x-3 flex items-center max-lg:mr-3">
+            <div className="shrink-0 space-x-3 flex items-center max-[1120px]:mr-3">
               <MessengerButton service="telegram"/>
               <MessengerButton service="whatsapp"/>
               <Link className='hover:text-quarry-brown' href="/" locale={locale === 'en' ? 'ru' : 'en'}>
@@ -83,14 +83,14 @@ export function Header() {
               </Link>
             </div>
 
-            <HamburgerButton isOpen={isSpreadOpen} ref={hamburgerRef} className="lg:hidden" onClick={onSpreadToggle}/>
+            <HamburgerButton isOpen={isSpreadOpen} ref={hamburgerRef} className="min-[1120px]:hidden" onClick={onSpreadToggle}/>
           </div>
 
           <Transition show={isSpreadOpen}>
             <Nav
               ref={mobileNavRef}
               className={clsx(
-                'lg:hidden flex-col gap-5 items-center px-4 py-space-md overflow-hidden text-2xl',
+                'min-[1120px]:hidden flex-col gap-5 items-center px-4 py-space-md overflow-hidden text-2xl',
                 'transition-all data-[closed]:text-transparent data-[closed]:-translate-y-10 data-[closed]:gap-0 data-[closed]:p-0 data-[closed]:max-h-0 max-h-100',
               )}
             />

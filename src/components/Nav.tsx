@@ -22,6 +22,7 @@ export const Nav = forwardRef(({ className, linkClassName, ...props }: NavProps,
       <a className={_linkClassName} href={`#${HeadingIdEnum.Characteristics}`} onClick={navScroll}>{t('characteristics')}</a>
       <a className={_linkClassName} href={`#${HeadingIdEnum.BusinessModels}`} onClick={navScroll}>{t('businessModels')}</a>
       <a className={_linkClassName} href={`#${HeadingIdEnum.SaleConditions}`} onClick={navScroll}>{t('saleConditions')}</a>
+      <a className={_linkClassName} href={`#${HeadingIdEnum.Articles}`} onClick={navScroll}>{t('articles')}</a>
     </nav>
   );
 });

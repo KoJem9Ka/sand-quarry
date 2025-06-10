@@ -20,7 +20,49 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  deploy-production:
+    name: Deploy to Production (REG.RU FTP)
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # https://nextjs.org/docs/app/guides/ci-build-caching#github-actions
+      # https://github.com/actions/cache/blob/main/examples.md#bun
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.bun/install/cache
+            ${{ github.workspace }}/.next/cache
+          key: ${{ runner.os }}-nextjs-bun-regru-${{ hashFiles('**/bun.lock') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-bun-regru-${{ hashFiles('**/bun.lock') }}-
+
+      # https://bun.sh/guides/runtime/cicd
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.2.13
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build for Production
+        run: bun run build
+
+      - name: Deploy to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.REG_RU_FTP_SERVER_IP }}
+          username: ${{ secrets.REG_RU_FTP_USERNAME }}
+          password: ${{ secrets.REG_RU_FTP_PASSWORD }}
+          port: ${{ secrets.REG_RU_FTP_PORT }}
+          security: strict
+          local-dir: ./out/
+          server-dir: ./
+
   deploy-gh-pages:
+    if: ${{ github.event_name == 'workflow_dispatch' }}
     name: Deploy to GitHub Pages
     environment:
       name: github-pages
@@ -45,7 +87,7 @@ jobs:
       - name: Install Bun
         uses: oven-sh/setup-bun@v2
         with:
-          bun-version: 1.2
+          bun-version: 1.2.13
 
       - name: Install dependencies
         run: bun install --frozen-lockfile
@@ -64,44 +106,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-  deploy-production:
-    name: Deploy to Production (REG.RU FTP)
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      # https://nextjs.org/docs/app/guides/ci-build-caching#github-actions
-      # https://github.com/actions/cache/blob/main/examples.md#bun
-      - uses: actions/cache@v4
-        with:
-          path: |
-            ~/.bun/install/cache
-            ${{ github.workspace }}/.next/cache
-          key: ${{ runner.os }}-nextjs-bun-regru-${{ hashFiles('**/bun.lock') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
-          restore-keys: |
-            ${{ runner.os }}-nextjs-bun-regru-${{ hashFiles('**/bun.lock') }}-
-
-      # https://bun.sh/guides/runtime/cicd
-      - name: Install Bun
-        uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: 1.2
-
-      - name: Install dependencies
-        run: bun install --frozen-lockfile
-
-      - name: Build for Production
-        run: bun run build
-
-      - name: Deploy to FTP server
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: ${{ secrets.REG_RU_FTP_SERVER_IP }}
-          username: ${{ secrets.REG_RU_FTP_USERNAME }}
-          password: ${{ secrets.REG_RU_FTP_PASSWORD }}
-          port: ${{ secrets.REG_RU_FTP_PORT }}
-          security: strict
-          local-dir: ./out/
-          server-dir: ./

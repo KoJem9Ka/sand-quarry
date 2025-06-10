@@ -16,6 +16,7 @@ export const MessagesEn = {
     characteristics: 'Specifications',
     businessModels: 'Business Models',
     saleConditions: 'Sales Terms',
+    articles: 'Articles',
   },
   consultation: {
     buttonShort: 'Contact Us',
@@ -667,6 +668,23 @@ However, considering that our deposit is very large (and has no equivalent on th
 **Your advantage is obvious!**
       `.trim(),
     },
+  },
+  articles: {
+    title: 'Articles',
+    list: [
+      {
+        title: 'Exclusive: Russia’s Largest Quartz Sand Quarry Up for Sale – An Investment Gem?',
+        textStart: 'In the current economic climate, where long-term and low-risk investments in real assets are taking center stage, investing in subsoil resources, especially scarce raw materials, is an extremely promising direction',
+        url: 'https://dzen.ru/a/aB9cMyZRiHl3Tc9X',
+        date: 'May 10, 2025',
+      },
+      {
+        title: 'Invisible Gold: How Ordinary Sand Became a Strategic Resource of the XXI Century and Why It\'s About to Spark a Battle',
+        textStart: 'Previously, the main argument of a reliable company was “refund under the contract.” This is good, but it did not eliminate your risk: you paid an advance and hoped it would be returned in case of failure',
+        url: 'https://dzen.ru/a/aEbe9xKa1FdiDx24',
+        date: 'June 9, 2025',
+      },
+    ],
   },
 } satisfies typeof MessagesRU;
 export default MessagesEn;
