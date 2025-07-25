@@ -20,6 +20,7 @@ const IMAGES: Image[] = [{
 },
   { src: path.join('images', 'articles', '1.png'), sizes: [{ maxWidth: 450 }] },
   { src: path.join('images', 'articles', '2.png'), sizes: [{ maxWidth: 450 }] },
+  { src: path.join('images', 'articles', '3.png'), sizes: [{ maxWidth: 450 }] },
 ];
 
 const projectRoot = fileURLToPath(new URL(path.join('..', '..'), import.meta.url));

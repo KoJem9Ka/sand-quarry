@@ -672,15 +672,20 @@ However, considering that our deposit is very large (and has no equivalent on th
   articles: {
     title: 'Articles',
     list: [{
-      title: 'Exclusive: Russia’s Largest Quartz Sand Quarry Up for Sale – An Investment Gem?',
-      textStart: 'In the current economic climate, where long-term and low-risk investments in real assets are taking center stage, investing in subsoil resources, especially scarce raw materials, is an extremely promising direction',
-      url: 'https://dzen.ru/a/aB9cMyZRiHl3Tc9X',
-      date: 'May 10, 2025',
+      title: 'Business Models of a Unique Quartz Sand Quarry. Annual Revenue of up to 1.6 Billion Rubles',
+      textStart: 'In the world of strategic investments, assets that can not only generate profits but also become the foundation for an entire industrial ecosystem are extremely rare. Today, we are presenting such an object',
+      url: 'https://dzen.ru/a/aIOaBR7b2XJbEHrp',
+      date: 'July 25, 2025',
     }, {
       title: 'Invisible Gold: How Ordinary Sand Became a Strategic Resource of the XXI Century and Why It\'s About to Spark a Battle',
-      textStart: 'Quartz sand is the chameleon of the fossil world. Its value lies in its purity. The higher the SiO₂ content, the wider and more expensive its application',
+      textStart: 'Quartz sand is the chameleon of the fossil world. Its value lies in its purity. The higher the SiO₂ content, the wider and more expensive it\'s application',
       url: 'https://dzen.ru/a/aEbe9xKa1FdiDx24',
       date: 'June 9, 2025',
+    }, {
+      title: 'Exclusive: Russia’s Largest Quartz Sand Quarry Up for Sale – An Investment Gem?',
+      textStart: 'In the current economic climate, where long-term and low-risk investments in real assets are taking center stage, investing in subsoil resources, especially scarce raw materials, is an extremely promising field',
+      url: 'https://dzen.ru/a/aB9cMyZRiHl3Tc9X',
+      date: 'May 10, 2025',
     }],
   },
 } satisfies typeof MessagesRU;

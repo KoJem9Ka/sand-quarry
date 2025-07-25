@@ -18,14 +18,14 @@ export function Section6Articles() {
   return (
     <Container>
       <Title id={HeadingIdEnum.Articles}>{t('title')}</Title>
-      <div className={clsx('grid md:grid-cols-2 ~md:grid-cols-3 gap-3 mt-space-sm', 'lg:w-2/3 lg:mx-auto')}>
+      <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-3 mt-space-sm'>
         {articles.map((article, i) => {
-          // const isLast = i === ARTICLES.length - 1;
+          const isLast = i === articles.length - 1;
           return (
             <a
               className={clsx(
                 'group flex flex-col rounded-radius-md overflow-hidden',
-                // isLast && 'sm:max-md:col-span-full sm:max-md:w-1/2 sm:max-md:mx-auto',
+                isLast && 'sm:max-md:col-span-full sm:max-md:w-1/2 sm:max-md:mx-auto'
               )}
               key={article.url}
               href={article.url}
@@ -58,6 +58,7 @@ export function Section6Articles() {
 }
 
 const IMAGES = [
-  PUBLIC.images.articles.img1,
+  PUBLIC.images.articles.img3,
   PUBLIC.images.articles.img2,
+  PUBLIC.images.articles.img1,
 ];

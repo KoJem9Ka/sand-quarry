@@ -51,6 +51,22 @@ export const PUBLIC = baseUrlDeep({
           "srcSet": "/images/articles/2-450x450.jpg 450w",
           "type": "image/jpeg"
         }
+      },
+      "img3": {
+        "webp": {
+          "src": "/images/articles/3-450x300.webp",
+          "width": 450,
+          "height": 300,
+          "srcSet": "/images/articles/3-450x300.webp 450w",
+          "type": "image/webp"
+        },
+        "jpeg": {
+          "src": "/images/articles/3-450x300.jpg",
+          "width": 450,
+          "height": 300,
+          "srcSet": "/images/articles/3-450x300.jpg 450w",
+          "type": "image/jpeg"
+        }
       }
     }
   }
