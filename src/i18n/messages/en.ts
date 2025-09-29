@@ -657,13 +657,13 @@ Thus, the types of mining activities can significantly impact the final selling 
 
 Considering the market trend of decreasing deposit value relative to its reserve size (the larger the object, the cheaper the base cost per <nobr>1 m³</nobr> of minerals), we believe a fair valuation for this property is approximately <nobr>6.5 ₽</nobr> per <nobr>1 m³</nobr>, and the total quarry cost around <nobr>530 million ₽</nobr> (<nobr>81,586,563 m³</nobr> × <nobr>6.5 ₽</nobr>). Note that the cheapest cubic meter of extracted sand (not quartz, but 2nd class) on the Russian Federation market for «construction grade» is <nobr>7.28 ₽,</nobr> and for «glass grade» is <nobr>17.67 ₽</nobr> (refer to the table).
 
-However, considering that our deposit is very large (and has no equivalent on the market), also we are interested in a quick sale of the property, and have formed a special price offer calculated based on the **state valuation of the object + 5%**.
+However, considering that our deposit is very large (and has no equivalent on the market), also we are interested in a quick sale of the property, and have formed a special price offer calculated based on the **state valuation of the object - 30%**.
 
 **The final selling price** of the deposit is:  
-<nobr>359.7 million ₽</nobr> + 5% = <nobr>**377.7 million ₽**</nobr>.
+<nobr>359.7 million ₽</nobr> - 30% = <nobr>**250 million ₽**</nobr>
 
 **Calculation of the average cost per <nobr>1 m³</nobr>**:  
-<nobr>377,700,000 ₽</nobr> (total cost) ÷ <nobr>81,586,563 m³</nobr> (quantity of reserves) = <nobr>**4.63 ₽**</nobr>.
+<nobr>250,000,000 ₽</nobr> (total cost) ÷ <nobr>81,586,563 m³</nobr> (quantity of reserves) = <nobr>**3 ₽**</nobr>
 
 **Your advantage is obvious!**
       `.trim(),

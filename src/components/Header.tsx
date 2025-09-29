@@ -67,9 +67,9 @@ export function Header() {
       )}>
         <Container>
           <div ref={divInHeaderRef} className="flex gap-3 py-4 justify-between items-center w-full">
-            <Link className="flex items-center text-lg font-bold space-x-1" href="/">
+            <a className="flex items-center text-lg font-bold space-x-1" href={`/${locale}`}>
               <IconSandQuarryLogo locale={locale} className="h-[36px] w-auto not-group-data-bg:[--icon-stroke:hsla(0,0%,100%,1)]"/>
-            </Link>
+            </a>
 
             <Nav className="max-[1120px]:hidden text-md"/>
 
