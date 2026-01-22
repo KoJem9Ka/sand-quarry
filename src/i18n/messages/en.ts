@@ -264,49 +264,8 @@ Project implementation stages:
   },
   saleConditions: {
     title: 'Sale Conditions',
-    tabBaseCost: {
-      title: 'Base Cost',
-      text: `
-It is important to recognize that this quarry is not a typical asset when determining its value. Price ranges in this specialized market can vary considerably. Professional valuators typically require assistance from geologists and mining engineers due to the specialized nature of subsoil use valuation.
-
-The state, when conducting a tender or auction for the right to use a subsoil plot, usually calculates the starting payment size according to the order of the Ministry of Natural Resources of Russia No. 232 dated September 30, 2008 «On approval of the Methodology for determining the starting size of a one-time payment for subsoil use». The starting payment size is not the market value of the deposit, but it is the first step to understanding the **minimum valuation of the object**.
-
-The starting one-time payment provides an understanding of how the state values the subsoil resources based on the average annual volume of mineral extraction and the average annual amount of mineral extraction tax. Knowing the total volume of balance reserves and the average annual extraction volume, one can calculate the number of years for deposit development.
-
-Based on these methodologies, specialists from a state geological institution calculated the starting payment for our quarry (if the object were auctioned for the right to use the subsoil for <nobr>49 years</nobr>). It's size amounted to <nobr>327 million ₽</nobr>. In order for the transaction to go through, the cost of one auction step must also be paid. According to the Decree of the Government of the Russian Federation No. 2499 dated December 28, 2021, the size of the auction step for the right to use a subsoil plot is 10% of the minimum (starting) size of the one-time payment. Thus, the **base cost** of leasing the quarry for <nobr>49 years</nobr> would be: <nobr>327 million ₽</nobr> (starting auction price) + <nobr>32.7 million ₽</nobr> (minimum size of one auction step) = <nobr>**359.7 million ₽**</nobr>.
-
-In our case, the quarry is privately owned, which is its undeniable advantage. Furthermore, the quarry owner has the right to extract minerals for <nobr>177 years</nobr>.
-      `.trim(),
-    },
-    tabMarketValue: {
-      title: 'Market Value',
-      text: `
-Market value is the most probable price at which an asset can be sold on the open market under competitive conditions, where the parties to the transaction act reasonably, possessing all necessary information, and the transaction price is not affected by any significant circumstances.
-
-The development of our deposit implies deploying a multi-profile business in various market niches. The combined advantages of convenient location (1), exceptional mineral quality (2), huge volume of reserves (3), long-term license (4), favorable extraction conditions (5), availability of extensive land for constructing production complexes near the quarry (6), technical capability of supplying the enterprise with electricity, gas and water (7) - all that significantly distinguish the object from the majority of mining enterprises in Russia, which are narrowly focused primarily on selling sand for the construction industry.
-
-When determining the market value, we suggest to be guided by the price of similar objects, information about the sale of which is published on various Internet resources. But the problem is that finding an object with analogous area, reserves volume, logistics, and other factors is difficult.
-
-We have analysed ALL offers for the sale of sand quarries in the Russian Federation. However, we could not find a similar analogue to our quarry. Nevertheless, we have found some tendencies in field pricing, which we propose you to review in the next section.
-      `.trim(),
-    },
-    tabQuarriesForSale: {
-      title: 'Other Quarries for Sale',
-      text1: `
-We present a selection of sand quarries in Russia that are currently on public sale. These are mostly sites with standard «construction grade» sand, the use of which is limited to construction industries. There are very few quarries with quartz sand of «glass grade» on sale, so for completeness of information several sold objects are added to the list. Based on the obtained information, calculations of the average cost per m³ of sand in the subsoil are made.
-      `.trim(),
-      text2: `
-The spread of prices for mineral deposits is very large. The cheapest m³ of «construction grade» sand was found in the Chelyabinsk region at the price of <nobr>7.28 ₽</nobr> per m³ of sand, and the most expensive - in the Mordovia Republic at a record price of <nobr>145 ₽ per m³</nobrr>.
-
-The largest «glass grade» quartz sand deposit, which can be compared to our quarry, was sold in the Lipetsk region. The reserves of the deposit are more than <nobr>100 million tons</nobr>. The quarry was sold as part of a mining company, which had machinery and buildings on its balance sheet. The total value of this complex totaled <nobr>1.096 billion ₽</nobr>. The seller invested an amount of <nobr>450 million ₽</nobr> in the development of the enterprise (purchase of machinery, construction of a building, documentation for the deposit). Accordingly, the estimated cost of the quarry in the enterprise price structure amounted to <nobr>646 million ₽</nobr>.
-
-**Conclusions based on the analysis of the sand deposit sales market**:
-- The average subsoil price of «construction grade» sand is <nobr>40.3 ₽</nobr> per m³, «glass grade» sand is <nobr>42.3 ₽</nobr> per m³ (based on processing all public data on quarry sales in the present and past tense for the Russian Federation)
-- Prices for «construction» and «glass» sands differ insignificantly, while the value of their commercial use is not comparable
-- Quartz sand deposits are very rare (especially for «glass grades»), their demand is growing due to economic development of application areas
-- The larger the reserves of the deposit, the cheaper the cost of extraction m³ of mineral resource
-      `.trim(),
-      tableHeadings: [
+    quarriesTable: {
+      headings: [
         'Location',
         'Reserves<br>(million m³)',
         'Sand quality',
@@ -315,8 +274,8 @@ The largest «glass grade» quartz sand deposit, which can be compared to our qu
         'Price<br>(million ₽)',
         '₽ per m³<br>of sand',
       ],
-      tableRelevantDate: 'Table info relevant as of Apr. 16, 2025',
-      table: [{
+      relevantDate: 'Table info relevant as of Apr. 16, 2025',
+      data: [{
         location: 'Saratov region',
         reserves: 2.23,
         sandQuality: 'Construction',
@@ -642,30 +601,92 @@ The largest «glass grade» quartz sand deposit, which can be compared to our qu
         link: 'https://reab.pro/ru/catalog/business-for-sale/quartz-sand-quarry-tver-region-40',
       }],
     },
-    tabOurConditions: {
-      title: 'Our Conditions',
+    tabMarketPrice: {
+      title: 'Market Price',
+      text1: `
+**How much is the deposit worth: transparent and fair cost calculation**
+
+When valuing a quartz sand deposit, we rely on two maximally objective approaches:
+
+1. **Comparative market analysis** - price calculation through comparison with analogues on the open market.
+2. **State valuation** - calculation of the starting payment according to the methodology of the Ministry of Natural Resources of the Russian Federation for auctions for the right to use subsoil.
+
+We have performed both calculations to offer you not only a justified, but also a uniquely advantageous price.
+
+**Comparative market analysis: why there are no direct analogues**
+
+Market value is the price at which an object can be sold on an open competitive market. However, our deposit stands out from typical offers due to a combination of key advantages:
+
+- Unique quality of quartz («glass») sand
+- Huge confirmed volume of reserves
+- Long-term mining license
+- Availability of extensive land for creating an industrial park
+- Full infrastructure availability (electricity, gas, water)
+
+We have analyzed **ALL sand quarries for sale in Russia**:
+      `.trim(),
+      text2: `
+**Market conclusions:**
+
+- **High price volatility.** The market is volatile, prices often lack clear economic justification.
+- **Average subsoil cost.** According to real transaction data, the weighted average price is:
+    - **40.3 ₽/m³** - for construction grade sands.
+    - **42.3 ₽/m³** - for glass grade sands.
+- **Scale effect.** The larger the deposit, the lower the price per cubic meter. For example, a deposit of <nobr>**60 million m³**</nobr> was sold at a price of <nobr>**≈ 13.2 ₽/m³**</nobr>.
+
+**Conclusion:** There are no direct analogues to our object on the market. Its aggregate value for a complex business is many times higher than that of typical quarries focused only on selling construction sand. The average market benchmark for quartz sands is <nobr>**from 42.3 ₽/m³**</nobr>.
+      `.trim(),
+    },
+    tabStateValuation: {
+      title: 'State Valuation',
       text: `
-**The cost of mineral reserves in the subsoil of our quarry (excluding operating costs of extraction and processing)**:
-- Extractable reserves in tonnes = <nobr>81,586,563 m³</nobr> (confirmed reserves) − 10% (losses during mineral extraction) = <nobr>73,427,906.7 m³</nobr> (amount of extractable reserves) / 0.62 = <nobr>**118,432,107 tonnes**</nobr> (extractable reserves in tonnes).
-- Average cost of basic quality construction sand = <nobr>**380 ₽/tonne**</nobr>
-- Average cost of quartz («glass») sand = <nobr>**2,500 ₽/tonne**</nobr>
-- Fair price of quartz sand for participants of the «industrial park» project = <nobr>**1,000 ₽/tonne**</nobr>
+**State valuation: a methodology of absolute transparency**
 
-Thus, the types of mining activities can significantly impact the final selling price of the sand. If the quarry is used narrowly for supplying construction industry counterparties, the reserves are valued at <nobr>**45 billion ₽**</nobr> (<nobr>118,432,107 t</nobr> × <nobr>380 ₽</nobr>). If an industrial park is to be developed on the territory of the deposit (or own production facilities are to be built), the value of reserves will be as follows: <nobr>**120 billion ₽**</nobr> (<nobr>118,432,107 tonnes</nobr> × 1000 ₽) <nobr>to **300 billion ₽**</nobr> (<nobr>118,432,107 tonnes</nobr> × ₽ 2500).
+The state evaluates subsoil for auctions in accordance with the Order of the Ministry of Natural Resources of Russia dated September 30, 2008 No. 232 «On Approval of the Methodology for Determining the Starting Amount of a One-Time Payment for Subsoil Use». The **starting amount of the one-time payment** is calculated, which is the starting point for determining the minimum cost of the right to use the site for <nobr>**49 years**</nobr>.
 
-**Our Quarry Valuation**
+**Calculation for our deposit (according to the state methodology):**
 
-Considering the market trend of decreasing deposit value relative to its reserve size (the larger the object, the cheaper the base cost per <nobr>1 m³</nobr> of minerals), we believe a fair valuation for this property is approximately <nobr>6.5 ₽</nobr> per <nobr>1 m³</nobr>, and the total quarry cost around <nobr>530 million ₽</nobr> (<nobr>81,586,563 m³</nobr> × <nobr>6.5 ₽</nobr>). Note that the cheapest cubic meter of extracted sand (not quartz, but 2nd class) on the Russian Federation market for «construction grade» is <nobr>7.28 ₽,</nobr> and for «glass grade» is <nobr>17.67 ₽</nobr> (refer to the table).
+1. **Starting payment** (calculated by a state geological institution): <nobr>**327 million ₽**</nobr>.
+2. **Auction step** (mandatory minimum surcharge according to the Decree of the Government of the Russian Federation dated 28.12.2021 No. 2499): **10%** of the starting payment (<nobr>**32.7 million ₽**</nobr>).
+3. **Total base cost of the right of use for <nobr>49 years</nobr>:** <nobr>327 + 32.7 = **359.7 million ₽**</nobr>.
 
-However, considering that our deposit is very large (and has no equivalent on the market), also we are interested in a quick sale of the property, and have formed a special price offer calculated based on the **state valuation of the object - 30%**.
+This is the **official government assessment** of the deposit for lease for <nobr>49 years</nobr>.
+      `.trim(),
+    },
+    tabFinalPrice: {
+      title: 'Final Price',
+      text: `
+**Our unique offer: state valuation, but with decisive advantages**
 
-**The final selling price** of the deposit is:  
-<nobr>359.7 million ₽</nobr> - 30% = <nobr>**250 million ₽**</nobr>
+We set the selling price exactly at the level of the state valuation - <nobr>**359.7 million ₽**</nobr>. However, our offer is radically more profitable than the conditions of any state auction.
 
-**Calculation of the average cost per <nobr>1 m³</nobr>**:  
-<nobr>250,000,000 ₽</nobr> (total cost) ÷ <nobr>81,586,563 m³</nobr> (quantity of reserves) = <nobr>**3 ₽**</nobr>
+| Criterion | **Our Offer** | **Typical State Auction Lot** |
+| --- | --- | --- |
+| **Form of ownership** | **Private Ownership** | **Lease Right** |
+| **Term of use** | **177 years** (mining license validity) | **49 years** (with possibility of extension) |
+| **Final price** | <nobr>**359.7 million ₽**</nobr> - full cost | <nobr>**359.7 million ₽**</nobr> - **lease payment only** |
 
-**Your advantage is obvious!**
+**Main conclusion:** We offer to buy the object into **private ownership forever** at the price that the state requests only for **temporary lease**.
+
+**Why this is a historically profitable price: a visual comparison**
+
+Let's translate our price into understandable metrics and compare with market data.
+
+**Unit cost of our deposit:**
+
+- <nobr>359.7 million ₽</nobr> / <nobr>81,586,563 m³</nobr> <nobr>**≈ 4.4 ₽</nobr> <nobr>per</nobr> <nobr>1 m³**</nobr> of reserves
+
+**Comparison with the market:**
+
+1. **9.6 times cheaper** than the average market cost of quartz sand deposits (<nobr>**42.3 ₽/m³**</nobr>)
+2. **3 times cheaper** than the largest analogue sold at a record low price (<nobr>**13.2 ₽/m³**</nobr>)
+3. **The value of subsoil in isolation from the business model** (potential value of reserves only as raw materials for resale) ranges <nobr>**from 45 to 300 billion ₽**</nobr>. Our price opens up the opportunity to create a business with huge added value.
+
+**Summary: an unprecedented offer**
+
+We performed two independent calculations. Market analysis confirmed the uniqueness and high potential value of the object. State valuation provided a transparent and absolutely fair price benchmark.
+
+**By selling the deposit at the price of the state valuation, but transferring it into private ownership with a license for <nobr>177 years</nobr>, we create an offer that has no analogues on the market.** This is not just a profitable deal - it is an opportunity to obtain a strategic asset at a price that makes investments unprecedentedly effective.
       `.trim(),
     },
   },

@@ -21,22 +21,20 @@ export function Section5SaleConditions() {
   return (
     <Container>
       <Title id={HeadingIdEnum.SaleConditions}>{t('title')}</Title>
-      <Tabs className="mt-space-sm" scrollUpTargetId={HeadingIdEnum.SaleConditions} scrollUpFn={navScroll}>
+      <Tabs className='mt-space-sm' scrollUpTargetId={HeadingIdEnum.SaleConditions} scrollUpFn={navScroll}>
         <TabList>
-          <Tab>{t('tabBaseCost.title')}</Tab>
-          <Tab>{t('tabMarketValue.title')}</Tab>
-          <Tab>{t('tabQuarriesForSale.title')}</Tab>
-          <Tab>{t('tabOurConditions.title')}</Tab>
+          <Tab>{t('tabMarketPrice.title')}</Tab>
+          <Tab>{t('tabStateValuation.title')}</Tab>
+          <Tab>{t('tabFinalPrice.title')}</Tab>
         </TabList>
-        <TabContents className="prose md:prose-lg md:text-justify">
-          <TabContent className="prose-in"><Markdown>{t.raw('tabBaseCost.text')}</Markdown></TabContent>
-          <TabContent className="prose-in"><Markdown>{t.raw('tabMarketValue.text')}</Markdown></TabContent>
-          <TabContent className="prose-in">
-            <Markdown>{t.raw('tabQuarriesForSale.text1')}</Markdown>
-            <QuarriesTable/>
-            <Markdown>{t.raw('tabQuarriesForSale.text2')}</Markdown>
+        <TabContents className='prose md:prose-lg md:text-justify'>
+          <TabContent className='prose-in'>
+            <Markdown>{t.raw('tabMarketPrice.text1')}</Markdown>
+            <QuarriesTable />
+            <Markdown>{t.raw('tabMarketPrice.text2')}</Markdown>
           </TabContent>
-          <TabContent className="prose-in"><Markdown>{t.raw('tabOurConditions.text')}</Markdown></TabContent>
+          <TabContent className='prose-in'><Markdown>{t.raw('tabStateValuation.text')}</Markdown></TabContent>
+          <TabContent className='prose-in'><Markdown>{t.raw('tabFinalPrice.text')}</Markdown></TabContent>
         </TabContents>
       </Tabs>
     </Container>
@@ -47,10 +45,10 @@ function QuarriesTable() {
   const dragHintRef = useRef<SVGSVGElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const isDragHintVisibleRef = useRef(true);
-  const t = useTranslations('saleConditions.tabQuarriesForSale');
+  const t = useTranslations('saleConditions.quarriesTable');
 
-  const headings = t.raw('tableHeadings') as string[];
-  const quarries = t.raw('table') as QuarryFromTable[];
+  const headings = t.raw('headings') as string[];
+  const quarries = t.raw('data') as QuarryFromTable[];
 
   useLayoutEffect(() => {
     if (!dragHintRef.current || !isDragHintVisibleRef.current || !scrollRef.current) return;
@@ -70,28 +68,28 @@ function QuarriesTable() {
   }, []);
 
   return (
-    <div className="not-prose">
-      <div ref={scrollRef} className="relative max-h-[500px] overflow-y-auto rounded-radius-md border-2 border-quarry-brown">
+    <div className='not-prose'>
+      <div ref={scrollRef} className='relative max-h-[500px] overflow-y-auto rounded-radius-md border-2 border-quarry-brown'>
         {isDragHintVisibleRef.current ? (
           <StreamlineOneFingerDragHorizontalSolid ref={dragHintRef} className={clsx(
             'absolute right-10 bottom-10 size-24 text-quarry-gray',
             'drop-shadow-sm drop-shadow-quarry-gray',
-          )}/>
+          )} />
         ) : null}
-        <Table className="text-center min-w-max text-base" wrapperClassName="![overflow:unset]" isNoBroder>
-          <THead className="sticky top-[0]">
+        <Table className='text-center min-w-max text-base' wrapperClassName='![overflow:unset]' isNoBroder>
+          <THead className='sticky top-[0]'>
             <TR>
               {headings.map((heading, idx) => <TH key={idx}><Markdown>{heading}</Markdown></TH>)}
             </TR>
           </THead>
-          <TBody className="[&_tr]:even:bg-black/5">
+          <TBody className='[&_tr]:even:bg-black/5'>
             {quarries.map((quarry, idx) => (
               <TR key={idx}>
                 <TD>
-                  <a className="text-blue-500" target="_blank" rel="noopener noreferrer" href={quarry.link}>
+                  <a className='text-blue-500' target='_blank' rel='noopener noreferrer' href={quarry.link}>
                     {quarry.location}
                     {' '}
-                    <IconQlementineIconsExternalLink16 className="inline"/>
+                    <IconQlementineIconsExternalLink16 className='inline' />
                   </a>
                 </TD>
                 <TD>{quarry.reserves}</TD>
@@ -105,7 +103,7 @@ function QuarriesTable() {
           </TBody>
         </Table>
       </div>
-      <p className="mt-3 text-right text-sm text-black/50">{t('tableRelevantDate')}</p>
+      <p className='mt-3 text-right text-sm text-black/50'>{t('relevantDate')}</p>
     </div>
   );
 }
