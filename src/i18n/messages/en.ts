@@ -620,6 +620,7 @@ Market value is the price at which an object can be sold on an open competitive 
 - Unique quality of quartz («glass») sand
 - Huge confirmed volume of reserves
 - Long-term mining license
+- Accessible logistics for all transport types: road, rail, and water
 - Availability of extensive land for creating an industrial park
 - Full infrastructure availability (electricity, gas, water)
 
