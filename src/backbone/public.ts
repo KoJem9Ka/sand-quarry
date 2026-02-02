@@ -20,51 +20,67 @@ export const PUBLIC = baseUrlDeep({
       }
     },
     "articles": {
-      "img1": {
+      "img0": {
         "webp": {
-          "src": "/images/articles/1-450x300.webp",
-          "width": 450,
-          "height": 300,
-          "srcSet": "/images/articles/1-450x300.webp 450w",
+          "src": "/images/articles/0-594x396.webp",
+          "width": 594,
+          "height": 396,
+          "srcSet": "/images/articles/0-594x396.webp 594w, /images/articles/0-350x233.webp 350w",
           "type": "image/webp"
         },
         "jpeg": {
-          "src": "/images/articles/1-450x300.jpg",
-          "width": 450,
-          "height": 300,
-          "srcSet": "/images/articles/1-450x300.jpg 450w",
+          "src": "/images/articles/0-594x396.jpg",
+          "width": 594,
+          "height": 396,
+          "srcSet": "/images/articles/0-594x396.jpg 594w, /images/articles/0-350x233.jpg 350w",
+          "type": "image/jpeg"
+        }
+      },
+      "img1": {
+        "webp": {
+          "src": "/images/articles/1-594x396.webp",
+          "width": 594,
+          "height": 396,
+          "srcSet": "/images/articles/1-594x396.webp 594w, /images/articles/1-350x233.webp 350w",
+          "type": "image/webp"
+        },
+        "jpeg": {
+          "src": "/images/articles/1-594x396.jpg",
+          "width": 594,
+          "height": 396,
+          "srcSet": "/images/articles/1-594x396.jpg 594w, /images/articles/1-350x233.jpg 350w",
           "type": "image/jpeg"
         }
       },
       "img2": {
         "webp": {
-          "src": "/images/articles/2-450x450.webp",
-          "width": 450,
-          "height": 450,
-          "srcSet": "/images/articles/2-450x450.webp 450w",
+          "src": "/images/articles/2-594x594.webp",
+          "width": 594,
+          "height": 594,
+          "srcSet": "/images/articles/2-594x594.webp 594w, /images/articles/2-350x350.webp 350w",
           "type": "image/webp"
         },
         "jpeg": {
-          "src": "/images/articles/2-450x450.jpg",
-          "width": 450,
-          "height": 450,
-          "srcSet": "/images/articles/2-450x450.jpg 450w",
+          "src": "/images/articles/2-594x594.jpg",
+          "width": 594,
+          "height": 594,
+          "srcSet": "/images/articles/2-594x594.jpg 594w, /images/articles/2-350x350.jpg 350w",
           "type": "image/jpeg"
         }
       },
       "img3": {
         "webp": {
-          "src": "/images/articles/3-450x300.webp",
-          "width": 450,
-          "height": 300,
-          "srcSet": "/images/articles/3-450x300.webp 450w",
+          "src": "/images/articles/3-594x396.webp",
+          "width": 594,
+          "height": 396,
+          "srcSet": "/images/articles/3-594x396.webp 594w, /images/articles/3-350x233.webp 350w",
           "type": "image/webp"
         },
         "jpeg": {
-          "src": "/images/articles/3-450x300.jpg",
-          "width": 450,
-          "height": 300,
-          "srcSet": "/images/articles/3-450x300.jpg 450w",
+          "src": "/images/articles/3-594x396.jpg",
+          "width": 594,
+          "height": 396,
+          "srcSet": "/images/articles/3-594x396.jpg 594w, /images/articles/3-350x233.jpg 350w",
           "type": "image/jpeg"
         }
       }

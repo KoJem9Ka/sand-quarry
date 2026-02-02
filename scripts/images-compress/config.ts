@@ -18,9 +18,10 @@ const IMAGES: Image[] = [{
   sizes: [{ maxWidth: 2560 }, { maxWidth: 1920 }, { maxWidth: 1280 }, { maxWidth: 640 }],
   quality: 70,
 },
-  { src: path.join('images', 'articles', '1.png'), sizes: [{ maxWidth: 450 }] },
-  { src: path.join('images', 'articles', '2.png'), sizes: [{ maxWidth: 450 }] },
-  { src: path.join('images', 'articles', '3.png'), sizes: [{ maxWidth: 450 }] },
+  { src: path.join('images', 'articles', '0.png'), sizes: [{ maxWidth: 594 }, { maxWidth: 350 }] },
+  { src: path.join('images', 'articles', '1.png'), sizes: [{ maxWidth: 594 }, { maxWidth: 350 }] },
+  { src: path.join('images', 'articles', '2.png'), sizes: [{ maxWidth: 594 }, { maxWidth: 350 }] },
+  { src: path.join('images', 'articles', '3.png'), sizes: [{ maxWidth: 594 }, { maxWidth: 350 }] },
 ];
 
 const projectRoot = fileURLToPath(new URL(path.join('..', '..'), import.meta.url));

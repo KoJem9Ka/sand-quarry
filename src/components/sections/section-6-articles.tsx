@@ -18,7 +18,8 @@ export function Section6Articles() {
   return (
     <Container>
       <Title id={HeadingIdEnum.Articles}>{t('title')}</Title>
-      <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-3 mt-space-sm'>
+      {/*<div className='grid sm:grid-cols-2 md:grid-cols-3 gap-3 mt-space-sm'>*/}
+      <div className='grid md:grid-cols-2 ~xl:grid-cols-4 gap-3 mt-space-sm'>
         {articles.map((article, i) => {
           const isLast = i === articles.length - 1;
           return (
@@ -34,7 +35,7 @@ export function Section6Articles() {
             >
               <div className='relative overflow-hidden aspect-video w-full rounded-t-radius-md'>
                 <picture>
-                  <source{...sourceProps(IMAGES[i]!.webp)} sizes='100vw' />
+                  <source{...sourceProps(IMAGES[i]!.webp)} sizes='90vw' />
                   <Img
                     {...imgProps(IMAGES[i]!.jpeg)}
                     alt=''
@@ -61,4 +62,5 @@ const IMAGES = [
   PUBLIC.images.articles.img3,
   PUBLIC.images.articles.img2,
   PUBLIC.images.articles.img1,
+  PUBLIC.images.articles.img0,
 ];

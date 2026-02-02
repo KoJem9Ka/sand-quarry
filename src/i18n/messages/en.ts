@@ -708,6 +708,11 @@ We performed two independent calculations. Market analysis confirmed the uniquen
       textStart: 'In the current economic climate, where long-term and low-risk investments in real assets are taking center stage, investing in subsoil resources, especially scarce raw materials, is an extremely promising field',
       url: 'https://dzen.ru/a/aB9cMyZRiHl3Tc9X',
       date: 'May 10, 2025',
+    }, {
+      title: 'The largest deposit of construction sand discovered in the Volzhsky region',
+      textStart: 'The development of the deposit, located a few kilometers from the village of Spartak in the Dubovsky district, will provide the construction materials market with a much-needed resource for several years. According to geological surveys, sand reserves here amount to more than 80 million cubic meters',
+      url: 'https://gazeta-vp.ru/krupnejshee-mestorozhdenie-stroitelnyh-peskov-otkryto-v-volzhskih-nedrah/',
+      date: 'December 26, 2021',
     }],
   },
 } satisfies typeof MessagesRU;
