@@ -159,9 +159,9 @@ Transport infrastructure: **federal highway** R228 «Volgograd-Saratov» (<nobr>
 2. License for subsoil use <nobr>VLG 030224 TE</nobr> until <nobr>12/11/2201</nobr>
     - Type of subsoil use: exploration and extraction of minerals
 3. Commissioning of the quarry
-    - Quarry development project <nobr>(6 months)</nobr>
-    - Mining allotment project <nobr>(3 months)</nobr>
-    - Expert review of projects <nobr>(3 months)</nobr>
+    - Quarry development project
+    - Mining allotment project
+    - Expert review of projects
 4. Sand extraction
     - Quarry launch
 
@@ -169,11 +169,11 @@ Transport infrastructure: **federal highway** R228 «Volgograd-Saratov» (<nobr>
 **Deposit is ready for industrial development** according to the Conclusion of the state expert review of reserves calculation of the Spartakovskoye deposit of construction sands dated <nobr>12/24/2021</nobr>
 - **Certificate of establishing the fact of discovery of a mineral deposit <nobr>No. 01/22-fo</nobr>** received
 - At the end of <nobr>2024</nobr>, **License for subsoil use <nobr>VLG 030224 TE</nobr> until <nobr>12/11/2201</nobr> (type of subsoil use: exploration and extraction of minerals)** was received
+- Projects for **quarry development** and **mining allotment** have been prepared (late 2025 - early 2026).
 
 ### Quarry commissioning
-To commission the quarry, it is necessary to complete 2 more stages:
-- Development of quarry development project <nobr>(6 months)</nobr>
-- Development of mining allotment project <nobr>(3 months)</nobr>
+To commission the quarry, it is necessary to complete the final formal stage:
+- Conducting an expert review of the projects (according to the regulations, the approval period is 3 months).
 
 ### Start of extraction
 Start of extraction can begin **in the first half of <nobr>2026</nobr>**
