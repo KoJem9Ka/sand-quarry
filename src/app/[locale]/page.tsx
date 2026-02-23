@@ -5,7 +5,7 @@ import { ModalConsultation } from '@/components/ModalConsultation/ModalConsultat
 import { Section2LegalStatus } from '@/components/sections/section-2-legal-status';
 import { Section3Characteristics } from '@/components/sections/section-3-characteristics';
 import { Section4BusinessModels } from '@/components/sections/section-4-business-models';
-import { Section5SaleConditions } from '@/components/sections/section-5-sale-conditions';
+// import { Section5SaleConditions } from '@/components/sections/section-5-sale-conditions';
 import { Section6Articles } from '@/components/sections/section-6-articles';
 
 export { generateStaticParams } from '@/i18n/generateStaticParams';
@@ -19,7 +19,7 @@ export default function Home() {
       <Section2LegalStatus />
       <Section3Characteristics />
       <Section4BusinessModels />
-      <Section5SaleConditions />
+      {/* <Section5SaleConditions /> */}
       <Section6Articles />
 
       <Footer />

@@ -1,9 +1,9 @@
+import { config } from '@/backbone/config';
+import { IconLogosTelegram } from '@/components/icons/IconLogosTelegram';
+import { IconLogosWhatsapp } from '@/components/icons/IconLogosWhatsapp';
+import { cn } from '@/utils/cn';
 import { Button } from '@headlessui/react';
 import type { ComponentProps } from 'react';
-import { IconLogosWhatsapp } from '@/components/icons/IconLogosWhatsapp';
-import { IconLogosTelegram } from '@/components/icons/IconLogosTelegram';
-import { CONTACT_LINKS } from '@/constants/CONTACT_LINKS';
-import { cn } from '@/utils/cn';
 
 
 type MessengerButtonProps = ComponentProps<'button'> & {
@@ -29,10 +29,10 @@ export function MessengerButton({ service, svgClassName, ...props }: MessengerBu
 const services = {
   telegram: {
     Icon: IconLogosTelegram,
-    url: CONTACT_LINKS.telegram,
+    url: config.contacts.telegram,
   },
   whatsapp: {
     Icon: IconLogosWhatsapp,
-    url: CONTACT_LINKS.whatsapp,
+    url: config.contacts.whatsapp,
   },
 } as const;

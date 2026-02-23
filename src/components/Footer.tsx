@@ -17,7 +17,7 @@ export function Footer() {
       <Container className="flex flex-col items-center justify-center gap-7">
         <Nav className="max-sm:flex-col items-center gap-3" linkClassName="hover:text-quarry-brown"/>
 
-        <a className='hover:text-quarry-brown' href={`mailto:${config.email}`}>{config.email}</a>
+        <a className='hover:text-quarry-brown' href={`mailto:${config.contacts.email}`}>{config.contacts.email}</a>
 
         <Button onClick={modalConsultationOpen} color="brown" className="text-sm uppercase">{t('buttonShort')}</Button>
 
