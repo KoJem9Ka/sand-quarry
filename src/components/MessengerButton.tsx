@@ -1,4 +1,5 @@
 import { config } from '@/backbone/config';
+import { IconLogosScam } from '@/components/icons/IconLogosScam';
 import { IconLogosTelegram } from '@/components/icons/IconLogosTelegram';
 import { IconLogosWhatsapp } from '@/components/icons/IconLogosWhatsapp';
 import { cn } from '@/utils/cn';
@@ -7,7 +8,7 @@ import type { ComponentProps } from 'react';
 
 
 type MessengerButtonProps = ComponentProps<'button'> & {
-  service: 'whatsapp' | 'telegram';
+  service: keyof typeof services;
   svgClassName?: string;
 }
 
@@ -35,4 +36,8 @@ const services = {
     Icon: IconLogosWhatsapp,
     url: config.contacts.whatsapp,
   },
+  scam: {
+    Icon: IconLogosScam,
+    url: config.contacts.scam,
+  }
 } as const;

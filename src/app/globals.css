@@ -48,6 +48,21 @@
   }
 }
 
+@utility bg-scam {
+  background-image:
+    radial-gradient(
+      ellipse 140% 100% at -2% -44%,
+      rgba(0, 0, 255, 0.72) 0%,
+      transparent 58%
+    ),
+    linear-gradient(
+      74deg,
+      #44CCFF 0%,
+      #5533EE 66.2%,
+      #9933DD 100%
+    );
+}
+
 input[type=number],
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {

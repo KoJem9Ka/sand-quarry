@@ -2,6 +2,7 @@
 
 import { config } from '@/backbone/config';
 import { iconArrowCva } from '@/components/icons/IconArrow';
+import { IconLogosScam } from '@/components/icons/IconLogosScam';
 import { IconLogosTelegram } from '@/components/icons/IconLogosTelegram';
 import { IconLogosWhatsapp } from '@/components/icons/IconLogosWhatsapp';
 import { IconSolarCloseCircleBold } from '@/components/icons/IconSolarCloseCircleBold';
@@ -68,6 +69,13 @@ export function ModalConsultation() {
               <Button className="bg-telegram rounded-none px-6 py-3 w-full">
                 <IconLogosTelegram isNoBg className="size-5" />
                 Telegram
+              </Button>
+            </a>
+
+            <a href={config.contacts.scam} target="_blank" className="grow" onClick={modalConsultationClose}>
+              <Button className="bg-scam rounded-none px-6 py-3 w-full">
+                <IconLogosScam isNoBg className="size-5" />
+                MAX
               </Button>
             </a>
           </div>

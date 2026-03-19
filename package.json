@@ -17,6 +17,8 @@
     "@maskito/kit": "3.10.1",
     "@maskito/react": "3.10.1",
     "ahooks": "3.9.0",
+    "baseline-browser-mapping": "2.10.9",
+    "caniuse-lite": "1.0.30001780",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "embla-carousel": "8.6.0",
