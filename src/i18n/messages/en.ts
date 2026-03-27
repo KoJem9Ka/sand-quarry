@@ -16,6 +16,7 @@ export const MessagesEn = {
     characteristics: 'Specifications',
     businessModels: 'Business Models',
     saleConditions: 'Sales Terms',
+    pricing: 'Pricing',
     articles: 'Articles',
   },
   consultation: {
@@ -688,6 +689,50 @@ Let's translate our price into understandable metrics and compare with market da
 We performed two independent calculations. Market analysis confirmed the uniqueness and high potential value of the object. State valuation provided a transparent and absolutely fair price benchmark.
 
 **By selling the deposit at the price of the state valuation, but transferring it into private ownership with a license for <nobr>177 years</nobr>, we create an offer that has no analogues on the market.** This is not just a profitable deal - it is an opportunity to obtain a strategic asset at a price that makes investments unprecedentedly effective.
+      `.trim(),
+    },
+  },
+  pricing: {
+    title: 'Pricing',
+    tab1PriceCalculation: {
+      title: 'Price Calculation',
+      text: `
+The mineral deposit market today is a zone of turbulence. Price disparity for comparable assets reaches tenfold differences, and in many cases valuations are driven not by real economics but by the seller's personal ambitions. The quarry owner takes a fundamentally different approach: absolute transparency and objectivity.
+
+**How the asset price is determined**: The decision has been made to abandon subjective estimates. The value is calculated using a unified, strictly regulated methodology that cannot be distorted in anyone's favor.
+* **Transparent calculation methodology**: The price is based on the official state valuation according to the methodology of the Ministry of Natural Resources of the Russian Federation (Order No. 232), used for conducting auctions. This is the very formula by which the state calculates the minimum price of access to subsoil resources.
+* **Independent verification**: The buyer can independently contact any accredited valuation institution and, using the asset's publicly available parameters (reserve volume, mining and geological conditions, recovery factor), perform an independent calculation. All source data are transparent and preclude any possibility of price inflation.
+* **Anchored in reality**: Unlike the majority of market offerings where prices are arbitrarily determined, the buyer receives the **minimum base price** reflecting the true value of the asset. This is not a speculative markup but a calculated indicator approved at the state level.
+      `.trim(),
+    },
+    tab2BuyerBenefits: {
+      title: 'Buyer Benefits',
+      text: `
+The key distinction: Government Lease or Private Ownership?
+
+Imagine that this deposit were part of the state fund and put up for an official auction. The state, following the same methodology (Order No. 232), calculates the starting payment for the right to use the subsoil for 49 years. Factoring in the mandatory auction step, the final sum is formed — the very amount an auction winner would pay the government.
+
+**What does a business receive in this standard scenario?**
+
+For this money, a company receives only access to the subsoil for a limited term (49 years), the status of a lessee, and the obligation to bear substantial costs for obtaining all permits, licenses, developing projects, and securing approvals from regulatory authorities.
+
+What does the seller of this deposit offer? For the same amount that the state would charge merely for auction admission (a 49-year lease), the seller offers the asset:
+* **In private ownership** — full rights of possession and disposal of the land plot;
+* **With a license for 177 years** — 3.6 times longer than the government standard;
+* **With all documentation already in place** — the buyer is free from administrative barriers and documentation costs.
+
+In other words, you do not overpay a single ruble for a "compelling narrative" or a seller's personal ambitions. You acquire the asset at the minimum price that would be inevitable in a transaction with the state, but under conditions the state simply cannot offer: perpetual ownership and readiness for launch.
+      `.trim(),
+    },
+    tab3Conclusion: {
+      title: 'Conclusion',
+      text: `
+1. **No overpayment**: The price is determined by a state methodology that eliminates market speculation and price volatility. You pay the real value of the asset, not the seller's wishful thinking.
+2. **Transparency and assurance**: Any buyer can independently verify the calculation through accredited appraisers. The methodology itself makes misrepresentation impossible.
+3. **Unique legal advantage**: You acquire the asset as private property (with a 177-year license) at a price comparable to the cost of a 49-year government lease. This transforms the project economics for a century ahead.
+4. **Turnkey business**: Documentation is complete, infrastructure is in place. Instead of spending years and millions navigating administrative procedures, you receive an asset ready to generate cash flow.
+
+**Opportunities of this scale** and legal integrity appear on the market once in a generation. The combination of vast reserves, the highest quality raw materials, private ownership status, a long-term license, well-developed logistics, and an extensive land bank for an industrial park makes this asset truly unique. This is not merely a quarry purchase — it is the acquisition of a foundation for building an entire industrial ecosystem capable of generating returns for decades.
       `.trim(),
     },
   },

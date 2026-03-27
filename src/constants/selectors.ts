@@ -8,6 +8,7 @@ export enum HeadingIdEnum {
   Characteristics = 'characteristics',
   BusinessModels = 'business-models',
   SaleConditions = 'sale-conditions',
+  Pricing = 'pricing',
   Articles = 'articles',
 }
 
